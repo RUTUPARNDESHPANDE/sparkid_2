@@ -9,7 +9,7 @@ import courselevel from "../Assets/home-img/course-level.webp";
 const SpellingBeeHero = () => {
     return (
         <div className="maincourse-container">
-            <div className="maincourse-content">
+            <div className="maincourse-wrapper">
                 <p className="pagename"><a href="/">Home</a> | <Link to="/courses"> Course </Link>|<span><Link to="/spellingbee"> Spelling Bee</Link></span> </p>
                 <div className="maincourse-section">
                     {/* Left Content Section */}

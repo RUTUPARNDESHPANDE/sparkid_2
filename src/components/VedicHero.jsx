@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../styles/commoncourse.css"; 
+import "../styles/commoncourse.css";
 import coursevedic from "../Assets/courses-img/coursevedic.webp";
 import courseage from "../Assets/home-img/course-age.webp";
 import coursetime from "../Assets/home-img/course-time.webp";
@@ -21,7 +21,7 @@ const VedicHero = () => {
         setScreenWidth(window.innerWidth);
       }, 150);
     };
-    
+
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -50,9 +50,9 @@ const VedicHero = () => {
 
   return (
     <div className="maincourse-container">
-      <div className="maincourse-content">
+      <div className="maincourse-wrapper">
         <p className="pagename">
-          <a href="/">Home</a> | <Link to="/courses"> Course </Link> | 
+          <a href="/">Home</a> | <Link to="/courses"> Course </Link> |
           <span><Link to="/vedic"> Vedic Maths</Link></span>
         </p>
         <div className="maincourse-section">
@@ -94,11 +94,6 @@ const VedicHero = () => {
               src={coursevedic}
               alt="vedic Course"
               loading="lazy"
-              style={{
-                ...getImageStyles(),
-                marginTop: "0px",
-                borderRadius: "20px",
-              }}
             />
           </div>
         </div>
