@@ -1,0 +1,475 @@
+/* Overall container styling */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+}
+.contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.contact-form-section {
+    flex: 1;
+    max-width: 45%;
+}
+
+.contact-form-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: 'Geologica';
+    color: var(--primary-grey);
+    text-align: center;
+}
+
+.contact-form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form-section form input,
+.contact-form-section form textarea {
+    width: 100%;
+    padding: 10px 23px;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 16px;
+    outline: none;
+}
+
+.contact-form-section form select {
+    width: 109%;
+    padding: 11px 23px;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 16px;
+    outline: none;
+    background-color: #ffffff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    color: #333;
+}
+
+.contact-form-section form select:focus {
+    border-color: var(--primary-orange);
+    outline: none;
+}
+
+.contact-form-section form select option {
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-form-section form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.dropdown-container {
+    margin-bottom: 15px;
+  }
+  
+  .styled-dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: var(--bg-color);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  .styled-dropdown:focus {
+    border-color: #ff7f50;
+    outline: none;
+  }
+  
+  .styled-dropdown option {
+    font-size: 16px;
+  }
+  
+.submit-button {
+    background-color: var(--primary-orange);
+    color: white;
+    padding: 16px 20px;
+    font-size: 19.19px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: darkorange;
+}
+
+.contact-info-section {
+    flex: 1;
+    max-width: 45%;
+    text-align: center;
+}
+
+.contact-info-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--primary-grey);
+    font-family: 'Geologica';
+}
+
+.contact-info-section p {
+    margin: 10px 0;
+    font-size: 24px;
+    font-family: geologica;
+    color: var(--primary-grey);
+}
+
+.contact-info-section p span {
+    color: var(--primary-orange);
+}
+
+.navigate-link {
+    margin: 10px 0;
+    font-size: 24px;
+    font-family: geologica;
+    color: var(--primary-grey);
+    color: var(--primary-orange);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navigate-link:hover {
+    color: darkorange;
+}
+
+.map img {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.contact-footer {
+    margin-top: 30px;
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+.contact-footer p {
+    margin: 10px 0;
+    font-size: 24px;
+    color: var(--primary-orange);
+    font-family: 'Geologica';
+}
+.contact-footer h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: var(--primary-grey);
+    font-family: 'Geologica';
+}
+
+.contact-footer .social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.contact-footer .social-links a {
+    text-decoration: none;
+    color: orange;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.contact-footer .social-links a:hover {
+    color: darkorange;
+}
+
+@media (max-width: 768px) {
+    .contact-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form-section{
+        max-width: 100%;
+    }
+    .contact-info-section {
+        max-width: 100%;
+    }
+
+    .contact-form-section h2,
+    .contact-info-section h2 {
+        font-size: 22px;
+    }
+    .contact-info-section p {
+        margin: 10px;
+        font-size: 18px;
+        font-family: geologica;
+        color: var(--primary-grey);
+    }
+    .map iframe {
+        height: 250px;
+        width: 85%;
+      }
+}
+
+/* For screen widths 425px and below */
+@media (max-width: 426px) {
+    .contact-container {
+        padding: 10px;
+    }
+
+    .contact-form-section h2,
+    .contact-info-section h2 {
+        font-size: 20px;
+    }
+
+    .contact-form-section form input,
+    .contact-form-section form textarea {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .contact-footer p,
+    .contact-footer h2 {
+        font-size: 18px;
+    }
+}
+
+/* For screen widths 375px and below */
+@media (max-width: 375px) {
+    .contact-container {
+        padding: 10px;
+    }
+
+    .contact-form-section h2,
+    .contact-info-section h2 {
+        font-size: 18px;
+    }
+
+    .contact-form-section form input,
+    .contact-form-section form textarea {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .contact-footer p,
+    .contact-footer h2 {
+        font-size: 16px;
+    }
+}
+
+/* For screen widths 320px and below */
+@media (max-width: 320px) {
+    .contact-container {
+        padding: 5px;
+    }
+
+    .contact-form-section h2,
+    .contact-info-section h2 {
+        font-size: 16px;
+    }
+
+    .contact-form-section form input,
+    .contact-form-section form textarea {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    .contact-footer p,
+    .contact-footer h2 {
+        font-size: 14px;
+    }
+}
+
+/* Full HD: 1920px */
+@media (min-width: 1920px) {
+  .contact-container {
+    padding: 30px;
+  }
+
+  .contact-row {
+    max-width: 1440px;
+    gap: 36px;
+  }
+
+  .contact-form-section h2,
+  .contact-info-section h2 {
+    font-size: 29px;
+  }
+
+  .contact-form-section form input,
+  .contact-form-section form textarea,
+  .contact-form-section form select {
+    padding: 12px 28px;
+    font-size: 1.2rem;
+  }
+
+  .contact-form-section form textarea {
+    height: 144px;
+  }
+
+  .contact-info-section p {
+    font-size: 29px;
+  }
+
+  .navigate-link {
+    font-size: 29px;
+  }
+
+  .submit-button {
+    padding: 19px 24px;
+    font-size: 23px;
+  }
+
+  .contact-footer {
+    max-width: 1440px;
+    padding: 30px;
+  }
+
+  .contact-footer p,
+  .contact-footer h2 {
+    font-size: 29px;
+  }
+
+  .contact-footer .social-links {
+    gap: 24px;
+  }
+
+  .contact-footer .social-links a {
+    font-size: 1.2rem;
+  }
+}
+
+/* 2K: 2560px */
+@media (min-width: 2560px) {
+  .contact-container {
+    padding: 40px;
+  }
+
+  .contact-row {
+    max-width: 1800px;
+    gap: 45px;
+  }
+
+  .contact-form-section h2,
+  .contact-info-section h2 {
+    font-size: 36px;
+  }
+
+  .contact-form-section form input,
+  .contact-form-section form textarea,
+  .contact-form-section form select {
+    padding: 15px 35px;
+    font-size: 1.5rem;
+  }
+
+  .contact-form-section form textarea {
+    height: 180px;
+  }
+
+  .contact-info-section p {
+    font-size: 36px;
+  }
+
+  .navigate-link {
+    font-size: 36px;
+  }
+
+  .submit-button {
+    padding: 24px 30px;
+    font-size: 29px;
+  }
+
+  .contact-footer {
+    max-width: 1800px;
+    padding: 40px;
+  }
+
+  .contact-footer p,
+  .contact-footer h2 {
+    font-size: 36px;
+  }
+
+  .contact-footer .social-links {
+    gap: 30px;
+  }
+
+  .contact-footer .social-links a {
+    font-size: 1.5rem;
+  }
+}
+
+/* 4K: 3840px */
+@media (min-width: 3840px) {
+  .contact-container {
+    padding: 60px;
+  }
+
+  .contact-row {
+    max-width: 2400px;
+    gap: 60px;
+  }
+
+  .contact-form-section h2,
+  .contact-info-section h2 {
+    font-size: 48px;
+  }
+
+  .contact-form-section form input,
+  .contact-form-section form textarea,
+  .contact-form-section form select {
+    padding: 20px 46px;
+    font-size: 2rem;
+  }
+
+  .contact-form-section form textarea {
+    height: 240px;
+  }
+
+  .contact-info-section p {
+    font-size: 48px;
+  }
+
+  .navigate-link {
+    font-size: 48px;
+  }
+
+  .submit-button {
+    padding: 32px 40px;
+    font-size: 38px;
+  }
+
+  .contact-footer {
+    max-width: 2400px;
+    padding: 60px;
+  }
+
+  .contact-footer p,
+  .contact-footer h2 {
+    font-size: 48px;
+  }
+
+  .contact-footer .social-links {
+    gap: 40px;
+  }
+
+  .contact-footer .social-links a {
+    font-size: 2rem;
+  }
+}

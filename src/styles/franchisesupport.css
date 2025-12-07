@@ -1,0 +1,311 @@
+.support {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 50px 10%; */
+  background-color: var(--bg-color);
+}
+
+.support-text {
+  margin-bottom: -50px;
+}
+
+.support-text h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: regular;
+  color: var(--primary-orange);
+  margin-bottom: 25px;
+  font-family: Geologica;
+}
+
+.support-text h3 {
+  color: #f37751;
+  margin-top: -19px;
+  text-align: center;
+  font-size: 50px;
+  color: var(--primary-grey);
+  font-weight: bold;
+  margin-bottom: -11px;
+  font-family: Lilita One;
+}
+
+.support-text p {
+  font-size: 22px;
+  margin-top: 20px;
+  /* max-width: 800px; */
+  text-align: center;
+  font-family: Geologica;
+  color: var(--primary-grey);
+}
+
+.support-sub {
+  display: flex;
+  flex-direction: row;
+  margin-top: -4%ist sa;
+  gap: 2rem;
+  /* Spacing between the image and content */
+}
+
+.support-sub-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: row;
+}
+
+.support-sub-content {
+  flex: 1;
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 119px;
+  width: 605px;
+}
+
+.support-sub-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--topic-color);
+  margin-bottom: 57px;
+  font-family: Geologica;
+  margin-top: 16px;
+}
+
+.support-sub-description {
+  font-size: 24px;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  line-height: 1.3;
+}
+
+/* Points List */
+.support-sub-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* Remove default margin */
+  font-family: Geologica;
+  font-size: 18px;
+  /* Adjust font size for better spacing */
+  font-weight: regular;
+  text-align: left;
+  line-height: 1.5;
+  /* Improve spacing within each point */
+  /* Removed extra margin for tighter grouping */
+}
+
+.support-sub-points li {
+  display: flex;
+  align-items: flex-start;
+  /* Align text and image at the top */
+  margin-bottom: 10px;
+  /* Reduce spacing between list items */
+  color: var(--text-color);
+  flex-direction: row;
+}
+
+.support-sub-points li img {
+  margin-right: 10px;
+  /* Slight spacing between text and image */
+  height: 20px;
+  /* Adjust image size for better alignment */
+  width: 20px;
+  flex-shrink: 0;
+  margin: top 10px;
+  border-radius: 10px;
+}
+
+.support-sub-points li p {
+  margin: 0;
+  /* Remove unnecessary margins */
+}
+
+.support-sub-points li span {
+  color: var(--primary-orange);
+  font-weight: bold;
+  /* Emphasize span text */
+}
+
+/* Right Image Section */
+.support-sub-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  /* Align image to the left */
+}
+
+.support-sub-image img {
+  width: 427px;
+  height: 600px;
+  transition: transform 0.3s ease;
+}
+
+.support-sub-image img:hover {
+  transform: translateY(-10px);
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+
+  /* @media (max-width: 768px) { */
+  .support-text h2 {
+    font-size: 20px;
+  }
+
+  .support-text h3 {
+    font-size: 40px;
+  }
+
+  .support-text p {
+    font-size: 18px;
+  }
+
+  .support-sub {
+    width: 100%;
+
+  }
+
+  .support-sub-heading {
+    font-size: 20px;
+  }
+
+  .support-sub-description {
+    font-size: 20px;
+  }
+
+  .support-sub-points {
+    font-size: 16px;
+  }
+
+  .support-sub-image img {
+    width: 320px;
+    height: 520px;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .support {
+    padding: 30px 10px;
+  }
+
+  .support-sub {
+    flex-direction: column;
+    /* Stack content vertically */
+  }
+
+  .support-sub-section {
+    flex-direction: column;
+    /* Stack subsections vertically */
+    gap: 1rem;
+  }
+
+  .support-sub-content {
+    margin-left: 35px;
+    margin-top: 0;
+    text-align: center;
+    width: 83%;
+  }
+
+  .support-text h2 {
+    font-size: 18px;
+  }
+
+  .support-text h3 {
+    font-size: 36px;
+  }
+
+  .support-text p {
+    font-size: 16px;
+  }
+
+  .support-sub-heading {
+    font-size: 18px;
+  }
+
+  .support-sub-description {
+    font-size: 18px;
+  }
+
+  .support-sub-points {
+    font-size: 14px;
+  }
+
+  .support-sub-image img {
+    width: 72%;
+    height: auto;
+    margin-left: 62px;
+  }
+}
+
+/* For screens 376px and smaller */
+@media (max-width: 376px) {
+  .support-text h2 {
+    font-size: 16px;
+  }
+
+  .support-text h3 {
+    font-size: 34px;
+  }
+
+  .support-text p {
+    font-size: 14px;
+  }
+
+  .support-sub-content {
+    margin-top: -14px;
+    width: 100%;
+    margin-left: 1px;
+  }
+
+  .support-sub-heading {
+    font-size: 16px;
+  }
+
+  .support-sub-description {
+    font-size: 16px;
+  }
+
+  .support-sub-points {
+    font-size: 13px;
+  }
+
+  .support-sub-image img {
+    width: 83%;
+    height: auto;
+    margin-left: 36px;
+  }
+}
+
+/* For screens 320px and smaller */
+@media (max-width: 320px) {
+  .support-text h2 {
+    font-size: 14px;
+  }
+
+  .support-text h3 {
+    font-size: 30px;
+  }
+
+  .support-text p {
+    font-size: 12px;
+  }
+
+  .support-sub-heading {
+    font-size: 14px;
+  }
+
+  .support-sub-description {
+    font-size: 14px;
+  }
+
+  .support-sub-points {
+    font-size: 12px;
+  }
+
+  .support-sub-image img {
+    width: 78%;
+    height: auto;
+    margin-left: 40px;
+  }
+}

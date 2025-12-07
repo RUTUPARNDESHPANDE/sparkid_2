@@ -1,0 +1,196 @@
+.insightstudent{
+  text-align: center;
+  /* padding: 40px 20px; */
+  background-color: var(--bg-color);
+  font-family: Arial, sans-serif;
+}
+
+.insightstudent-title {
+  font-size: 50px;
+  font-weight: 400;
+  font-family:lilita one;
+  color: var(--primary-grey);
+  margin-bottom: -9px;
+}
+
+.insightstudent-highlight {
+  color: var(--primary-orange);
+}
+
+.insightstudent-subtitle {
+  font-size: 24px;
+  color: var(--primary-grey);
+  font-weight:400;
+  font-family:geologica;
+  margin-bottom: 11px;
+}
+
+.insightstudent-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.insightstudent-card {
+  width: 300px;
+
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.4s ease;
+}
+
+.insightstudent-wrapper {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background-color: var(--primary-orange);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.insightstudent-image {
+  width: 312px;
+  height: 350.02px;
+  border-radius: 50%;
+}
+
+.insightstudent-name {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--highlight-color);
+  font-family: geologica;
+  margin-bottom: -18px;
+}
+
+.insightstudent-prize {
+  font-size: 20px;
+  font-weight: 100;
+  color: var(--highlight-color);
+  font-family: geologica;
+  margin-bottom: -15px;
+}
+
+.insightstudent-description {
+  line-height: 1.5;
+  font-size: 22px;
+  font-weight: 100;
+  color: var(--highlight-color);
+  font-family: geologica;
+}
+@media (max-width: 885px) {
+  .insightstudent-description{
+    font-size: 17px;
+  }
+  .insightstudent-image {
+    width: 225px;
+    height: 244.02px;
+}
+.insightstudent-card {
+  width: 211px;
+}
+}
+/* Tablet: 601px - 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .insightstudent-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-left: -20px;
+    gap: 15px;
+  }
+
+  .insightstudent-image {
+    width: 195px;
+    height: 219.02px;
+    border-radius: 50%;
+    margin-left: -13px;
+  }
+
+  .insightstudent-name {
+    font-size: 16px;
+    margin-bottom: -12px;
+  }
+
+  .insightstudent-prize {
+    font-size: 12px;
+    margin-bottom: -9px;
+  }
+
+  .insightstudent-description {
+    line-height: 1.2;
+    font-size: 14px;
+  }
+
+  .insightstudent-card {
+    flex: 0 0 auto;
+    width: 189px;
+  }
+}
+
+/* Mobile: 320px - 600px */
+@media (max-width: 600px) {
+  .insightstudent {
+    width: 100%;
+  }
+
+  .insightstudent-container {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .insightstudent-image {
+    width: 220px;
+    height: 248px;
+    border-radius: 50%;
+  }
+
+  .insightstudent-title {
+    font-size: 36px;
+  }
+
+  .insightstudent-subtitle {
+    font-size: 16px;
+  }
+
+  .insightstudent-name {
+    font-size: 18px;
+    margin-bottom: -12px;
+  }
+
+  .insightstudent-prize {
+    font-size: 14px;
+    margin-bottom: -9px;
+  }
+
+  .insightstudent-description {
+    line-height: 1.2;
+    font-size: 16px;
+  }
+
+  .insightstudent-card {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  /* Small mobile adjustments */
+  @media (max-width: 375px) {
+    .insightstudent-title {
+      font-size: 30px;
+    }
+
+    .insightstudent-card {
+      width: 90%;
+    }
+
+    .insightstudent-description {
+      font-size: 15px;
+    }
+  }
+}

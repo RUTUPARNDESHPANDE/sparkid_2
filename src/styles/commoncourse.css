@@ -1,0 +1,612 @@
+.pagename {
+  font-size: 24px;
+  color: var(--primary-grey);
+  margin-bottom: 30px;
+  position: relative;
+  font-family: geologica;
+  top: 0px;
+  padding: 2rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Ensure good text contrast in dark theme */
+[data-theme="dark"] .pagename {
+  color: var(--item-text);
+}
+
+.pagename a {
+  color: var(--primary-grey);
+  text-decoration: none;
+}
+
+.pagename span a {
+  color: var(--primary-orange);
+}
+
+.maincourse-container {
+  display: flex;
+  padding: 40px;
+  /* width: 1152px; */
+  height: 567px;
+
+}
+
+.maincourse-section {
+  display: flex;
+  width: 1152px;
+  height: 567px;
+  border: 2px solid rgba(221, 221, 221, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background: var(--item-color);
+  padding: 36px 96px;
+  margin-left: 57px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Dark theme border and shadow */
+[data-theme="dark"] .maincourse-section {
+  border: 2px solid rgba(245, 134, 52, 0.4);
+  box-shadow: 0 4px 20px rgba(245, 134, 52, 0.2), 0 0 0 1px rgba(245, 134, 52, 0.1);
+}
+
+
+.maincourse-content {
+  flex: 1;
+  max-width: 50%;
+
+}
+
+.maincourse-heading {
+  font-size: 50px;
+  font-weight: 400;
+  color: var(--primary-orange);
+  margin-bottom: 1rem;
+  font-family: 'Lilita One';
+}
+
+.maincourse-points-wholelist {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 5px;
+  line-height: 1.8;
+}
+
+.maincourse-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.maincourse-points-list {
+  display: flex;
+  flex-direction: row;
+  font-size: 22px;
+  color: var(--primary-grey);
+  font-family: Geologica;
+  gap: 10px;
+  line-height: 1.6;
+}
+
+/* Ensure good text contrast in dark theme */
+[data-theme="dark"] .maincourse-points-list {
+  color: var(--item-text);
+}
+
+.maincourse-subcontent li {
+  font-size: 24px;
+  font-family: Geologica;
+  color: var(--primary-grey);
+  line-height: 50px;
+}
+
+/* Ensure good text contrast in dark theme */
+[data-theme="dark"] .maincourse-subcontent li {
+  color: var(--item-text);
+}
+
+.maincourse-subcontent li span {
+  font-weight: 400;
+
+}
+
+.maincourse-points p {
+  display: flex;
+  font-size: 18px;
+  color: var(--primary-grey);
+  font-family: Geologica;
+  margin: 8px 0;
+}
+
+/* Ensure good text contrast in dark theme */
+[data-theme="dark"] .maincourse-points p {
+  color: var(--item-text);
+}
+
+.maincourse-points p img {
+  width: 20px;
+  height: 20px;
+}
+
+.maincourse-points-list span {
+  font-weight: 400;
+  font-size: 24px;
+  font-family: geologica;
+  color: var(--primary-grey);
+}
+
+/* Ensure good text contrast in dark theme */
+[data-theme="dark"] .maincourse-points-list span {
+  color: var(--item-text);
+}
+
+.maincourse-subcontent span {
+  font-size: 24px;
+  font-family: geologica;
+  color: var(--primary-orange);
+}
+
+.maincourse-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  width: 389px;
+  height: 56px;
+  background-color: var(--primary-orange);
+  color: var(--bg-color);
+  font-size: 24px;
+  font-weight: semibold;
+  font-family: geologica;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(245, 134, 52, 0.4);
+  transition: all 0.3s ease;
+}
+
+.maincourse-button:hover {
+  background-color: #e7752a;
+  box-shadow: 0 6px 12px rgba(245, 134, 52, 0.6);
+}
+
+.maincourse-image {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.maincourse-image img {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  animation: none;
+  /* No animation initially */
+}
+
+.maincourse-image img:hover {
+  animation: wiggle 1.0s ease infinite;
+  /* Trigger wiggle on hover */
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .maincourse-container {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .maincourse-section {
+    flex-direction: column-reverse;
+    /* Stack image on top of content if desired, or column for standard stacking */
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+    margin: 0 auto;
+    /* Center the section */
+    box-sizing: border-box;
+  }
+
+  .maincourse-content {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 12px;
+  }
+
+  .maincourse-subcontent li {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-top: 8px;
+  }
+
+  .maincourse-subcontent span {
+    font-size: 15px;
+  }
+
+  .pagename {
+    font-size: 15px;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  .maincourse-heading {
+    font-size: 31px;
+    margin-bottom: 19px;
+    margin-top: 5px;
+  }
+
+  .maincourse-points-wholelist {
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+
+  .maincourse-points p img {
+    width: 22px;
+    height: 21px;
+    margin-top: -11px;
+    margin-bottom: 15px;
+  }
+
+  .maincourse-points-list,
+  .maincourse-points-list span {
+    font-size: 17px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .maincourse-button {
+    width: 83%;
+    min-height: 48px;
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .maincourse-image img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+@media (max-width: 426px) {
+  .pagename {
+    font-size: 14px;
+    left: 0;
+    top: 0;
+    padding: 1rem 0;
+    text-align: left;
+  }
+
+  .maincourse-container {
+    height: auto;
+    align-items: center;
+  }
+
+  .maincourse-section {
+    flex-direction: column;
+    width: 90%;
+    padding: 30px 20px;
+    margin: 0 auto;
+  }
+
+  .maincourse-content {
+    order: 2;
+    padding: 0 12px;
+  }
+
+  .maincourse-image {
+    max-width: 95%;
+  }
+
+  .maincourse-heading {
+    font-size: 30px;
+  }
+
+  .maincourse-points-list,
+  .maincourse-subcontent li {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .maincourse-points-list span,
+  .maincourse-subcontent li span {
+    font-size: 15px;
+  }
+
+  .maincourse-button {
+    font-size: 14px;
+    padding: 2px;
+    width: 100%;
+    height: 50px;
+  }
+
+  .maincourse-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .maincourse-image img:hover {
+    animation: none;
+  }
+}
+
+@media (max-width: 376px) {
+  .pagename {
+    font-size: 14px;
+    padding: 1rem 0;
+    left: 0;
+    top: 0;
+  }
+
+  .maincourse-container {
+    height: auto;
+    align-items: center;
+  }
+
+  .maincourse-section {
+    flex-direction: column;
+    width: 90%;
+    padding: 30px 18px;
+    margin: 0 auto;
+  }
+
+  .maincourse-content {
+    order: 2;
+    padding: 0 10px;
+  }
+
+  .maincourse-image {
+    max-width: 120%;
+  }
+
+  .maincourse-heading {
+    font-size: 26px;
+  }
+
+  .maincourse-points-list,
+  .maincourse-subcontent li {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .maincourse-points-list span,
+  .maincourse-subcontent li span {
+    font-size: 14px;
+    width: 17%;
+  }
+
+  .maincourse-button {
+    font-size: 12px;
+    padding: 4px;
+    width: 98%;
+  }
+}
+
+@media (max-width: 320px) {
+  .pagename {
+    font-size: 10px;
+    padding: 0.5rem 0;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .maincourse-container {
+    align-items: center;
+  }
+
+  .maincourse-content {
+    width: px;
+  }
+
+  .maincourse-section {
+    width: 85%;
+    padding: 30px 15px;
+    margin: 0 auto;
+  }
+
+  .maincourse-content {
+    padding: 0 8px;
+  }
+
+  .maincourse-image {
+    max-width: 90%;
+  }
+
+  .maincourse-points-list span,
+  .maincourse-subcontent li span {
+    width: 26%;
+  }
+}
+
+/* Full HD: 1920px */
+@media (min-width: 1920px) {
+  .maincourse-container {
+    padding: 50px;
+    height: 680px;
+  }
+
+  .maincourse-section {
+    width: 1382px;
+    height: 680px;
+    padding: 43px 115px;
+    margin-left: 68px;
+  }
+
+  .pagename {
+    font-size: 29px;
+    padding: 2.4rem;
+  }
+
+  .maincourse-heading {
+    font-size: 60px;
+  }
+
+  .maincourse-points-list {
+    font-size: 26px;
+  }
+
+  .maincourse-points-list span {
+    font-size: 29px;
+  }
+
+  .maincourse-subcontent li {
+    font-size: 29px;
+  }
+
+  .maincourse-subcontent span {
+    font-size: 29px;
+  }
+
+  .maincourse-points p {
+    font-size: 22px;
+  }
+
+  .maincourse-points p img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .maincourse-button {
+    width: 467px;
+    height: 67px;
+    font-size: 29px;
+  }
+}
+
+/* 2K: 2560px */
+@media (min-width: 2560px) {
+  .maincourse-container {
+    padding: 60px;
+    height: 851px;
+  }
+
+  .maincourse-section {
+    width: 1728px;
+    height: 851px;
+    padding: 54px 144px;
+    margin-left: 85px;
+  }
+
+  .pagename {
+    font-size: 36px;
+    padding: 3rem;
+  }
+
+  .maincourse-heading {
+    font-size: 75px;
+  }
+
+  .maincourse-points-list {
+    font-size: 33px;
+  }
+
+  .maincourse-points-list span {
+    font-size: 36px;
+  }
+
+  .maincourse-subcontent li {
+    font-size: 36px;
+  }
+
+  .maincourse-subcontent span {
+    font-size: 36px;
+  }
+
+  .maincourse-points p {
+    font-size: 27px;
+  }
+
+  .maincourse-points p img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .maincourse-button {
+    width: 584px;
+    height: 84px;
+    font-size: 36px;
+  }
+}
+
+/* 4K: 3840px */
+@media (min-width: 3840px) {
+  .maincourse-container {
+    padding: 80px;
+    height: 1134px;
+  }
+
+  .maincourse-section {
+    width: 2304px;
+    height: 1134px;
+    padding: 72px 192px;
+    margin-left: 114px;
+  }
+
+  .pagename {
+    font-size: 48px;
+    padding: 4rem;
+  }
+
+  .maincourse-heading {
+    font-size: 100px;
+  }
+
+  .maincourse-points-list {
+    font-size: 44px;
+  }
+
+  .maincourse-points-list span {
+    font-size: 48px;
+  }
+
+  .maincourse-subcontent li {
+    font-size: 48px;
+  }
+
+  .maincourse-subcontent span {
+    font-size: 48px;
+  }
+
+  .maincourse-points p {
+    font-size: 36px;
+  }
+
+  .maincourse-points p img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .maincourse-button {
+    width: 778px;
+    height: 112px;
+    font-size: 48px;
+  }
+}

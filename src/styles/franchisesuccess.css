@@ -1,0 +1,377 @@
+.franchisesuccess-slider-container {
+  width: 1280px;
+  height: 480px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 58px;
+}
+
+.franchisesuccess-slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.franchisesuccess-slider-item {
+  display: flex !important;
+  /* Ensure items are flex */
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.franchisesuccess-image-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.franchisesuccess-image-container img {
+  width: 480px;
+  height: 480px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.franchisesuccess-image-container img:hover {
+  transform: translateY(-10px);
+}
+
+.franchisesuccess-content-container {
+  width: 528px;
+  height: 348px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--bg-color);
+  box-sizing: border-box;
+  margin-top: 61px;
+}
+
+.franchisesuccess-text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -76px;
+}
+
+.franchisesuccess-text-content h2 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-family: Lilita One;
+  font-weight: 400;
+  color: var(--primary-orange);
+}
+
+.franchisesuccess-text-content p {
+  font-size: 24px;
+  font-family: "Geologica";
+  font-weight: 400;
+  color: var(--highlight-color);
+}
+
+.franchisesuccess-text-content p span {
+  line-height: 1.5;
+  font-size: 24px;
+  font-family: "Geologica";
+  font-weight: 400;
+  color: var(--primary-orange);
+}
+
+/* Custom styles for slick buttons */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: orange;
+  color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  position: absolute;
+  top: 11px;
+  right: 14px;
+  font-size: 20px;
+  color: white;
+}
+
+.slick-prev::before {
+  content: '◀';
+}
+
+.slick-next::before {
+  content: '▶';
+}
+
+.slick-prev,
+.slick-next {
+  color: transparent;
+  font-size: 0;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+/* @media (min-width:768px) and (max-width:1024px){ */
+@media (max-width: 1024px) {
+  .franchisesuccess-slider-container {
+    padding: 10px;
+    width: 742px;
+    height: 305px;
+  }
+
+  .franchisesuccess-text-content {
+    width: 70%;
+    margin-top: -171px;
+    margin-left: 35px;
+  }
+
+  .franchisesuccess-image-container img {
+    height: 291px;
+    margin-left: 90px;
+  }
+
+  .franchisesuccess-text-content h2 {
+    font-size: 20px;
+    margin-bottom: -10px;
+  }
+
+  .franchisesuccess-text-content p {
+    font-size: 16px;
+  }
+
+  .franchisesuccess-text-content p span {
+    font-size: 17px;
+  }
+
+  .franchisesuccess-image-container img {
+    max-width: 277px;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .franchisesuccess-slider {
+    width: 100%;
+    margin-left: -17px;
+  }
+
+  .franchisesuccess-slider-container {
+    padding: 10px;
+    width: 327px;
+    height: 503px;
+    margin-left: 48px;
+  }
+
+  .franchisesuccess-slider-item {
+    flex-direction: column;
+    width: 100%;
+    margin-left: -40px;
+  }
+
+  .slick-prev {
+    left: 10px;
+  }
+
+  .slick-next {
+    right: 1px;
+
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 31px;
+    height: 31px
+  }
+
+  .slick-prev::before,
+  .slick-next::before {
+
+    top: 2px;
+    right: 9px;
+    font-size: 18px;
+  }
+
+  .franchisesuccess-content-container {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .franchisesuccess-text-content {
+    width: 65%;
+    margin-top: -124px;
+    margin-left: 107px;
+  }
+
+  .franchisesuccess-text-content {
+    font-size: 14px;
+    ;
+  }
+
+  .franchisesuccess-image-container {
+    width: 100%;
+  }
+
+  .franchisesuccess-image-container img {
+    max-width: 254px;
+    height: 245px;
+  }
+
+
+}
+
+
+@media (max-width: 394px) {
+  .franchisesuccess-slider {
+    width: 100%;
+    margin-left: -17px;
+  }
+
+  .franchisesuccess-slider-container {
+    padding: 10px;
+    width: 327px;
+    height: 503px;
+    margin-left: 36px;
+  }
+
+  .franchisesuccess-slider-item {
+    flex-direction: column;
+    width: 100%;
+    margin-left: -40px;
+  }
+
+  .slick-prev {
+    left: 10px;
+  }
+
+  .slick-next {
+    right: 8px;
+
+  }
+
+  .franchisesuccess-content-container {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .franchisesuccess-text-content {
+    width: 65%;
+    margin-top: -124px;
+    margin-left: 107px;
+  }
+
+  .franchisesuccess-text-content {
+    font-size: 14px;
+    ;
+  }
+
+  .franchisesuccess-image-container {
+    width: 100%;
+  }
+
+  .franchisesuccess-image-container img {
+    max-width: 254px;
+    height: 245px;
+  }
+
+}
+
+@media (max-width: 376px) {
+  .franchisesuccess-slider-container {
+    width: 328px;
+    margin-left: 22px;
+    padding: 0px;
+  }
+
+  .franchisesuccess-text-content {
+    width: 69%;
+    margin-top: -100px;
+    margin-left: 96px;
+  }
+
+  .slick-dots {
+    margin-top: 5px;
+  }
+
+  .slick-next {
+    right: 1px;
+  }
+
+  .slick-prev {
+    left: 8x;
+  }
+}
+
+@media (max-width: 320px) {
+  .franchisesuccess-text-content h2 {
+    font-size: 16px;
+  }
+
+  .franchisesuccess-slider-container {
+    width: 263px;
+    margin-left: 30px;
+  }
+
+  .franchisesuccess-text-content {
+    width: 65%;
+    margin-top: -155px;
+    margin-left: 93px;
+  }
+
+  .franchisesuccess-text-content p {
+    font-size: 12px;
+  }
+
+  .slick-arrow {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  .franchisesuccess-image-container img {
+    max-width: 202px;
+    height: 199px;
+  }
+
+  .slick-prev::before,
+  .slick-next::before {
+    top: 2px;
+    right: 5px;
+    font-size: 15px;
+  }
+
+  .slick-next {
+    right: 0px;
+  }
+}

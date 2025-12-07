@@ -1,0 +1,523 @@
+.educator-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem 2rem;
+}
+
+.educator-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.educator-image-container {
+  flex: 1;
+}
+
+.educator-shape-container {
+  flex: 1;
+  display: flex;
+  padding-right: 100px;
+}
+
+.educator-image {
+  width: 546px;
+  height: 352px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.educator-image:hover {
+  transform: translateY(-10px);
+}
+
+.educator-shape {
+  width: 228px;
+  height: 349.5px;
+  border-radius: 0px;
+  margin-left: 50px;
+
+}
+
+.educator-text-container {
+  flex: 1;
+  text-align: right;
+  width: 320px;
+}
+
+.educator-label {
+  color: var(--primary-orange);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 24px;
+  font-family: geologica;
+}
+
+.educator-heading {
+  font-size: 50px;
+  color: var(--primary-grey);
+  margin-bottom: 1rem;
+  margin-left: -300px;
+  font-family: lilita one;
+}
+
+.highlight-text {
+  color: var(--primary-orange);
+  margin-left: -300px;
+  font-size: 50px;
+  font-family: lilita one;
+}
+
+.educator-description {
+  font-size: 20px;
+  color: var(--primary-grey);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-family: geologica;
+}
+
+.educator-button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: var(--primary-orange);
+  border: 2px solid var(--primary-orange);
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 19.19px;
+  font-family: geologica;
+  transition: all 0.3s ease;
+}
+
+.educator-button:hover {
+  background-color: #ff7c2e;
+  color: #fff;
+}
+
+@media(max-width:1024px) {
+  .educator-image {
+    width: 457px;
+    height: 319px;
+  }
+
+  .educator-shape {
+    width: 182px;
+    height: 345.5px;
+    border-radius: 0px;
+    margin-left: 22px;
+  }
+
+  .educator-shape-container {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .educator-content {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+
+  .educator-image {
+    width: 310px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .educator-shape-container {
+    padding-right: 0;
+    margin-top: 20px;
+  }
+
+  .educator-shape {
+    width: 140px;
+    height: 230.5px;
+    border-radius: 0px;
+    margin-left: 7px;
+    margin-top: 8px;
+  }
+
+  .educator-text-container {
+    flex: 1;
+    text-align: right;
+    width: 225px;
+  }
+
+  .educator-heading,
+  .highlight-text {
+    font-size: 35px;
+    margin-left: -46px;
+  }
+
+  .educator-description {
+    font-size: 14px;
+    margin-top: -12px;
+    margin-bottom: -13px;
+  }
+
+  .educator-button {
+    font-size: 14px;
+  }
+}
+
+/* Responsive for width 480px */
+@media (max-width: 480px) {
+  .educator-section {
+    padding: 1rem 1rem;
+  }
+
+  .educator-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .educator-image {
+    width: 360px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .educator-shape-container {
+    padding-right: 0;
+    margin-top: 20px;
+  }
+
+  .educator-shape {
+    width: 140px;
+    height: 230.5px;
+    border-radius: 0px;
+    margin-left: 7px;
+    margin-top: 8px;
+  }
+
+  .educator-text-container {
+    flex: 1;
+    text-align: right;
+    width: 225px;
+  }
+
+  .educator-heading,
+  .highlight-text {
+    font-size: 35px;
+    margin-left: -46px;
+  }
+
+  .educator-description {
+    font-size: 14px;
+    margin-top: -12px;
+    margin-bottom: -13px;
+  }
+
+  .educator-button {
+    font-size: 14px;
+  }
+}
+
+/* For screens up to 425px */
+@media (max-width: 426px) {
+  .educator-section {
+    padding: 1rem 0.5rem;
+  }
+
+  .educator-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .educator-image {
+    width: 380px;
+    height: auto;
+    margin-top: 15px;
+  }
+
+  .educator-shape-container {
+    margin-top: 15px;
+    padding-right: 0;
+  }
+
+  .educator-shape {
+    width: 156px;
+    height: auto;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+  .educator-text-container {
+    width: 192px;
+    text-align: right;
+  }
+
+  .educator-label {
+    font-size: 20px;
+  }
+
+  .educator-heading,
+  .highlight-text {
+    font-size: 30px;
+    margin-left: -90px;
+  }
+
+  .educator-description {
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .educator-button {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 376px) {
+  .educator-section {
+    padding: 0.8rem 0.5rem;
+  }
+
+  .educator-image {
+    width: 325px;
+  }
+
+  .educator-shape-container {
+    width: 85%;
+  }
+
+  .educator-shape {
+    width: 100px;
+    height: 180px;
+    margin-left: 3px;
+    margin-top: 5px;
+  }
+
+  .educator-text-container {
+    width: 166px;
+    text-align: right;
+  }
+
+  .educator-label {
+    font-size: 17px;
+  }
+
+  .educator-heading,
+  .highlight-text {
+    font-size: 29px;
+    margin-left: -31px;
+  }
+
+  .educator-description {
+    font-size: 12px;
+  }
+
+  .educator-button {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width:361px) {
+  .educator-shape-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 321px) {
+  .educator-section {
+    padding: 0.5rem 0.2rem;
+  }
+
+  .educator-image {
+    width: 260px;
+    height: auto;
+    margin-top: 8px;
+  }
+
+  .educator-shape {
+    width: 90px;
+    height: 160px;
+    margin-left: 2px;
+    margin-top: 4px;
+  }
+
+  .educator-label {
+    font-size: 14px;
+  }
+
+  .educator-text-container {
+    width: 185px;
+    text-align: center;
+  }
+
+  .educator-heading,
+  .highlight-text {
+    font-size: 20px;
+    margin-left: -56px;
+    margin-top: 30px;
+    margin-bottom: -7px;
+  }
+
+  .educator-description {
+    font-size: 10px;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .educator-button {
+    font-size: 9px;
+    width: 53%;
+    margin-top: 0px;
+  }
+}
+
+/* Full HD: 1920px */
+@media (min-width: 1920px) {
+  .educator-section {
+    padding: 8.4rem 2.4rem;
+  }
+
+  .educator-content {
+    max-width: 1440px;
+  }
+
+  .educator-image {
+    width: 655px;
+    height: 422px;
+  }
+
+  .educator-shape {
+    width: 274px;
+    height: 419px;
+    margin-left: 60px;
+  }
+
+  .educator-shape-container {
+    padding-right: 120px;
+  }
+
+  .educator-text-container {
+    width: 384px;
+  }
+
+  .educator-label {
+    font-size: 29px;
+  }
+
+  .educator-heading,
+  .highlight-text {
+    font-size: 60px;
+    margin-left: -360px;
+  }
+
+  .educator-description {
+    font-size: 24px;
+  }
+
+  .educator-button {
+    font-size: 23px;
+    padding: 12px 24px;
+  }
+}
+
+/* 2K: 2560px */
+@media (min-width: 2560px) {
+  .educator-section {
+    padding: 10.5rem 3rem;
+  }
+
+  .educator-content {
+    max-width: 1800px;
+  }
+
+  .educator-image {
+    width: 819px;
+    height: 528px;
+  }
+
+  .educator-shape {
+    width: 342px;
+    height: 524px;
+    margin-left: 75px;
+  }
+
+  .educator-shape-container {
+    padding-right: 150px;
+  }
+
+  .educator-text-container {
+    width: 480px;
+  }
+
+  .educator-label {
+    font-size: 36px;
+  }
+
+  .educator-heading,
+  .highlight-text {
+    font-size: 75px;
+    margin-left: -450px;
+  }
+
+  .educator-description {
+    font-size: 30px;
+  }
+
+  .educator-button {
+    font-size: 29px;
+    padding: 15px 30px;
+  }
+}
+
+/* 4K: 3840px */
+@media (min-width: 3840px) {
+  .educator-section {
+    padding: 14rem 4rem;
+  }
+
+  .educator-content {
+    max-width: 2400px;
+  }
+
+  .educator-image {
+    width: 1092px;
+    height: 704px;
+  }
+
+  .educator-shape {
+    width: 456px;
+    height: 699px;
+    margin-left: 100px;
+  }
+
+  .educator-shape-container {
+    padding-right: 200px;
+  }
+
+  .educator-text-container {
+    width: 640px;
+  }
+
+  .educator-label {
+    font-size: 48px;
+  }
+
+  .educator-heading,
+  .highlight-text {
+    font-size: 100px;
+    margin-left: -600px;
+  }
+
+  .educator-description {
+    font-size: 40px;
+  }
+
+  .educator-button {
+    font-size: 38px;
+    padding: 20px 40px;
+  }
+}

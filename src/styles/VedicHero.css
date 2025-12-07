@@ -1,0 +1,132 @@
+.pagename {
+    font-size: 24px;
+    color: #455a64;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    position: relative;
+    font-family: geologica;
+    top: 0px;
+    padding: 2rem;
+}
+.vedic-container {
+    display: flex;
+    padding: 40px;
+    width: 1152px;
+    height: 567px;
+    
+}
+  
+.vedic-section {
+    display: flex;
+    width: 1152px;
+    height: 567px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+  
+
+  .vedic-content {
+    flex: 1;
+    max-width: 50%;
+   
+  }
+  
+  .vedic-heading {
+    font-size: 50px; 
+    font-weight: 400;
+    color: #f58634; 
+    margin-bottom: 1rem;
+    font-family: 'Lilita One';
+  }
+  .vedic-points-wholelist{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .vedic-points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .vedic-points-list {
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    color: #455a64;
+    font-family: Geologica;
+    gap: 10px;
+}
+  .vedic-subcontent li{
+    font-size: 24px;
+    font-family: Geologica;
+    color: #455a64;
+
+  }
+  .vedic-subcontent li span{
+    font-weight: 400;
+    
+  }
+  
+  .vedic-points p {
+    display: flex;
+    font-size: 18px;
+    color: #455a64; 
+    font-family: Geologica;
+    margin: 8px 0; 
+  }
+  
+  .vedic-points p img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .vedic-points-list span {
+    font-weight: 400;
+    font-size: 24px;
+    font-family: geologica;
+    color: #455a64;
+  }
+  .vedic-subcontent span {
+    font-size: 24px;
+    font-family: geologica;
+    color: #f58634;
+  }
+ 
+  .vedic-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 20px 16px;
+    width: 389px;
+    height: 56px;
+    background-color: #f58634;
+    color: #ffffff;
+    font-size: 19.19px;
+    font-weight: semibold;
+    font-family: geologica;;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(245, 134, 52, 0.4); /* Button shadow */
+    transition: all 0.3s ease;
+  }
+  
+  .vedic-button:hover {
+    background-color: #e7752a;
+    box-shadow: 0 6px 12px rgba(245, 134, 52, 0.6);
+  }
+
+  .vedic-image {
+    flex: 1;
+    max-width: 50%; 
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .vedic-image img {
+    width: 513px; 
+    height: 444px; 
+    border-radius: 20px; 
+    object-fit: cover; 
+  }

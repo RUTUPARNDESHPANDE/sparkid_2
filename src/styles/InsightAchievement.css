@@ -1,0 +1,132 @@
+.achievements-container {
+    padding: 110px;
+}
+
+.achievements-container h2 {
+    font-size: 30px;
+    font-family: 'Lilita One';
+    margin-bottom: 10px;
+    color: var(--primary-grey);
+}
+
+.achievements-container p.key-stats {
+    font-size: 24px;
+    color: var(--primary-orange);
+    font-family: 'Geologica';
+    margin-bottom: -4px;
+}
+
+.achievements-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.achievements-grid.top-row {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 88px;
+    text-align: left;
+    margin-top: -84px;
+    margin-left: 500px;
+}
+
+.achievements-grid.bottom-row {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.achievement-item h3 {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--primary-orange);
+    margin: 0;
+    font-family: 'Lilita One';
+}
+.achievement-item h3:hover {
+    transform: scale(1.1);
+}
+
+.achievement-item p {
+    font-size: 24px; 
+    color: var(--primary-grey);
+    margin: 0;
+    line-height: 1.5; 
+}
+.achievement-item p:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 884px) {
+    .achievements-container {
+        padding: 60px;
+    }
+
+    .achievements-grid.top-row {
+               margin-left: 0;
+               margin-top: 57px;
+               margin-bottom: 30px;
+               text-align: left;
+                }
+
+    .achievements-grid.bottom-row {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        gap: 20px;
+    }
+
+    .achievement-item h3 {
+        font-size: 40px;
+    }
+
+    .achievement-item p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 428px) {
+    .achievements-container {
+        padding: 40px;
+    }
+
+    .achievements-grid.bottom-row {
+       
+        gap: 15px;
+        text-align: center;
+    }
+
+    .achievement-item h3 {
+        font-size: 30px;
+    }
+
+    .achievement-item p {
+        font-size: 18px;
+    }
+}
+
+ @media (max-width: 376px) {
+    .achievements-container {
+        padding: 30px;
+    }
+
+    .achievements-grid.bottom-row {
+        gap: 15px;
+        text-align: left;
+    }
+
+} 
+
+@media (max-width: 320px) {
+    .achievements-container {
+        padding: 20px;
+    }
+
+    .achievements-grid {
+        gap: 8px;
+    }
+
+    .achievement-item h3 {
+        font-size: 24px;
+    }
+
+    .achievement-item p {
+        font-size: 14px;
+    }
+}

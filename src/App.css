@@ -1,0 +1,339 @@
+
+/* course pg */
+@media (min-width:768px ) and (max-width: 1024px) {
+  .abacus-section,
+  .reading-section,
+  .cube-section,
+  .handwriting-section,
+  .vedic-section {
+    padding: 2rem;
+    gap: 1rem;
+  }
+
+  .abacus-content,
+  .abacus-image,
+  .reading-content,
+  .reading-image,
+  .cube-content,
+  .cube-image,
+  .handwriting-content,
+  .handwriting-image,
+  .vedic-content,
+  .vedic-image {
+    flex: 0 0 50%;
+  }
+
+  .abacus-heading,
+  .reading-heading,
+  .cube-heading,
+  .handwriting-heading,
+  .vedic-heading {
+    font-size: 36px;
+  }
+
+  .abacus-description,
+  .reading-description,
+  .cube-description,
+  .handwriting-description,
+  .vedic-description {
+    font-size: 18px;
+  }
+
+  .abacus-points li span,
+  .reading-points li span,
+  .cube-points li span,
+  .handwriting-points li span,
+  .vedic-points li span {
+    font-size: 16px;
+  }
+
+  .abacus-button,
+  .reading-button,
+  .cube-button,
+  .handwriting-button,
+  .vedic-button {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .abacus-image img,
+  .cube-image img,
+  .handwriting-image img,
+  .vedic-image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .reading-image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-right: -10px;
+  }
+}
+@media (min-width:425px ) and (max-width: 450px) {
+/* @media (max-width: 426px) { */
+  .abacus-content,
+  .vedic-content,
+  .handwriting-content,
+  .reading-content,
+  .cube-content {
+    flex: 1;
+    width: 100%;
+    order: 2;
+    text-align: center;
+    direction: ltr;
+  }
+
+  .abacus-section,
+  .vedic-section,
+  .handwriting-section,
+  .reading-section,
+  .cube-section {
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .abacus-heading,
+  .vedic-heading,
+  .handwriting-heading,
+  .reading-heading,
+  .cube-heading {
+    font-size: 40px;
+    margin-bottom: 0.5rem;
+  }
+
+  .abacus-description,
+  .vedic-description,
+  .handwriting-description,
+  .reading-description,
+  .cube-description {
+    font-size: 16px;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+
+  .abacus-points,
+  .vedic-points,
+  .handwriting-points,
+  .reading-points,
+  .cube-points {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+
+  .abacus-points li,
+  .vedic-points li,
+  .handwriting-points li,
+  .reading-points li,
+  .cube-points li {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.8rem;
+    font-size: 12px;
+  }
+
+  .abacus-points li img,
+  .vedic-points li img,
+  .handwriting-points li img,
+  .reading-points li img,
+  .cube-points li img {
+    margin-right: 1rem;
+    height: 12px;
+    width: 12px;
+  }
+
+  .abacus-points li span,
+  .vedic-points li span,
+  .handwriting-points li span,
+  .reading-points li span,
+  .cube-points li span {
+    line-height: 1.3;
+    font-size: 16px;
+  }
+
+  .abacus-button,
+  .vedic-button,
+  .handwriting-button,
+  .reading-button,
+  .cube-button {
+    font-size: 14px;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+  }
+
+  .abacus-image img,
+  .vedic-image img,
+  .handwriting-image img,
+  .reading-image img,
+  .cube-image img {
+    width: 270px;
+    height: 250px;
+  }
+
+  .abacus-image,
+  .vedic-image,
+  .handwriting-image,
+  .reading-image,
+  .cube-image {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+@media (min-width:320px ) and (max-width: 424px) {
+/* @media (max-width: 376px) { */
+  .abacus-content,
+  .vedic-content,
+  .handwriting-content,
+  .reading-content,
+  .cube-content {
+    flex: 1;
+    width: 100%;
+    order: 2;
+    text-align: center;
+    direction: ltr;
+  }
+  .abacus-section,
+  .vedic-section,
+  .handwriting-section,
+  .reading-section,
+  .cube-section {
+    padding: 0rem 1rem;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .abacus-heading,
+  .vedic-heading,
+  .handwriting-heading,
+  .reading-heading,
+  .cube-heading {
+    font-size: 50px;
+    margin-bottom: 0rem;
+  }
+
+  .abacus-description,
+  .vedic-description,
+  .handwriting-description,
+  .reading-description,
+  .cube-description {
+    font-size: 18px;
+    margin-bottom: 0rem;
+    line-height: 1.1;
+  }
+
+  /* Points List */
+  .abacus-points,
+  .vedic-points,
+  .handwriting-points,
+  .reading-points,
+  .cube-points {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .abacus-points li,
+  .vedic-points li,
+  .handwriting-points li,
+  .reading-points li,
+  .cube-points li {
+    display: flex;
+    margin-bottom: 0rem;
+    font-size: 4px;
+    flex-direction: row;
+  }
+
+  .abacus-points li img,
+  .vedic-points li img,
+  .handwriting-points li img,
+  .reading-points li img,
+  .cube-points li img {
+    margin-right: 1.2rem;
+    height: 15px;
+    width: 15px;
+  }
+
+  .abacus-points li span,
+  .vedic-points li span,
+  .handwriting-points li span,
+  .reading-points li span,
+  .cube-points li span {
+    line-height: 1.4;
+    font-size: 18px;
+  }
+
+  .abacus-button,
+  .vedic-button,
+  .handwriting-button,
+  .reading-button,
+  .cube-button {
+    font-size: 15.19px;
+    width: 222px;
+    height: 25px;
+    margin-left: 66px;
+  }
+
+  .abacus-image img,
+  .vedic-image img,
+  .handwriting-image img,
+  .reading-image img,
+  .cube-image img {
+    width: 250px;
+    height: 250px;
+  }
+  .abacus-image,
+  .vedic-image,
+  .handwriting-image,
+  .reading-image,
+  .cube-image {
+    display: flex;
+    margin-right: 25px;
+  }
+}
+/* @media (min-width:321px ) and (max-width: 375px) { */
+/* @media (max-width: 321px) {
+  .abacus-content,
+  .vedic-content,
+  .handwriting-content,
+  .reading-content,
+  .cube-content {
+    width: 100%;
+    text-align: left;
+  }
+  .abacus-description,
+  .vedic-description,
+  .handwriting-description,
+  .reading-description,
+  .cube-description {
+    font-size: 16px;
+    margin-bottom: 0rem;
+    line-height: 1.1;
+  }
+  .abacus-points li span,
+  .vedic-points li span,
+  .handwriting-points li span,
+  .reading-points li span,
+  .cube-points li span {
+    line-height: 1.4;
+    font-size: 14px;
+  }
+
+  .abacus-button,
+  .vedic-button,
+  .handwriting-button,
+  .reading-button,
+  .cube-button {
+    font-size: 15.19px;
+    width: 50%;
+    height: 25px;
+    margin-left: 43px;
+  }
+} */

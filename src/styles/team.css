@@ -1,0 +1,247 @@
+.team-section {
+  padding: 40px;
+  /* background-color: #f9f9f9; */
+  text-align: center;
+  /* background: linear-gradient(to right, #000000, #5a0000);   */
+
+}
+
+.team-title {
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  font-family: lilita one;
+  color: var(--highlight-color);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  gap: 30px; /* space between cards */
+  justify-items: center;
+  width:50%;
+  margin-left:10%;
+}
+
+.team-card {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  background: var(--item-color);
+  border-radius: 17px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* padding: 20px; */
+  width: 564px;
+  height: 213px; 
+  transition: transform 0.2s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card-image {
+  flex: 1;
+  max-width: 150px;
+}
+
+.team-image {
+  width: 228.75px;
+  height: 213.73px;
+  /* border-radius: 50%; */
+  object-fit: cover;
+  border-radius: 17px;
+}
+
+.team-card-details {
+  flex: 2;
+  text-align: left;
+  padding-left: 96px;
+}
+
+.team-name {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: lilita one;
+  margin-bottom: -17px;
+  color: var(--text-color);
+}
+
+.team-position {
+  font-size: 24px;
+  color: var(--text-color);
+  font-family: geologica;
+  margin-bottom: 20px;
+}
+
+.team-social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.team-social-icon {
+  /* width: 24px;
+  height: 24px; */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.team-social-icons img{
+  width: 24px;
+  height: 24px;
+}
+
+.team-social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Ensure that on smaller screens it still displays two per row */
+/* Media Queries */
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr); /* Still 2 cards per row */
+    gap: 20px;
+  }
+
+  .team-card {
+    width: 106%;
+    height: 215px;
+  }
+
+  .team-card-details {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-rows: repeat(1, 1fr); /* 1 card per row */
+    gap: 20px;
+    width: 100%;
+    margin-left: -8px;
+  }
+
+  .team-card {
+    flex-direction: rows; /* Stack image and details */
+    height: 163px;
+  }
+
+  .team-card-image {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .team-image {
+    width: 161px;
+    height: 161px;
+    border-radius: 17px 17px 0 0;
+}
+
+  .team-card-details {
+    padding: 20px;
+    text-align: center;
+  }
+  .team-name {
+    font-size: 21px;
+  }
+  .team-position {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 426px) {
+  .team-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+    gap: 20px;
+    width: 100%;
+    margin-left:-15px;
+  }
+  .team-card {
+    width: 100%;
+  }
+
+  .team-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .team-name {
+    font-size: 1.2rem;
+  }
+
+  .team-position {
+    font-size: 1rem;
+  }
+
+  .team-social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .team-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+    gap: 20px;
+    width: 100%;
+  }
+  .team-card {
+    width: 100%;
+  }
+
+  .team-title {
+    font-size: 1.8rem;
+  }
+
+  .team-name {
+    font-size: 1rem;
+    margin-bottom: -9px;
+  }
+
+  .team-position {
+    font-size: 0.9rem;
+  }
+
+  .team-social-icons img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 320px) {
+  .team-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+    gap: 20px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .team-title {
+    font-size: 1.5rem;
+  }
+
+  .team-grid {
+    gap: 15px;
+  }
+  .team-image {
+    width: 116px;
+    height: 115px;
+    border-radius: 17px 17px 0 0;
+}
+
+  .team-card {
+    width: 100%;
+    height: 112px;
+  }
+
+  .team-name {
+    font-size: 0.9rem;
+  }
+
+  .team-position {
+    font-size: 0.8rem;
+  }
+
+  .team-social-icons img {
+    width: 16px;
+    height: 16px;
+  }
+}

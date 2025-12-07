@@ -1,0 +1,405 @@
+.insights-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 7rem;
+
+  gap: 2rem;
+}
+
+.insights-content {
+  flex: 1;
+}
+
+.insights-heading {
+  color: var(--primary-orange);
+  font-size: 24px;
+  font-family: Geologica;
+  margin-bottom: 1rem;
+}
+
+.insights-title {
+  font-size: 30px;
+  font-family: Lilita One;
+  color: var(--highlight-color);
+  margin-bottom: 1.5rem;
+}
+
+.insights-description {
+  font-size: 24px;
+  color: var(--primary-grey);
+  font-family: Geologica;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.insights-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.insights-list li {
+  font-size: 22px;
+  color: var(--highlight-color);
+  margin-bottom: 1rem;
+  font-family: Geologica;
+  display: flex;
+  align-items: center;
+}
+
+.insights-list li::before {
+  content: '✔';
+  color: #fa8701;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.insights-button {
+  display: inline-block;
+  padding: 10px 26px;
+  color: var(--primary-orange);
+  border: 2px solid var(--primary-orange);
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: KoHo;
+  font-size: 19.19px;
+  transition: all 0.3s ease;
+}
+
+.insights-button:hover {
+  background-color: var(--primary-orange);
+  color: #f5f5f5;
+}
+
+.images-grid {
+  position: relative;
+  margin-top: 100px;
+  padding-right: 40px;
+  width: 500px;
+  height: 600px;
+}
+
+.images-grid img {
+  position: absolute;
+  border-radius: 1px;
+  transition: transform 0.3s ease;
+}
+
+.images-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Specific positions for the images */
+.images-grid img:nth-child(1) {
+  top: 90px;
+  left: 15px;
+  width: 120px;
+  height: 150px;
+}
+
+.images-grid img:nth-child(2) {
+  bottom: 420px;
+  left: 140px;
+  width: 128px;
+  height: 212px;
+}
+
+.images-grid img:nth-child(3) {
+  bottom: 450px;
+  left: 270px;
+  width: 128px;
+  height: 171px;
+}
+
+.images-grid img:nth-child(4) {
+  top: 30px;
+  left: 400px;
+  width: 160px;
+  height: 255px;
+}
+
+.images-grid img:nth-child(5) {
+  top: 180px;
+  left: 140px;
+  width: 128px;
+  height: 215px;
+}
+
+.images-grid img:nth-child(6) {
+  top: 150px;
+  left: 270px;
+  width: 128px;
+  height: 172px;
+}
+
+.images-grid img:nth-child(7) {
+  top: 240px;
+  left: -35px;
+  width: 172px;
+  height: 258px;
+}
+
+.images-grid img:nth-child(8) {
+  top: 390px;
+  left: 140px;
+  width: 128px;
+  height: 160px;
+}
+
+.images-grid img:nth-child(9) {
+  top: 320px;
+  left: 270px;
+  width: 128px;
+  height: 192px;
+}
+
+.images-grid img:nth-child(10) {
+  top: 280px;
+  left: 400px;
+  width: 128px;
+  height: 165px;
+}
+
+@media (max-width:1024px) {
+  .insights-section {
+    padding: 0rem 1rem;
+  }
+}
+
+/* Responsive for width 768px */
+@media (max-width: 768px) {
+  .insights-section {
+    flex-direction: row;
+    padding: 3rem 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .insights-content {
+    text-align: left;
+    width: 50%;
+  }
+
+  .insights-title {
+    font-size: 28px;
+  }
+
+  .insights-description {
+    font-size: 14px;
+  }
+
+  .insights-list li {
+    font-size: 14px;
+  }
+
+  .insights-button {
+    font-size: 14px;
+  }
+
+  .images-grid {
+    width: 45%;
+    height: auto;
+  }
+
+  .images-grid img:nth-child(1) {
+    top: -127px;
+    left: 5px;
+    width: 80px;
+    height: 110px;
+  }
+
+  .images-grid img:nth-child(2) {
+    bottom: 68px;
+    left: 86px;
+    width: 88px;
+    height: 172px;
+  }
+
+  .images-grid img:nth-child(3) {
+    bottom: 102px;
+    left: 176px;
+    width: 88px;
+    height: 125px;
+  }
+
+  .images-grid img:nth-child(4) {
+    top: -177px;
+    left: 265px;
+    width: 102px;
+    height: 173px;
+  }
+
+  .images-grid img:nth-child(5) {
+    top: -70px;
+    left: 87px;
+    width: 87px;
+    height: 145px;
+  }
+
+  .images-grid img:nth-child(6) {
+    top: -106px;
+    left: 175px;
+    width: 88px;
+    height: 132px;
+  }
+
+  .images-grid img:nth-child(7) {
+    top: -15px;
+    left: -25px;
+    width: 110px;
+    height: 162px;
+  }
+
+  .images-grid img:nth-child(8) {
+    top: 73px;
+    left: 87px;
+    width: 88px;
+    height: 120px;
+  }
+
+  .images-grid img:nth-child(9) {
+    top: 23px;
+    left: 175px;
+    width: 88px;
+    height: 152px;
+  }
+
+  .images-grid img:nth-child(10) {
+    top: -5px;
+    left: 266px;
+    width: 88px;
+    height: 125px;
+  }
+}
+
+@media (max-width: 480px) {
+  .insights-section {
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+    gap: 1.5rem;
+    height: 790px;
+  }
+
+  .insights-content {
+    text-align: left;
+    order: 1;
+    width: 340px;
+  }
+
+  .insights-title {
+    font-size: 30px;
+  }
+
+  .insights-description {
+    font-size: 14px;
+  }
+
+  .insights-list li {
+    font-size: 14px;
+  }
+
+  .insights-button {
+    font-size: 14px;
+  }
+
+  .images-grid {
+    order: 2;
+    height: auto;
+    width: 325px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width:376px) {
+  .images-grid img:nth-child(4) {
+    width: 86px;
+  }
+
+  .images-grid img:nth-child(10) {
+    width: 86px;
+  }
+
+  .images-grid img:nth-child(7) {
+    width: 92px;
+    left: -7px;
+  }
+
+  .images-grid {
+    width: 310px;
+  }
+}
+
+@media (max-width:321px) {
+  .insights-section {
+    height: 860px;
+  }
+
+  .insights-content {
+    width: 100%;
+  }
+
+  .images-grid img {
+    width: 50%;
+  }
+
+  .images-grid img:nth-child(1) {
+    width: 67px;
+    left: 23px;
+  }
+
+  .images-grid img:nth-child(2) {
+    width: 82px;
+    left: 92px;
+    height: 160px;
+  }
+
+  .images-grid img:nth-child(3) {
+    bottom: 102px;
+    left: 175px;
+    width: 84px;
+    height: 113px;
+  }
+
+  .images-grid img:nth-child(4) {
+    top: -173px;
+    left: 261px;
+    width: 62px;
+    height: 135px;
+  }
+
+  .images-grid img:nth-child(5) {
+    left: 91px;
+    width: 83px;
+    height: 131px;
+  }
+
+  .images-grid img:nth-child(6) {
+    width: 83px;
+    height: 127px;
+  }
+
+  .images-grid img:nth-child(7) {
+    width: 70px;
+    left: 21px;
+    height: 138px;
+  }
+
+  .images-grid img:nth-child(8) {
+    top: 59px;
+    left: 93px;
+    width: 82px;
+  }
+
+  .images-grid img:nth-child(9) {
+    top: 18px;
+    left: 175px;
+    width: 83px;
+    height: 147px;
+  }
+
+  .images-grid img:nth-child(10) {
+    top: -40px;
+    left: 261px;
+    width: 60px;
+  }
+}

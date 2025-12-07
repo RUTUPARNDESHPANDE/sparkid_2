@@ -1,0 +1,272 @@
+/* Container styles */
+.franchise-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .heading {
+    font-size: 50px;
+    font-family: "Lilita One", sans-serif;
+    color: var(--primary-orange);
+    margin-bottom: -20px;
+  }
+  
+  .subheading {
+    font-size: 30px;
+    color: var(--primary-grey);
+    font-family: "Lilita One", sans-serif;
+    font-weight: regular;
+    margin-bottom: 50px;
+  }
+  
+  /* Steps container */
+  .steps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 10px; /* Space between steps */
+  }
+  
+  /* Wrapper for each step and arrow */
+  .step-wrapper {
+    position: relative;
+    width: 600px; 
+  }
+  
+  /* Single step box */
+  .step-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--primary-orange); /* Orange border */
+    border-radius: 12.1px;
+    padding: 15px 20px;
+    width: 570px;
+    height: 110px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-color);
+    position: relative;
+    z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.step-box:hover {
+transform: translatey(-10px);
+}
+  
+  .step-number-line {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  .step-number {
+    font-size: 33.51px;
+    font-weight: bold;
+    color: #1c1c1c;
+    font-family: "Poppins", sans-serif;
+    margin-right: 10px;
+  }
+  
+  .thin-line {
+    width: 1px;
+    height: 50px;
+    background-color: #000000;
+    margin-right: 10px;
+  }
+  
+  .step-content {
+    text-align: left;
+    color: var(--highlight-color);
+    font-size: 24px;
+    font-family: Geologica, sans-serif;
+  }
+  
+  .step-content span {
+    font-size: 22px;
+    color: var(--highlight-color);
+    line-height: 1.4;
+  }
+  
+  /* Arrow styles */
+  .arrow-image {
+    width: 55px; 
+    height: 120px; 
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 1;
+  }
+  
+  .arrow-left {
+    left: -60px; 
+    top:150px;
+  }
+  
+  .arrow-right {
+    right: -70px;
+    top:150px; 
+    transform: translateY(-50%) scaleX(-1); /* Flip the arrow */
+  }
+@media (max-width: 768px) {
+  
+  .steps-container{
+    gap:15px;
+  }
+  .step-content span{
+    font-size: 20px;
+  }
+    .step-box {
+      width: 590px;
+      height: 73px;
+    }
+    
+    .step-wrapper {
+      width: 85%;
+    }
+    .arrow-image {
+      width: 35px;
+      height: 90px;
+      top: 50%;
+    }
+    
+    .arrow-left {
+      left: -40px; 
+      top:110px;
+    }
+    
+    .arrow-right {
+      right: -55px;
+      top:110px;
+    }
+}
+@media (max-width: 426px) {
+  .heading{
+    font-size: 45px;
+  }
+  .subheading{
+    font-size: 28px;
+  }
+  .steps-container {
+    gap: 10px;
+  }
+  .step-wrapper{
+    width: 95%;
+  }
+
+  .step-box {
+    width: 310px;
+    height: 50px;
+  }
+
+  .step-number {
+    font-size: 20px;
+  }
+  .step-content{
+    font-size: 18px;
+  }
+
+  .step-content span {
+    font-size: 14px;
+  }
+
+  .arrow-image {
+    width: 30px;
+    height: 70px;
+  }
+
+  .arrow-left {
+    left: -30px;
+    top: 80px;
+  }
+
+  .arrow-right {
+    right: -19px;
+    top: 90px;
+  }
+}
+
+@media (max-width: 377px) {
+  .heading {
+    font-size: 39px;
+  }
+  .subheading {
+    font-size: 22px;
+  }
+  .steps-container {
+    gap: 8px;
+  }
+  .step-wrapper {
+    width: 93%;
+  }
+
+  .step-box {
+    width: 280px;
+    height: 45px;
+  }
+
+  .step-number {
+    font-size: 18px;
+  }
+  .step-content {
+    font-size: 16px;
+  }
+
+  .step-content span {
+    font-size: 11px;
+  }
+
+  .arrow-image {
+    width: 22px;
+    height: 70px;
+  }
+
+  .arrow-left {
+    left: -25px;
+    top: 90px;
+  }
+
+  .arrow-right {
+    right: -35px;
+    top: 90px;
+  }
+}
+@media (max-width: 321px) {
+  .heading {
+    font-size: 33px;
+  }
+  .subheading {
+    font-size: 20px;
+  }
+  .step-box {
+    width: 220px;
+    height: 45px;
+  }
+
+  .step-number {
+    font-size: 18px;
+  }
+  .step-content {
+    font-size: 14px;
+  }
+
+  .step-content span {
+    font-size: 10px;
+  }
+
+  .arrow-image {
+    width: 21px;
+    height: 67px;
+  }
+
+  .arrow-left {
+    left: -25px;
+    top: 90px;
+  }
+
+  .arrow-right {
+    right: -24px;
+    top: 90px;
+  }
+}

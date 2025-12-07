@@ -1,0 +1,98 @@
+/* Overall Section */
+.reading-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 8rem;
+    background: var(--bg-gradient);
+    gap: 2rem;
+}
+
+/* Left Content Section (unchanged) */
+.reading-content {
+    flex: 1;
+}
+
+.reading-heading {
+    font-size: 50px;
+    font-weight: 44;
+    color: var(--highlight-color);
+    margin-bottom: 1rem;
+    font-family: Lilita One;
+}
+
+.reading-description {
+    font-size: 24px;
+    color: var(--primary-grey);
+    margin-bottom: 2rem;
+    font-family: geologica;
+    line-height: 1.3;
+}
+
+.reading-points {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.reading-points li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-family: geologica;
+    font-size: 24px;
+    color: var(--highlight-color);
+}
+
+.reading-points li img {
+    margin-right: 0.8rem;
+    height: 24px;
+    width: 24px;
+}
+
+.reading-points li span {
+    line-height: 1.6;
+    font-size: 24px;
+}
+
+/* Button Style (unchanged) */
+.reading-button {
+display: flex; 
+justify-content: center; 
+align-items: center; 
+padding: 20px 16px; 
+background-color: var(--primary-orange);
+color: white;
+border-radius: 8px;
+text-decoration: none;
+font-weight: bold;
+font-size: 19.19px;
+width: 270px; 
+height: 56px; 
+transition: background-color 0.3s ease;
+box-sizing: border-box;
+box-shadow: 0 0 10px rgba(255, 124, 46, 0.6);
+}
+
+.reading-button:hover {
+    background-color: var(--primary-orange);
+    box-shadow: 0 0 20px rgba(255, 124, 46, 0.8);
+}
+
+/* Right Image Section */
+.reading-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.reading-image img {
+    width: 876.44px; /* Updated width */
+    height: 639.28px; /* Updated height */
+    margin-right: -100px;
+    transition: transform 0.3s ease;
+}
+
+.reading-image img:hover{
+    transform: translateY(-10px);
+}

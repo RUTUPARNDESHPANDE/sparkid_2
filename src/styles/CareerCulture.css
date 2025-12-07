@@ -1,0 +1,233 @@
+.career-culture {
+    padding: 3rem 2rem; /* Add more padding to the container */
+    font-family: Geologica;
+    color: #333;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto auto; /* Two rows for heading + content */
+    grid-template-columns: 1fr; /* Single column by default */
+    justify-items: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.career-culture-heading {
+    color: var(--primary-orange);
+    font-size: 24px;
+    margin-bottom: 1rem; /* Adjust spacing */
+    font-family: Geologica;
+}
+
+.career-culture-subheading {
+    font-size: 50px;
+    margin-bottom: 1rem; 
+    margin-top: 0; 
+    font-family: Lilita One;
+    color: var(--primary-grey);
+}
+
+.career-culture-description {
+    font-size: 24px;
+    margin-bottom: 2rem; 
+    margin-top: 0rem; 
+    color: var(--text-color);
+    line-height: 1.5;
+    font-family: Geologica;
+}
+
+.career-culture-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 10rem;
+    width: 1000px;
+    margin-top: 2rem;
+}
+
+.career-culture-column {
+    text-align: left;
+    width: 600px;
+    margin-left: -80px;
+}
+
+.career-culture-column h4 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #333;
+    font-family: Geologica;
+}
+
+.career-culture-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.career-culture-column li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.career-culture-column li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.8rem;
+}
+
+.career-culture-column li span {
+    font-size: 24px;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .career-culture {
+        min-height: 45vh;
+    }
+
+    .career-culture-heading {
+        font-size: 16px;
+    }
+
+    .career-culture-subheading {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .career-culture-description {
+        font-size: 16px;
+        margin-top: 7px;
+        margin-bottom: 0px;
+    }
+
+    .career-culture-content {
+        gap: 5px;
+        width: 100%;
+        margin-bottom: 110px;
+    }
+
+    .career-culture-column {
+        width: 128%;
+    }
+
+    .career-culture-column h4 {
+        font-size: 16px;
+        margin-left: 83px;
+    }
+
+    .career-culture-column li img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .career-culture-column li span {
+        font-size: 16px;
+    }
+
+    .career-culture-column li {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 426px) {
+    .career-culture {
+        padding: 2rem;
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .career-culture-heading {
+        font-size: 18px;
+    }
+
+    .career-culture-subheading {
+        font-size: 50px;
+    }
+
+    .career-culture-description {
+        font-size: 18px;
+        margin-top: 7px;
+        margin-bottom: 1px;
+    }
+
+    .career-culture-column h4 {
+        font-size: 18px;
+        margin-left: 70px;
+    }
+
+    .career-culture-column li {
+        margin-left: 10px;
+    }
+
+    .career-culture-content {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 1px;
+        margin: 0;
+    }
+
+    .career-culture-column {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 377px) {
+    .career-culture {
+        padding: 1rem;
+    }
+
+    .career-culture-heading {
+        font-size: 16px;
+    }
+
+    .career-culture-subheading {
+        font-size: 30px;
+    }
+
+    .career-culture-description {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 1px;
+    }
+
+    .career-culture-column h4 {
+        font-size: 18px;
+        margin-left: 60px;
+    }
+
+    .career-culture-column li {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 321px) {
+    .career-culture {
+        padding: 1rem;
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .career-culture-heading {
+        font-size: 14px;
+    }
+
+    .career-culture-subheading {
+        font-size: 33px;
+    }
+
+    .career-culture-description {
+        font-size: 12px;
+        margin-top: 5px;
+        margin-bottom: 1px;
+    }
+
+    .career-culture-column h4 {
+        font-size: 16px;
+        margin-left: 40px;
+    }
+
+    .career-culture-column li {
+        margin-left: 3px;
+    }
+}
