@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/coursehandwriting.css";
 import point from "../Assets/courses-img/checkpoint.webp";
-import handwritingImage from "../Assets/courses-img/coursehandwriting.webp";
+import handwritingImage from "../Assets/courses-img/coursehandwriting.png";
 
 const AbacusCourse = () => {
   return (
@@ -12,21 +12,21 @@ const AbacusCourse = () => {
       <div className="handwriting-content">
         <h2 className="handwriting-heading">Hand Writing</h2>
         <p className="handwriting-description">
-        Handwriting is an essential skill that supports<br/> academic success and personal expression. Our <br/>handwriting program focuses on foundational skills,<br/>writing speed, and style.
+          Handwriting is an essential skill that supports<br /> academic success and personal expression. Our <br />handwriting program focuses on foundational skills,<br />writing speed, and style.
         </p>
         <ul className="handwriting-points">
           <li>
 
-            <span>Builds muscle memory for smooth<br/> writing</span>
+            <span>Builds muscle memory for smooth<br /> writing</span>
             <img src={point} alt="point" />
           </li>
           <li>
-            
+
             <span>Enhances legibility and speed</span>
             <img src={point} alt="point" />
           </li>
           <li>
-            
+
             <span>Fosters creativity and confidence</span>
             <img src={point} alt="point" />
           </li>

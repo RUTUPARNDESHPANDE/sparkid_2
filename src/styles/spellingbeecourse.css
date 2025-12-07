@@ -57,18 +57,18 @@
 
 /* Button Style */
 .spelling-button {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    padding: 20px 16px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 16px;
     background-color: var(--primary-orange);
     color: white;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
     font-size: 19.19px;
-    width: 270px; 
-    height: 56px; 
+    width: 270px;
+    height: 56px;
     transition: background-color 0.3s ease;
     box-sizing: border-box;
     box-shadow: 0 0 10px rgba(255, 124, 46, 0.6);
@@ -97,3 +97,75 @@
     transform: translateY(-10px);
 }
 
+
+/* Dark Mode Overrides */
+[data-theme="dark"] .spelling-heading,
+[data-theme="dark"] .spelling-description,
+[data-theme="dark"] .spelling-points li,
+[data-theme="dark"] .spelling-points li span {
+    color: var(--item-text);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .spelling-section {
+        padding: 3rem 4rem;
+        gap: 1.5rem;
+    }
+
+    .spelling-image img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .spelling-section {
+        flex-direction: column;
+        /* Image is first in DOM, so regular column puts Image Top, Content Bottom */
+        padding: 2rem 1.5rem;
+        text-align: center;
+    }
+
+    .spelling-heading {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .spelling-description {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .spelling-points li {
+        font-size: 18px;
+        justify-content: center;
+    }
+
+    .spelling-points li img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .spelling-points li span {
+        font-size: 18px;
+    }
+
+    .spelling-button {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 270px;
+    }
+
+    .spelling-image {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .spelling-image img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+}

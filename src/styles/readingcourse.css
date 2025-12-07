@@ -57,21 +57,21 @@
 
 /* Button Style (unchanged) */
 .reading-button {
-display: flex; 
-justify-content: center; 
-align-items: center; 
-padding: 20px 16px; 
-background-color: var(--primary-orange);
-color: white;
-border-radius: 8px;
-text-decoration: none;
-font-weight: bold;
-font-size: 19.19px;
-width: 270px; 
-height: 56px; 
-transition: background-color 0.3s ease;
-box-sizing: border-box;
-box-shadow: 0 0 10px rgba(255, 124, 46, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 16px;
+    background-color: var(--primary-orange);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 19.19px;
+    width: 270px;
+    height: 56px;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(255, 124, 46, 0.6);
 }
 
 .reading-button:hover {
@@ -87,12 +87,85 @@ box-shadow: 0 0 10px rgba(255, 124, 46, 0.6);
 }
 
 .reading-image img {
-    width: 876.44px; /* Updated width */
-    height: 639.28px; /* Updated height */
+    width: 876.44px;
+    /* Updated width */
+    height: 639.28px;
+    /* Updated height */
     margin-right: -100px;
     transition: transform 0.3s ease;
 }
 
-.reading-image img:hover{
+.reading-image img:hover {
     transform: translateY(-10px);
+}
+
+/* Dark Mode Overrides */
+[data-theme="dark"] .reading-heading,
+[data-theme="dark"] .reading-description,
+[data-theme="dark"] .reading-points li,
+[data-theme="dark"] .reading-points li span {
+    color: var(--item-text);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .reading-section {
+        padding: 3rem 4rem;
+        gap: 1.5rem;
+    }
+
+    .reading-image img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .reading-section {
+        flex-direction: column-reverse;
+        padding: 2rem 1.5rem;
+        text-align: center;
+    }
+
+    .reading-heading {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .reading-description {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .reading-points li {
+        font-size: 18px;
+        justify-content: center;
+    }
+
+    .reading-points li img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .reading-points li span {
+        font-size: 18px;
+    }
+
+    .reading-button {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 270px;
+    }
+
+    .reading-image {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .reading-image img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
 }

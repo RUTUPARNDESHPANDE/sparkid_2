@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/abacuscourse.css";
 import point from "../Assets/courses-img/checkpoint.webp";
-import abacusImage from "../Assets/courses-img/abacuscourse.webp";
+import abacusImage from "../Assets/courses-img/abacuscourse.png";
 
 const AbacusCourse = () => {
   return (
@@ -11,7 +11,7 @@ const AbacusCourse = () => {
       <div className="abacus-content">
         <h2 className="abacus-heading">Abacus</h2>
         <p className="abacus-description">
-          Unlock the full potential of your child's <br/>Mathematical abilities with our <br/>comprehensive Abacus Course.
+          Unlock the full potential of your child's <br />Mathematical abilities with our <br />comprehensive Abacus Course.
         </p>
         <ul className="abacus-points">
           <li>
@@ -20,7 +20,7 @@ const AbacusCourse = () => {
           </li>
           <li>
             <img src={point} alt="point" />
-            <span>Faster problem-solving skills and <br/>mental agility</span>
+            <span>Faster problem-solving skills and <br />mental agility</span>
           </li>
           <li>
             <img src={point} alt="point" />

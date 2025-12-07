@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/readingcourse.css";
 import pointIcon from "../Assets/courses-img/checkpoint.webp";
-import readingImage from "../Assets/courses-img/readingcourse.webp";
+import readingImage from "../Assets/courses-img/readingcourse.png";
 
 const ReadingCourse = () => {
   return (

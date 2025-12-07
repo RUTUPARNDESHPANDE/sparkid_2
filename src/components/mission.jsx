@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/mission.css'; // Updated CSS path
 import centralImage from '../Assets/about-img/missionbg.webp'; // Main background image
-import smallImage from '../Assets/about-img/mission.webp'; // Smaller overlapping image
+import smallImage from '../Assets/about-img/mission.png'; // Smaller overlapping image
 import missionicon from '../Assets/about-img/missionicon.webp';
 import missionicon2 from '../Assets/about-img/missionicon2.webp';
 import mission1 from '../Assets/about-img/mission1.webp';

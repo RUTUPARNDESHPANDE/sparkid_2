@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/spellingbeecourse.css";
 import pointIcon from "../Assets/courses-img/checkpoint.webp";
-import spellingImage from "../Assets/home-img/courseimg6.webp";
+import spellingImage from "../Assets/home-img/courseimg6.png";
 
 const SpellingBeeCourse = () => {
   return (

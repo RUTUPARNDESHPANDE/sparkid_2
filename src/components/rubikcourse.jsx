@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/rubikcourse.css";
 import point from "../Assets/courses-img/checkpoint.webp";
-import cubeImage from "../Assets/courses-img/rubikcourse.webp";
+import cubeImage from "../Assets/courses-img/rubikcourse.png";
 
 const CubeCourse = () => {
     return (

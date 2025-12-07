@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect, useRef } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { ThemeContext } from "../context/ThemeContext";
 import "../styles/header.css";
-import logo from "../logo.svg";
+import logo from "../Assets/logo/logo-removebg-preview.png";
 
 function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -62,7 +62,13 @@ function Header() {
     <header className="header">
       <div className="logo">
         <NavLink to="/">
-          <img src={logo} alt="Sparkids Logo" width="95" height="110" />
+          <img
+            src={logo}
+            alt="Sparkids Logo"
+            width="95"
+            height="110"
+            className={isDarkMode ? "dark-mode-logo" : ""}
+          />
         </NavLink>
       </div>
       <div className={`hamburger ${isNavOpen ? "active" : ""}`} onClick={toggleNav}>

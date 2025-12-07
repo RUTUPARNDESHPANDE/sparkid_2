@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/courseVedic.css";
 import point from "../Assets/courses-img/checkpoint.webp";
-import vedicImage from "../Assets/courses-img/coursevedic.webp";
+import vedicImage from "../Assets/courses-img/vedicmaths.png";
 
 const vedicCourse = () => {
   return (
@@ -11,11 +11,11 @@ const vedicCourse = () => {
       <div className="vedic-content">
         <h2 className="vedic-heading">Vedic Maths</h2>
         <p className="vedic-description">
-        Vedic Mathematics, rooted in ancient Indian sutras, offers an efficient approach to complex arithmetic and algebra.
+          Vedic Mathematics, rooted in ancient Indian sutras, offers an efficient approach to complex arithmetic and algebra.
         </p>
         <ul className="vedic-points">
           <li>
-            <span>Enhances calculation speed and <br/>accuracy</span>
+            <span>Enhances calculation speed and <br />accuracy</span>
             <img src={point} alt="point" />
           </li>
           <li>

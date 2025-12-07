@@ -5,16 +5,16 @@
     align-items: center;
     padding: 3rem 8rem;
     gap: 2rem;
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
 }
-  
+
 /* Left Content Section (Now positioned on the right) */
 .handwriting-content {
     flex: 1;
-    direction: rtl; 
-    text-align: right; 
+    direction: rtl;
+    text-align: right;
 }
-  
+
 .handwriting-heading {
     font-size: 50px;
     font-weight: 44;
@@ -22,7 +22,7 @@
     margin-bottom: 1rem;
     font-family: Lilita One;
 }
-  
+
 .handwriting-description {
     font-size: 24px;
     color: var(--primary-grey);
@@ -30,14 +30,16 @@
     font-family: geologica;
     line-height: 1.3;
 }
-  
+
 /* Points List */
 .handwriting-points {
     list-style: none;
     padding: 0;
     margin-bottom: 2rem;
-    direction: rtl; /* Ensures text direction starts from the right */
-    text-align: right; /* Aligns all text content to the right */
+    direction: rtl;
+    /* Ensures text direction starts from the right */
+    text-align: right;
+    /* Aligns all text content to the right */
 }
 
 .handwriting-points li {
@@ -51,50 +53,56 @@
 }
 
 .handwriting-points li img {
-    margin-left: 0.8rem; /* Space between image and text */
-    margin-right: 0; /* Reset right margin */
+    margin-left: 0.8rem;
+    /* Space between image and text */
+    margin-right: 0;
+    /* Reset right margin */
     height: 24px;
     width: 24px;
-    flex-shrink: 0; /* Prevents image from resizing due to text */
+    flex-shrink: 0;
+    /* Prevents image from resizing due to text */
 }
 
 .handwriting-points li span {
     line-height: 1.6;
     font-size: 24px;
-    flex-grow: 1; /* Ensures text spans the remaining space consistently */
-    white-space: nowrap; /* Prevents text from breaking into multiple lines */
+    flex-grow: 1;
+    /* Ensures text spans the remaining space consistently */
+    white-space: nowrap;
+    /* Prevents text from breaking into multiple lines */
 }
 
 .handwriting-button {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    padding: 20px 16px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 16px;
     background-color: var(--primary-orange);
     color: white;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
     font-size: 19.19px;
-    width: 270px; 
-    height: 56px; 
+    width: 270px;
+    height: 56px;
     transition: background-color 0.3s ease;
     box-sizing: border-box;
     box-shadow: 0 0 10px rgba(255, 124, 46, 0.6);
 }
-  
+
 .handwriting-button:hover {
     background-color: var(--primary-orange);
     box-shadow: 0 0 20px rgba(255, 124, 46, 0.8);
 }
-  
+
 /* Right Image Section (Now positioned on the left) */
 .handwriting-image {
     flex: 1;
     display: flex;
-    justify-content: flex-start; /* Align image to the left */
+    justify-content: flex-start;
+    /* Align image to the left */
 }
-  
+
 .handwriting-image img {
     width: 541px;
     height: 595px;
@@ -104,4 +112,90 @@
 
 .handwriting-image img:hover {
     transform: translateY(-10px);
+}
+
+/* Dark Mode Overrides */
+[data-theme="dark"] .handwriting-heading,
+[data-theme="dark"] .handwriting-description,
+[data-theme="dark"] .handwriting-points li,
+[data-theme="dark"] .handwriting-points li span {
+    color: var(--item-text);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .handwriting-section {
+        padding: 3rem 4rem;
+        gap: 1.5rem;
     }
+
+    .handwriting-image img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .handwriting-section {
+        flex-direction: column-reverse;
+        /* Image Top (since Image is last in DOM) */
+        padding: 2rem 1.5rem;
+        text-align: center;
+    }
+
+    .handwriting-content {
+        direction: ltr;
+        /* Reset RTL */
+        text-align: center;
+    }
+
+    .handwriting-heading {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .handwriting-description {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .handwriting-points {
+        direction: ltr;
+        text-align: center;
+    }
+
+    .handwriting-points li {
+        font-size: 18px;
+        flex-direction: row;
+        /* Reset flex-direction */
+        justify-content: center;
+        text-align: left;
+    }
+
+    .handwriting-points li img {
+        margin-right: 0.8rem;
+        margin-left: 0;
+        height: 20px;
+        width: 20px;
+    }
+
+    .handwriting-points li span {
+        font-size: 18px;
+    }
+
+    .handwriting-button {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 270px;
+    }
+
+    .handwriting-image {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .handwriting-image img {
+        width: 100%;
+        height: auto;
+    }
+}

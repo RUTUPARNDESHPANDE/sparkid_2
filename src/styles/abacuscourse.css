@@ -1,99 +1,172 @@
 .abacus-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem 8rem;
-    background: var(--bg-gradient);
-    gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 8rem;
+  background: var(--bg-gradient);
+  gap: 2rem;
+}
+
+/* Left Content Section */
+.abacus-content {
+  flex: 1;
+}
+
+.abacus-heading {
+  font-size: 50px;
+  font-weight: 44;
+  color: var(--highlight-color);
+  margin-bottom: 1rem;
+  font-family: Lilita One;
+}
+
+.abacus-description {
+  font-size: 24px;
+  color: var(--primary-grey);
+  margin-bottom: 2rem;
+  font-family: geologica;
+  line-height: 1.3;
+}
+
+/* Points List */
+.abacus-points {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.abacus-points li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-family: geologica;
+  font-size: 24px;
+  color: var(--highlight-color);
+}
+
+.abacus-points li img {
+  margin-right: 0.8rem;
+  height: 24px;
+  width: 24px;
+}
+
+.abacus-points li span {
+  line-height: 1.6;
+  font-size: 24px;
+}
+
+
+.abacus-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 16px;
+  background-color: var(--primary-orange);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 19.19px;
+  width: 270px;
+  height: 56px;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(255, 124, 46, 0.6);
+}
+
+.abacus-button:hover {
+  background-color: var(--primary-orange);
+  box-shadow: 0 0 20px rgba(255, 124, 46, 0.8);
+}
+
+/* Right Image Section */
+.abacus-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.abacus-image img {
+  max-width: 699px;
+  height: 606px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.abacus-image img:hover {
+  transform: translateY(-10px);
+}
+
+
+/* Dark Mode Overrides */
+[data-theme="dark"] .abacus-heading,
+[data-theme="dark"] .abacus-description,
+[data-theme="dark"] .abacus-points li,
+[data-theme="dark"] .abacus-points li span {
+  color: var(--item-text);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .abacus-section {
+    padding: 3rem 4rem;
+    gap: 1.5rem;
   }
-  
-  /* Left Content Section */
-  .abacus-content {
-    flex: 1;
+
+  .abacus-image img {
+    max-width: 500px;
+    height: auto;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .abacus-section {
+    flex-direction: column-reverse;
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+
   .abacus-heading {
-    font-size: 50px;
-    font-weight: 44;
-    color: var(--highlight-color);
-    margin-bottom: 1rem;
-    font-family: Lilita One;
+    font-size: 36px;
+    text-align: center;
   }
-  
+
   .abacus-description {
-    font-size: 24px;
-    color: var(--primary-grey);
-    margin-bottom: 2rem;
-    font-family: geologica;
-    line-height: 1.3;
+    font-size: 18px;
+    text-align: center;
   }
-  
-  /* Points List */
-  .abacus-points {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 2rem;
-  }
-  
+
   .abacus-points li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.5rem;
-    font-family: geologica;
-    font-size: 24px;
-    color: var(--highlight-color);
+    font-size: 18px;
+    justify-content: center;
+    /* Center align points */
+    text-align: left;
+    /* Keep text left aligned relative to icon if needed, or center block */
   }
-  
+
   .abacus-points li img {
-    margin-right: 0.8rem;
-    height: 24px;
-    width: 24px;
+    height: 20px;
+    width: 20px;
   }
-  
+
   .abacus-points li span {
-    line-height: 1.6;
-    font-size: 24px;
+    font-size: 18px;
   }
-  
 
   .abacus-button {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    padding: 20px 16px; 
-    background-color: var(--primary-orange);
-    color: white;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 19.19px;
-    width: 270px; 
-    height: 56px; 
-    transition: background-color 0.3s ease;
-    box-sizing: border-box;
-    box-shadow: 0 0 10px rgba(255, 124, 46, 0.6);
+    margin: 0 auto;
+    /* Center button */
+    width: 100%;
+    max-width: 270px;
   }
-  
-  .abacus-button:hover {
-    background-color: var(--primary-orange);
-    box-shadow: 0 0 20px rgba(255, 124, 46, 0.8);
-  }
-  
-  /* Right Image Section */
+
   .abacus-image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    width: 100%;
   }
-  
+
   .abacus-image img {
-    max-width: 699px;
-    height: 606px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
   }
-
-  .abacus-image img:hover {
-    transform: translateY(-10px);
-    }
-
+}

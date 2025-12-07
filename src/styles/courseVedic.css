@@ -4,16 +4,19 @@
   justify-content: space-between;
   align-items: center;
   padding: 3rem 8rem;
-  background:var(--bg-gradient);
+  background: var(--bg-gradient);
   gap: 2rem;
-  flex-direction: row-reverse; /* Flips the order of content */
+  flex-direction: row-reverse;
+  /* Flips the order of content */
 }
 
 /* Left Content Section (Now positioned on the right) */
 .vedic-content {
   flex: 1;
-  direction: rtl; /* Sets text direction to right-to-left */
-  text-align: right; /* Aligns text to the right */
+  direction: rtl;
+  /* Sets text direction to right-to-left */
+  text-align: right;
+  /* Aligns text to the right */
 }
 
 .vedic-heading {
@@ -37,8 +40,10 @@
   list-style: none;
   padding: 0;
   margin-bottom: 2rem;
-  direction: rtl; /* Ensures text direction starts from the right */
-  text-align: right; /* Aligns all text content to the right */
+  direction: rtl;
+  /* Ensures text direction starts from the right */
+  text-align: right;
+  /* Aligns all text content to the right */
 }
 
 .vedic-points li {
@@ -52,8 +57,10 @@
 }
 
 .vedic-points li img {
-  margin-left: 0.8rem; /* Space between image and text */
-  margin-right: 0; /* Reset right margin */
+  margin-left: 0.8rem;
+  /* Space between image and text */
+  margin-right: 0;
+  /* Reset right margin */
   height: 24px;
   width: 24px;
   flex-shrink: 0;
@@ -62,23 +69,25 @@
 .vedic-points li span {
   line-height: 1.6;
   font-size: 24px;
-  flex-grow: 1; /* Ensures text spans the remaining space consistently */
-  white-space: nowrap; /* Prevents text from breaking into multiple lines */
+  flex-grow: 1;
+  /* Ensures text spans the remaining space consistently */
+  white-space: nowrap;
+  /* Prevents text from breaking into multiple lines */
 }
 
 .vedic-button {
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  padding: 20px 16px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 16px;
   background-color: var(--primary-orange);
   color: white;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
   font-size: 19.19px;
-  width: 270px; 
-  height: 56px; 
+  width: 270px;
+  height: 56px;
   transition: background-color 0.3s ease;
   box-sizing: border-box;
   box-shadow: 0 0 10px rgba(255, 124, 46, 0.6);
@@ -93,16 +102,96 @@
 .vedic-image {
   flex: 1;
   display: flex;
-  justify-content: flex-start; 
+  justify-content: flex-start;
 }
 
 .vedic-image img {
-  width: 489px;
-  height: 647px;
+  width: 100%;
+  max-width: 480px;
+  height: auto;
   transition: transform 0.3s ease;
   border-radius: 10px;
 }
 
-.vedic-image img:hover{
+.vedic-image img:hover {
   transform: translateY(-10px);
+}
+
+/* Dark Mode Overrides */
+[data-theme="dark"] .vedic-heading,
+[data-theme="dark"] .vedic-description,
+[data-theme="dark"] .vedic-points li,
+[data-theme="dark"] .vedic-points li span {
+  color: var(--item-text);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .vedic-section {
+    padding: 3rem 4rem;
+    gap: 1.5rem;
   }
+}
+
+@media (max-width: 768px) {
+  .vedic-section {
+    flex-direction: column-reverse;
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+
+  .vedic-content {
+    direction: ltr;
+    text-align: center;
+  }
+
+  .vedic-heading {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .vedic-description {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .vedic-points {
+    direction: ltr;
+    text-align: center;
+  }
+
+  .vedic-points li {
+    font-size: 18px;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .vedic-points li img {
+    margin-right: 0.8rem;
+    margin-left: 0;
+    height: 20px;
+    width: 20px;
+  }
+
+  .vedic-points li span {
+    font-size: 18px;
+  }
+
+  .vedic-button {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 270px;
+  }
+
+  .vedic-image {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .vedic-image img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+  }
+}
