@@ -202,50 +202,50 @@ const CourseList = () => {
                 <CourseCard key={index} {...course} />
               ))}
           </div>
-          <div className="home-course-slider-buttons">
-            <button
-              className="home-course-slider-button-left"
-              onClick={prevSlide}
-              disabled={currentIndex === 0}
+        </div>
+        <div className="home-course-slider-buttons">
+          <button
+            className="home-course-slider-button-left"
+            onClick={prevSlide}
+            disabled={currentIndex === 0}
+          >
+            <svg
+              width="15"
+              height="25"
+              viewBox="0 0 15 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                width="15"
-                height="25"
-                viewBox="0 0 15 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.9023 1.44043L1.8125 12.5302L12.9023 23.62"
-                  stroke="var(--bg-color)"
-                  strokeWidth="2.21796"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
-            <button
-              className="home-course-slider-button-right"
-              onClick={nextSlide}
-              disabled={currentIndex >= courseData.length - 3}
+              <path
+                d="M12.9023 1.44043L1.8125 12.5302L12.9023 23.62"
+                stroke="var(--bg-color)"
+                strokeWidth="2.21796"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+            className="home-course-slider-button-right"
+            onClick={nextSlide}
+            disabled={currentIndex >= courseData.length - 3}
+          >
+            <svg
+              width="15"
+              height="25"
+              viewBox="0 0 15 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                width="15"
-                height="25"
-                viewBox="0 0 15 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.8125 1.44043L12.9023 12.5302L1.8125 23.62"
-                  stroke="var(--bg-color)"
-                  strokeWidth="2.21796"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M1.8125 1.44043L12.9023 12.5302L1.8125 23.62"
+                stroke="var(--bg-color)"
+                strokeWidth="2.21796"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </section>

@@ -218,14 +218,12 @@ section.home-card-info,
 }
 
 .home-course-slider-buttons {
-  position: absolute;
-  bottom: 10px;
-
-  transform: translateX(-50%);
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
-  z-index: 10;
-  right: 45px;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .home-course-slider-button-left {
