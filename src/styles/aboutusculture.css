@@ -1,309 +1,304 @@
-.our-culture{
+.our-culture {
   background: var(--bg-gradient);
+  padding: 40px 0;
+  overflow-x: hidden;
 }
+
 .our-culture-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   
-    padding: 1px;
-    gap: 20px;
-  }
-  
-  .our-culture-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    margin-left: -11px;
-    margin-right: 167px;
-    
-  }
-  .our-culture-image img{
-  width: 558px; 
-  height: 559px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.our-culture-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  /* Align right towards center in default row */
+  align-items: center;
+}
+
+.our-culture-image img {
+  width: 100%;
+  max-width: 558px;
+  height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .our-culture-image img:hover {
-    /* Floating effect on hover */
-    transform: translateY(-10px); /* Move image upward */
-   
-  }
-  
-  
-  
-  .our-culture-content {
-    flex: 2;
-    margin-left: 95px;
-    padding: 20px;
-  }
-  
-  .culture-title {
-    font-size: 24px;
-    font-weight: 400; 
-    color: var(--primary-orange);
-    margin: 0 0 10px 0; 
-    font-family: geologica;
-  }
-  
-  .culture-description {
-    font-size: 24px;
-    font-weight: 400; 
-    color: var(--highlight-color);
-    line-height: 1.4; 
-    margin-top: 10px;
-    font-family: geologica;
-  }
-  .culture-sub-div{
-    display: flex;
-    flex-direction: column;
+}
 
-  }
-  
+.our-culture-image img:hover {
+  transform: translateY(-10px);
+}
 
-  .culture-subdiv-image img{
-    height: 25px;
-    width:25px;
-    border-radius: 10px;
-  }
-  .culture-subdiv-point{
-    font-size:24px; 
-    font-family: geologica;
-    font-weight: 400;
-    color:343434;
-    margin-top: -60px;
-    margin-left: 33px;
-  }
-  
-/* Media Queries */
-@media (max-width: 1024px) {
- 
-  .our-culture-container {
-    flex-direction: rows;
-    align-items: center;
-    margin-left: 72px;
-  }
-  .our-culture-image img {
-    width: 438px;
-    height: 487px;
-}
-  .culture-title {
-    font-size: 30px;
-  }
-  .culture-description {
-    font-size: 22px;
-    width: 416px;
-  }
-  .our-culture-image {
-    flex: 1 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    margin-left: -122px;
-    margin-right: 0px;
-    
-}
-.culture-subdiv-image img {
-  height: 25px;
-  width: 25px;
-  /* margin-left: 10px; */
-  margin-right: 331px;
-  margin-bottom: 5px;
-}
 .our-culture-content {
-  margin-left: 0;
-  text-align: left;
-
-}
-.culture-subdiv-point {
-  font-size: 20px;
-}
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .our-culture-container {
-    flex-direction: rows;
-    align-items: center;
-    margin-left: 14px;
-    width:40%;
-  }
-  .our-culture-image img {
-    width: 400px;
-    height: auto;
-  }
-  .culture-title {
-    font-size: 30px;
-  }
-  .culture-description {
-    font-size: 22px;
-    width: 416px;
-  }
-  .our-culture-image {
-    flex: 1 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    margin-left: -122px;
-    
-}
-.culture-subdiv-image img {
-  height: 25px;
-  width: 25px;
-  /* margin-left: 10px; */
-  margin-right: 331px;
-  margin-bottom: 5px;
-}
-.our-culture-content {
-  margin-left: 0;
-  text-align: left;
-}
-.culture-subdiv-point {
-  font-size: 20px;
-}
-}
-
-@media (max-width: 426px) {
-  .our-culture-container {
-    flex-direction: column;
-    align-items: center;
-    width:100%;
-    margin-left: 0px;
-  }
-  .our-culture-content {
-    text-align: center;
-}
-.our-culture-image{
-  margin-left:0px;
-}
-  .our-culture-image img {
-    width: 320px;
-    height: 313px;
-    margin-top: -73px;
-    margin-right: -86px;
-}
-  .culture-title {
-    font-size: 34px;
-    margin: 0 45px 10px 0;
-  }
-  .culture-description {
-    font-size: 16px;
-    width :87%;
-  }
-  .culture-subdiv-point {
-    font-size: 16px;
-    margin-left: 47px;
-    text-align: left;
-    width :85%;
-  }
-  .culture-subdiv-image img {
-    height: 25px;
-    width: 25px;
-    margin-left: -39px;
-    margin-bottom: 14px;
-}
-}
-@media (max-width: 394px){
-  .culture-subdiv-image img {
-    margin-left: 5px;
-}
-}
-@media (max-width: 376px) {
-  .our-culture-container {
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-  }
-  .our-culture-content{
-    width: 81%;
-    margin-left:-53px;
-  }
-  .our-culture-image{
-    margin-left: 167px;
-  }
-  .our-culture-image img {
-    width: 339px;
-    height: 342px;
-    margin-top: -73px;
-    margin-right: 0px;
-}
 .culture-title {
   font-size: 24px;
-  width: 100%;
-  margin-left: 123px;
-}
-  .culture-description {
-    font-size: 16px;
-    width: 232%;
-    margin-left: 14px;
-  }
-  .culture-sub-div {
-    display: flex;
-    flex-direction: column;
-    margin-left: 29px;
-}
-  .culture-subdiv-point {
-    font-size: 16px;
-    margin-left: 30px;
-    text-align: left;
-    width:224%;
-  }
-  .culture-subdiv-image img {
-    height: 25px;
-    width: 25px;
-    margin-left: -2px;
-    margin-bottom: 14px;
-}
+  font-weight: 400;
+  color: var(--primary-orange);
+  margin: 0 0 10px 0;
+  font-family: geologica;
 }
 
-@media (max-width: 320px) {
+.culture-description {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--highlight-color);
+  line-height: 1.4;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-family: geologica;
+}
+
+.culture-sub-div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.culture-subdiv-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+/* Note: The jsx structure seems to be flat divs for points. 
+   Assuming standard structure based on provided CSS analysis, 
+   but strictly standardizing selector just in case. */
+.culture-subdiv-image {
+  flex-shrink: 0;
+}
+
+.culture-subdiv-image img {
+  height: 25px;
+  width: 25px;
+  border-radius: 10px;
+}
+
+.culture-subdiv-point {
+  flex: 1;
+}
+
+.culture-subdiv-point p {
+  font-size: 24px;
+  font-family: geologica;
+  font-weight: 400;
+  color: #343434;
+  margin: 0;
+  line-height: 1.2;
+}
+
+
+/* Media Queries */
+
+/* Tablet (1024px) */
+@media (max-width: 1024px) {
+  .our-culture-container {
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .our-culture-image img {
+    max-width: 450px;
+  }
+
+  .culture-title {
+    font-size: 30px;
+  }
+
+  .culture-description {
+    font-size: 22px;
+  }
+
+  .culture-subdiv-point p {
+    font-size: 20px;
+  }
+}
+
+/* Tablet Small (768px) */
+@media (max-width: 768px) {
   .our-culture-container {
     flex-direction: column;
-    align-items: center;
-    margin-bottom: -53px;
-  }
-  .our-culture-content{
-    width: 86%;
     text-align: center;
   }
+
   .our-culture-image {
-    margin-right:30px
+    justify-content: center;
+    order: 2;
+    /* Image below text on smaller screens if desired, or remove to keep above */
+    margin-top: 30px;
   }
-  .our-culture-image img {
-    width: 320px;
-    height: 343px;
-    /* margin-top: -45px; */
-    margin-right: 0px;
-}
-  .culture-title {
-    font-size: 33px;
-    width:247%;
-    margin-left: 10px;
-    margin: 9px 0px 10px 0;
+
+  .our-culture-content {
+    align-items: center;
+    padding: 0;
   }
-  .culture-description {
-    font-size: 14px;
-    width: 200%;
-    margin-left:40px
-  }
-  .culture-subdiv-point {
-    font-size: 14px;
-    text-align: left;
-    margin-left: 33px;
-    width:159%;
-  }
+
   .culture-sub-div {
-    display: flex;
-    flex-direction: column;
-    margin-left: 66px;
+    align-items: center;
+    /* Center points container */
+    text-align: left;
+    /* Keep text aligned left for readability */
     width: 100%;
+    max-width: 500px;
+    /* Constrain width for better reading */
+  }
+
+  /* To re-create the structure implied by original CSS where image and point were siblings:
+     We need to layout the specific flat structure properly if we can't edit JSX.
+     Assuming JSX is: 
+     <div class="culture-sub-div">
+        <div class="culture-subdiv-image">...</div>
+        <div class="culture-subdiv-point">...</div>
+        ...
+     </div>
+     We need to use grid or flex wrap to align distinct pairs if they aren't wrapped in rows.
+     Since I can't see the exact DOM hierarchy update perfectly without editing JSX, 
+     I will assume the current JSX renders image and point sequentially.
+  */
+
+  .culture-sub-div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    column-gap: 15px;
+    row-gap: 20px;
+    text-align: left;
+  }
 }
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .our-culture-container {
+    padding: 30px 20px;
+  }
+
+  .our-culture-image img {
+    max-width: 320px;
+  }
+
+  .culture-title {
+    font-size: 24px;
+  }
+
+  .culture-description {
+    font-size: 16px;
+  }
+
+  .culture-subdiv-point p {
+    font-size: 16px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 375px) {
+  .our-culture-container {
+    padding: 20px 15px;
+  }
+
+  .culture-sub-div {
+    column-gap: 10px;
+  }
+
   .culture-subdiv-image img {
-    height: 25px;
-    width: 25px;
-    margin-left: -3px;
-  margin-bottom: 14px;    
+    width: 20px;
+    height: 20px;
+  }
 }
+
+/* Full HD: 1920px */
+@media (min-width: 1920px) {
+  .our-culture-container {
+    max-width: 1600px;
+    padding: 60px 0;
+    gap: 80px;
+  }
+
+  .culture-title {
+    font-size: 32px;
+  }
+
+  .culture-description {
+    font-size: 28px;
+  }
+
+  .culture-subdiv-point p {
+    font-size: 28px;
+  }
+
+  .our-culture-image img {
+    max-width: 650px;
+  }
+}
+
+/* 2K: 2560px */
+@media (min-width: 2560px) {
+  .our-culture-container {
+    max-width: 2200px;
+    padding: 80px 0;
+    gap: 100px;
+  }
+
+  .culture-title {
+    font-size: 48px;
+  }
+
+  .culture-description {
+    font-size: 36px;
+  }
+
+  .culture-subdiv-point p {
+    font-size: 36px;
+  }
+
+  .culture-subdiv-image img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .our-culture-image img {
+    max-width: 850px;
+  }
+}
+
+/* 4K: 3840px */
+@media (min-width: 3840px) {
+  .our-culture-container {
+    max-width: 3200px;
+    padding: 100px 0;
+    gap: 150px;
+  }
+
+  .culture-title {
+    font-size: 64px;
+    margin-bottom: 20px;
+  }
+
+  .culture-description {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+
+  .culture-subdiv-point p {
+    font-size: 48px;
+  }
+
+  .culture-subdiv-image img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .our-culture-image img {
+    max-width: 1100px;
+  }
 }

@@ -68,6 +68,11 @@
             "schema-utils": "^3.3.0",
             "ajv": "^6.12.6",
             "ajv-keywords": "^3.5.2"
+        },
+        "file-loader": {
+            "schema-utils": "^3.0.0",
+            "ajv": "^6.12.6",
+            "ajv-keywords": "^3.5.2"
         }
     }
 }

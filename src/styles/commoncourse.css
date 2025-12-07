@@ -366,8 +366,8 @@
   }
 
   .maincourse-image img {
-    width: 50%;
-    max-width: 350px;
+    width: 60%;
+    max-width: 450px;
     height: auto;
     object-fit: contain;
     transform: scale(1);
@@ -812,9 +812,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 5px;
+    padding: 60px 5px 20px 5px;
     height: auto;
-    min-height: 950px;
+    height: auto;
+    min-height: auto;
     width: 100%;
     box-sizing: border-box;
   }
@@ -823,10 +824,11 @@
     width: 100%;
     max-width: 82%;
     height: auto;
-    min-height: 950px;
-    padding: 70px 140px;
+    height: auto;
+    min-height: auto;
+    padding: 70px 80px;
     margin: 0 auto;
-    gap: 80px;
+    gap: 50px;
     align-items: center;
     box-sizing: border-box;
   }
@@ -903,9 +905,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 5px;
+    padding: 80px 5px 30px 5px;
     height: auto;
-    min-height: 1200px;
+    height: auto;
+    min-height: auto;
     width: 100%;
     box-sizing: border-box;
   }
@@ -914,10 +917,11 @@
     width: 100%;
     max-width: 78%;
     height: auto;
-    min-height: 1200px;
-    padding: 90px 180px;
+    height: auto;
+    min-height: auto;
+    padding: 90px 100px;
     margin: 0 auto;
-    gap: 90px;
+    gap: 60px;
     align-items: center;
     box-sizing: border-box;
   }
