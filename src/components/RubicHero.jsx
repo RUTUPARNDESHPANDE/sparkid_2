@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/commoncourse.css";
 import { Link } from "react-router-dom";
-import courserubic from "../Assets/courses-img/rubikcourse.png";
-import courseage from "../Assets/home-img/course-age.png";
-import coursetime from "../Assets/home-img/course-time.png";
-import courselevel from "../Assets/home-img/course-level.png";
+import courserubic from "../Assets/courses-img/rubikcourse.webp";
+import courseage from "../Assets/home-img/course-age.webp";
+import coursetime from "../Assets/home-img/course-time.webp";
+import courselevel from "../Assets/home-img/course-level.webp";
 
 const RubicHero = () => {
   return (

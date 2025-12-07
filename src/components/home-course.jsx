@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import "../styles/home-course.css";
 
-import courseimg1 from "../Assets/home-img/courseimg1.png";
-import courseimg2 from "../Assets/home-img/courseimg2.png";
-import courseimg3 from "../Assets/home-img/courseimg3.png";
-import courseage from "../Assets/home-img/course-age.png";
-import coursetime from "../Assets/home-img/course-time.png";
-import courselevel from "../Assets/home-img/course-level.png";
-import courserate from "../Assets/home-img/course-rate.png";
-import courseLearnMore from "../Assets/home-img/course-learnmore.png";
-import learnmorebulb from "../Assets/home-img/learnmorebulb.png";
+import courseimg1 from "../Assets/home-img/courseimg1.webp";
+import courseimg2 from "../Assets/home-img/courseimg2.webp";
+import courseimg3 from "../Assets/home-img/courseimg3.webp";
+import courseage from "../Assets/home-img/course-age.webp";
+import coursetime from "../Assets/home-img/course-time.webp";
+import courselevel from "../Assets/home-img/course-level.webp";
+import courserate from "../Assets/home-img/course-rate.webp";
+import courseLearnMore from "../Assets/home-img/course-learnmore.webp";
+import learnmorebulb from "../Assets/home-img/learnmorebulb.webp";
 import { Link, useNavigate } from "react-router-dom";
 
 const CourseCard = ({

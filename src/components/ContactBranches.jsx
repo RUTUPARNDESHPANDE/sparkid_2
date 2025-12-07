@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../styles/ContactBranches.css";
-import media1 from "../Assets/contact-img/media1.png";
-import media2 from "../Assets/contact-img/media2.png";
-import media3 from "../Assets/contact-img/media3.png";
+import media1 from "../Assets/contact-img/media1.webp";
+import media2 from "../Assets/contact-img/media2.webp";
+import media3 from "../Assets/contact-img/media3.webp";
 
 const BranchCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

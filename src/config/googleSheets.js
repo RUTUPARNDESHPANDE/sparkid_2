@@ -1,15 +1,31 @@
 // Google Sheets Web App URLs
-// Replace these with your actual Google Apps Script web app URLs after setup
-// See GOOGLE_SHEETS_SETUP.md for instructions
+// Loaded from environment variables for security
+// See .env.example and ENVIRONMENT_SETUP.md for setup instructions
 
 export const GOOGLE_SHEETS_CONFIG = {
   // Contact form web app URL
-  contactForm: "https://script.google.com/macros/s/AKfycbw1bTe2wWS328B8zCdPK3nIdQjyOmkKVWJUkKdPvULTpkeKsVTCC_SMikNvo67d11Yr/exec",
+  contactForm: process.env.REACT_APP_GOOGLE_SHEETS_CONTACT_FORM || "",
   
   // Question/Phone number form web app URL
-  questionForm: "https://script.google.com/macros/s/AKfycbyEQHpqcLXxW79lQc19Wo4-PCxYr4BkzEQakOJRYsI5V8xq7ZRGQDPw_G7WyzjzBCS7/exec",
+  questionForm: process.env.REACT_APP_GOOGLE_SHEETS_QUESTION_FORM || "",
   
   // Job application form web app URL (handles both form data and file uploads)
-  jobApplication: "https://script.google.com/macros/s/AKfycby_YXMJNTkWc6tkj9fyVfHLXWbDcvvsuXf1EeR0zWeXawvKgumoWbv0L6-EZ5C6KRngJA/exec",
+  jobApplication: process.env.REACT_APP_GOOGLE_SHEETS_JOB_APPLICATION || "",
 };
+
+// Validate that all required environment variables are set
+const missingVars = [];
+if (!GOOGLE_SHEETS_CONFIG.contactForm) missingVars.push('REACT_APP_GOOGLE_SHEETS_CONTACT_FORM');
+if (!GOOGLE_SHEETS_CONFIG.questionForm) missingVars.push('REACT_APP_GOOGLE_SHEETS_QUESTION_FORM');
+if (!GOOGLE_SHEETS_CONFIG.jobApplication) missingVars.push('REACT_APP_GOOGLE_SHEETS_JOB_APPLICATION');
+
+if (missingVars.length > 0) {
+  console.warn('⚠️ Missing Google Sheets environment variables:', missingVars.join(', '));
+  console.warn('📝 Please create a .env file in the root directory with these variables.');
+  console.warn('📖 See SETUP_ENV.md or ENVIRONMENT_SETUP.md for instructions.');
+  
+  if (process.env.NODE_ENV === 'production') {
+    console.error('❌ Production build requires all environment variables to be set!');
+  }
+}
 

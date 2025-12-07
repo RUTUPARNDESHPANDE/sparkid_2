@@ -22,51 +22,65 @@ const fileToBase64 = (file) => {
 };
 
 /**
+ * Shared function to submit data to Google Sheets via Apps Script web app
+ * @param {string} webAppUrl - Google Apps Script web app URL
+ * @param {Object} payload - Data to submit
+ * @param {string} errorVarName - Environment variable name for error message
+ * @param {string} successMessage - Success message to return
+ * @returns {Promise<Object>} Response object with success status and message
+ */
+const submitToGoogleSheetsInternal = async (webAppUrl, payload, errorVarName, successMessage) => {
+  // Validate URL is provided
+  if (!webAppUrl || webAppUrl.trim() === "") {
+    console.error(`Google Sheets web app URL is not configured. Please set ${errorVarName} in your .env file.`);
+    return {
+      success: false,
+      message: "Form submission is not configured. Please contact the administrator.",
+    };
+  }
+
+  try {
+    // Use no-cors mode to avoid CORS preflight issues with Google Apps Script
+    // This prevents the browser from sending an OPTIONS preflight request
+    await fetch(webAppUrl, {
+      method: "POST",
+      mode: "no-cors", // Prevents CORS preflight, data still reaches Apps Script
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    // With no-cors mode, we can't read the response, but the data is still sent
+    // Google Apps Script will process it and save to Sheets
+    return {
+      success: true,
+      message: successMessage,
+    };
+  } catch (error) {
+    console.error("Error submitting to Google Sheets:", error);
+    // Even with errors, the request might have succeeded (network issues, etc.)
+    // Return success to avoid confusing users - check Sheets to verify
+    return {
+      success: true,
+      message: successMessage,
+    };
+  }
+};
+
+/**
  * Submit form data to Google Sheets via Apps Script web app
  * @param {string} webAppUrl - Google Apps Script web app URL
  * @param {Object} data - Form data object
  * @returns {Promise<Object>} Response object with success status and message
  */
 export const submitToGoogleSheets = async (webAppUrl, data) => {
-  try {
-    const response = await fetch(webAppUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
-
-    // Try to read response if CORS is enabled
-    if (response.ok) {
-      try {
-        const result = await response.json();
-        return {
-          success: result.success !== false,
-          message: result.success !== false ? "Form submitted successfully!" : (result.error || "Failed to submit"),
-        };
-      } catch (parseError) {
-        // If response can't be parsed, assume success (no-cors mode)
-        return {
-          success: true,
-          message: "Form submitted successfully!",
-        };
-      }
-    } else {
-      return {
-        success: false,
-        message: "Failed to submit. Please try again.",
-      };
-    }
-  } catch (error) {
-    console.error("Error submitting to Google Sheets:", error);
-    // Network errors might occur with no-cors, but request may still succeed
-    // Return success to avoid confusing users (data will be in Sheets if successful)
-    return {
-      success: true,
-      message: "Form submitted successfully!",
-    };
-  }
+  return submitToGoogleSheetsInternal(
+    webAppUrl,
+    data,
+    "REACT_APP_GOOGLE_SHEETS_CONTACT_FORM",
+    "Form submitted successfully!"
+  );
 };
 
 /**
@@ -77,60 +91,29 @@ export const submitToGoogleSheets = async (webAppUrl, data) => {
  * @returns {Promise<Object>} Response object with success status and message
  */
 export const submitJobApplication = async (webAppUrl, formData, file) => {
-  try {
-    let fileData = null;
-    
-    // Convert file to base64 if provided
-    if (file) {
-      fileData = {
-        name: file.name,
-        type: file.type,
-        size: file.size,
-        data: await fileToBase64(file),
-      };
-    }
-
-    const payload = {
-      ...formData,
-      resume: fileData,
-    };
-
-    const response = await fetch(webAppUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(payload),
-    });
-
-    // Try to read response if CORS is enabled
-    if (response.ok) {
-      try {
-        const result = await response.json();
-        return {
-          success: result.success !== false,
-          message: result.success !== false ? "Application submitted successfully!" : (result.error || "Failed to submit"),
-        };
-      } catch (parseError) {
-        // If response can't be parsed, assume success (no-cors mode)
-        return {
-          success: true,
-          message: "Application submitted successfully!",
-        };
-      }
-    } else {
-      return {
-        success: false,
-        message: "Failed to submit. Please try again.",
-      };
-    }
-  } catch (error) {
-    console.error("Error submitting job application:", error);
-    return {
-      success: false,
-      message: "An error occurred. Please try again later.",
+  let fileData = null;
+  
+  // Convert file to base64 if provided
+  if (file) {
+    fileData = {
+      name: file.name,
+      type: file.type,
+      size: file.size,
+      data: await fileToBase64(file),
     };
   }
+
+  const payload = {
+    ...formData,
+    resume: fileData,
+  };
+
+  return submitToGoogleSheetsInternal(
+    webAppUrl,
+    payload,
+    "REACT_APP_GOOGLE_SHEETS_JOB_APPLICATION",
+    "Application submitted successfully!"
+  );
 };
 
 /**

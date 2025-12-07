@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/CustomCursor.css";
-import hoverImg from "../Assets/hover.png";
-import flameImg from "../Assets/flame.png";
+import hoverImg from "../Assets/hover.webp";
+import flameImg from "../Assets/flame.webp";
 
 const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });

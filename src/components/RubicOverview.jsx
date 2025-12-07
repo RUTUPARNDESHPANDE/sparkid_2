@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import point from "../Assets/courses-img/checkpoint.png";
+import point from "../Assets/courses-img/checkpoint.webp";
 import "../styles/AbacusOverview.css";
 
 const RubicOverview = () => {
@@ -132,19 +132,19 @@ const RubicOverview = () => {
                   </ul>
                   <h4 className="dropdown-subtitle">Learning Methodology</h4>
                   <p className="dropdown-course-info">
-                    <span>Visual demonstrations:</span> of each step
+                    <span>Cube familiarization:</span> Understanding cube mechanics through hands-on exploration.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Individual practice:</span> with guidance
+                    <span>Basic algorithm teaching:</span> Introducing the first set of moves with clear instructions.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Breakdown of algorithms:</span> into simple patterns
+                    <span>Pattern practice:</span> Repeating beginner patterns to build confidence.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Worksheets & practice assignments:</span>
+                    <span>Step-by-step demonstrations:</span> Instructor-guided solving of each layer.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Progress updates:</span> shared with parents
+                    <span>Parent updates:</span> Suggestions for home practice and memory reinforcement.
                   </p>
                 </div>
               )}
@@ -196,19 +196,19 @@ const RubicOverview = () => {
                   </ul>
                   <h4 className="dropdown-subtitle">Learning Methodology</h4>
                   <p className="dropdown-course-info">
-                    <span>Stepwise algorithm teaching:</span>
+                    <span>Algorithm expansion:</span> Teaching multiple solving sequences for higher cube variations.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Repetitive drills:</span> for speed conditioning
+                    <span>Timed exercises:</span> Structured drills to improve speed and accuracy.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Timed practice sessions:</span>
+                    <span>Visual mapping:</span> Using diagrams to strengthen pattern recognition.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Pattern-based memory reinforcement:</span>
+                    <span>Live demonstrations:</span> Clear breakdown of 2x2, 3x3, and 4x4 solutions.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Guidance:</span> for building personal solving rhythm
+                    <span>Parent updates:</span> Performance tracking and home-focus tips.
                   </p>
                 </div>
               )}
@@ -263,19 +263,19 @@ const RubicOverview = () => {
                   </ul>
                   <h4 className="dropdown-subtitle">Learning Methodology</h4>
                   <p className="dropdown-course-info">
-                    <span>High-precision speed drills:</span>
+                    <span>Speed-solving practice:</span> Regular drills to enhance solving speed under time limits.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Professional speedcubing algorithm sets:</span>
+                    <span>Advanced algorithm training:</span> Learning competitive-level sequences.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Timer-based training:</span> (digital/physical)
+                    <span>Pattern creation:</span> Developing visual strategy through custom cube patterns.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Solve breakdown analysis:</span> & performance reviews
+                    <span>Challenge demonstrations:</span> Guided solving of blindfold and rapid methods.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Preparation:</span> for WCA-style competitions
+                    <span>Parent updates:</span> Competition-readiness insights and practice recommendations.
                   </p>
                 </div>
               )}

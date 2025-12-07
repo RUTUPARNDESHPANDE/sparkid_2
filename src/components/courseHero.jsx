@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/courseHero.css"; 
-import image from "../Assets/courses-img/coursehero.png"; 
+import image from "../Assets/courses-img/coursehero.webp"; 
 
 const coursehero = () => {
   return (

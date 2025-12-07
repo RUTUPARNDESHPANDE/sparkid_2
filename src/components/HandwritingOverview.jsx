@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/AbacusOverview.css"; // Using the same CSS file
-import point from "../Assets/courses-img/checkpoint.png"; // Importing the image
+import point from "../Assets/courses-img/checkpoint.webp"; // Importing the image
 
 const HandwritingOverview = () => {
   const [activeTab, setActiveTab] = useState("overview");
@@ -34,47 +34,57 @@ const HandwritingOverview = () => {
       <div className="content-card">
         {activeTab === "overview" && (
           <div className="overview-content">
-            <h2 className="main-title">What is Handwriting Improvement?</h2>
+            <h2 className="main-title">What is Handwriting?</h2>
             <p className="overview-description">
-              Handwriting is more than just putting words on paper—it is a reflection of clarity, discipline, and
-              confidence. Our Handwriting Improvement Program is scientifically designed to fix poor grip,
-              irregular spacing, and illegible strokes. We focus on fine motor skills, posture, and pen control to
-              help students write effortlessly. Whether it’s print or cursive, a beautiful handwriting style boosts
-              academic performance and leaves a lasting positive impression.
+              Handwriting is more than penmanship — it is an essential skill that shapes a child's clarity of
+              thought, expression, and academic performance.
+              Our program uses scientific techniques to improve neatness, letter formation, and writing
+              speed.
+              Children develop stronger fine-motor control, better posture, and refined hand–eye
+              coordination.
+              With guided practice, they gain confidence in exams where speed and presentation matter.
+              This program builds a lifelong foundation for beautiful writing and effective written
+              communication.
             </p>
             <h3 className="sub-title">
-              Transform Your Child’s Writing & Confidence
+              Unlock Your Child's Clarity, Neatness & Written Expression
             </h3>
             <p className="overview-description">
-              Does your child struggle with messy writing, slow speed, or hand pain?
-              Our program transforms their writing from illegible to beautiful in just a few weeks.
-              We don’t just teach them to copy letters; we retrain their muscle memory for proper grip and
-              movement.
-              Clear handwriting leads to better grades, as teachers can read answers without effort.
-              Beyond school, the discipline of writing neatly builds patience, focus, and self-esteem.
+              Unlock your child's ability to write clearly and confidently with structured handwriting
+              techniques.
+              The program strengthens fine-motor control and teaches proper letter formation, spacing, and
+              consistency.
+              Children gradually improve writing speed while maintaining neatness and legibility.
+              This results in cleaner notebooks, better exam presentation, and higher confidence in written
+              work.
+              The skills gained create a lifelong foundation for effective and professional written
+              communication.
             </p>
             <h3 className="sub-title">Skills Enhanced Through Our Program</h3>
             <ul className="benefits-list">
               <li>
-                <img src={point} alt="Checkpoint" /> Legible and neat handwriting
+                <img src={point} alt="Checkpoint" /> Neat and legible writing
               </li>
               <li>
-                <img src={point} alt="Checkpoint" /> Proper pen/pencil grip correction
+                <img src={point} alt="Checkpoint" /> Proper letter formation & spacing
               </li>
               <li>
-                <img src={point} alt="Checkpoint" /> Consistent letter sizing and spacing
+                <img src={point} alt="Checkpoint" /> Improved pencil grip and pressure control
               </li>
               <li>
-                <img src={point} alt="Checkpoint" /> Faster writing speed without fatigue
+                <img src={point} alt="Checkpoint" /> Better hand–eye coordination
               </li>
               <li>
-                <img src={point} alt="Checkpoint" /> Improved fine motor skills
+                <img src={point} alt="Checkpoint" /> Strong fine motor development
               </li>
               <li>
-                <img src={point} alt="Checkpoint" /> Better presentation in exams
+                <img src={point} alt="Checkpoint" /> Increased writing speed
               </li>
               <li>
-                <img src={point} alt="Checkpoint" /> Boosted self-confidence
+                <img src={point} alt="Checkpoint" /> Clean presentation and workbook neatness
+              </li>
+              <li>
+                <img src={point} alt="Checkpoint" /> Boosted confidence in academic performance
               </li>
             </ul>
           </div>
@@ -91,7 +101,7 @@ const HandwritingOverview = () => {
                   fontWeight: "bold",
                 }}
               >
-                <h3>1. Print Style (Foundation Level)</h3>
+                <h3>1. Lexi-Base (Foundation Level)</h3>
                 <span>{expandedSection === "level1" ? "-" : "+"}</span>
               </div>
               {expandedSection === "level1" && (
@@ -100,42 +110,45 @@ const HandwritingOverview = () => {
                     <span>Eligibility:</span> 5 Years & Above
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Duration:</span> 3 Months
+                    <span>Duration:</span> 2 Month
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Focus:</span> Letter Formation & Clarity
+                    <span>Focus:</span> Letter Formation & Motor Skill Development
                   </p>
                   <p className="dropdown-description">
-                    This level focuses on the basics of clear, separate letter formation (Print Script). It is ideal for
-                    younger children or those who need to correct fundamental legibility issues.
+                    The Basic level introduces children to proper letter shapes, strokes, and spacing. They practice
+                    uppercase and lowercase letters, simple words, and correct posture.
                   </p>
                   <h4 className="dropdown-subtitle">Key Skills Developed</h4>
                   <ul className="benefits-list">
                     <li>
-                      <img src={point} alt="Checkpoint" /> Correct stroke direction for alphabets
+                      <img src={point} alt="Checkpoint" /> Correct letter formation
                     </li>
                     <li>
-                      <img src={point} alt="Checkpoint" /> Uniform size and shape of letters
+                      <img src={point} alt="Checkpoint" /> Proper spacing between letters & words
                     </li>
                     <li>
-                      <img src={point} alt="Checkpoint" /> Proper spacing between words
+                      <img src={point} alt="Checkpoint" /> Pencil grip correction
                     </li>
                     <li>
-                      <img src={point} alt="Checkpoint" /> Straight-line alignment
+                      <img src={point} alt="Checkpoint" /> Line alignment & writing direction
                     </li>
                   </ul>
                   <h4 className="dropdown-subtitle">Learning Methodology</h4>
                   <p className="dropdown-course-info">
-                    <span>Pattern tracing exercises:</span>
+                    <span>Stroke mastery:</span> Practice of basic strokes for steady and neat writing.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Grip correction techniques:</span>
+                    <span>Letter formation:</span> Guided shaping of individual letters with correct spacing.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Four-line notebook practice:</span>
+                    <span>Motor-skill worksheets:</span> Activities that strengthen fine-motor control.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Daily worksheets:</span> for reinforcement
+                    <span>Live correction:</span> Immediate feedback to fix writing habits early.
+                  </p>
+                  <p className="dropdown-course-info">
+                    <span>Parent updates:</span> Tips for posture and pencil grip improvement at home.
                   </p>
                 </div>
               )}
@@ -151,51 +164,54 @@ const HandwritingOverview = () => {
                   fontWeight: "bold",
                 }}
               >
-                <h3>2. Cursive Style (Intermediate Level)</h3>
+                <h3>2. Lexi-Flow Improvement Level</h3>
                 <span>{expandedSection === "level2" ? "-" : "+"}</span>
               </div>
               {expandedSection === "level2" && (
                 <div className="dropdown-content">
                   <p className="dropdown-course-info">
-                    <span>Eligibility:</span> 7 Years & Above
+                    <span>Eligibility:</span> 7 years and above
                   </p>
                   <p className="dropdown-course-info">
                     <span>Duration:</span> 3 Months
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Focus:</span> Flow & Connectivity
+                    <span>Focus:</span> Flow, Connectivity & Style
                   </p>
                   <p className="dropdown-description">
-                    Students learn the art of joining letters smoothly. Cursive writing improves writing speed and
-                    helps in maintaining a continuous thought process while writing.
+                    Cursive writing helps students develop faster and smoother writing skills. Children learn to
+                    connect letters, maintain rhythm, and develop elegant handwriting patterns.
                   </p>
                   <h4 className="dropdown-subtitle">Key Skills Developed</h4>
                   <ul className="benefits-list">
                     <li>
-                      <img src={point} alt="Checkpoint" /> Smooth connections between letters
+                      <img src={point} alt="Checkpoint" /> Smooth letter connectivity
                     </li>
                     <li>
-                      <img src={point} alt="Checkpoint" /> Consistent slant and rhythm
+                      <img src={point} alt="Checkpoint" /> Improved writing flow & rhythm
                     </li>
                     <li>
-                      <img src={point} alt="Checkpoint" /> Writing without lifting the pen frequently
+                      <img src={point} alt="Checkpoint" /> Better hand movement control
                     </li>
                     <li>
-                      <img src={point} alt="Checkpoint" /> Elegant and professional look
+                      <img src={point} alt="Checkpoint" /> Faster writing with neatness
                     </li>
                   </ul>
                   <h4 className="dropdown-subtitle">Learning Methodology</h4>
                   <p className="dropdown-course-info">
-                    <span>Stroke connectivity drills:</span>
+                    <span>Consistency practice:</span> Exercises to develop uniform and neat writing.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Paragraph writing practice:</span>
+                    <span>Speed training:</span> Structured sheets to increase writing pace.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Speed control exercises:</span>
+                    <span>Word formation practice:</span> Activities to improve spacing and alignment.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Regular assessment:</span> of neatness
+                    <span>Model-based demonstrations:</span> Step-by-step guidance for print/cursive clarity.
+                  </p>
+                  <p className="dropdown-course-info">
+                    <span>Parent updates:</span> Recommendations for daily writing reinforcement.
                   </p>
                 </div>
               )}
@@ -211,7 +227,7 @@ const HandwritingOverview = () => {
                   fontWeight: "bold",
                 }}
               >
-                <h3>3. Speed Writing (Advanced Level)</h3>
+                <h3>3. Lexi-Advance Advance level</h3>
                 <span>{expandedSection === "level3" ? "-" : "+"}</span>
               </div>
               {expandedSection === "level3" && (
@@ -220,42 +236,45 @@ const HandwritingOverview = () => {
                     <span>Eligibility:</span> 10 Years & Above
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Duration:</span> 2 Months
+                    <span>Duration:</span> 2 Month
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Focus:</span> Speed with Legibility
+                    <span>Focus:</span> Speed, Precision & Presentation
                   </p>
                   <p className="dropdown-description">
-                    This level is for students who have good handwriting but struggle to finish exams on time. We
-                    train them to write fast without compromising on clarity.
+                    This level trains students to write faster without losing legibility. It focuses heavily on writing
+                    stamina, clean presentation, and structured workbook habits.
                   </p>
                   <h4 className="dropdown-subtitle">Key Skills Developed</h4>
                   <ul className="benefits-list">
                     <li>
-                      <img src={point} alt="Checkpoint" /> Increasing words per minute (WPM)
+                      <img src={point} alt="Checkpoint" /> Improved writing speed
                     </li>
                     <li>
-                      <img src={point} alt="Checkpoint" /> Maintaining legibility under pressure
+                      <img src={point} alt="Checkpoint" /> Better spacing & alignment
                     </li>
                     <li>
-                      <img src={point} alt="Checkpoint" /> Reducing hand fatigue during long exams
+                      <img src={point} alt="Checkpoint" /> Clean and attractive page presentation
                     </li>
                     <li>
-                      <img src={point} alt="Checkpoint" /> Efficient note-taking skills
+                      <img src={point} alt="Checkpoint" /> Faster classwork and homework completion
                     </li>
                   </ul>
                   <h4 className="dropdown-subtitle">Learning Methodology</h4>
                   <p className="dropdown-course-info">
-                    <span>Timed writing challenges:</span>
+                    <span>Speed-building worksheets:</span> Practice sheets for exam-oriented writing speed.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Muscle relaxation techniques:</span>
+                    <span>Style refinement:</span> Guidance to develop clean, mature handwriting.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Dictation practice:</span>
+                    <span>Paragraph practice:</span> Improving consistency in longer written responses.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Exam simulation drills:</span>
+                    <span>Live feedback:</span> Real-time evaluation to enhance presentation quality.
+                  </p>
+                  <p className="dropdown-course-info">
+                    <span>Parent updates:</span> Suggestions for maintaining writing discipline.
                   </p>
                 </div>
               )}
@@ -267,19 +286,25 @@ const HandwritingOverview = () => {
           <div className="details-content">
             <h2 className="main-title">The Science Behind Handwriting Training</h2>
             <p className="overview-description">
-              Handwriting is a complex cognitive process that links the hand and brain:
+              Handwriting development engages multiple parts of the brain responsible for:
             </p>
             <ul className="dropdown-course-info">
               <li>
-                <span>Fine Motor Activation:</span> Strengthens neural pathways controlling finger movements.
+                <span>Fine Motor Skills:</span> Improved finger strength, dexterity, and control
               </li>
               <li>
-                <span>Reticular Activating System (RAS):</span> Writing by hand improves focus and information retention compared to typing.
+                <span>Visual Processing:</span> Understanding shapes, spacing, and letter orientation
+              </li>
+              <li>
+                <span>Cognitive Organization:</span> Planning, sequencing, and structured writing
+              </li>
+              <li>
+                <span>Memory:</span> Developing stroke patterns and muscle memory
               </li>
             </ul>
             <p className="overview-description">
-              Good handwriting reduces cognitive load, allowing the brain to focus on content rather than the
-              act of writing.
+              This combination builds strong neural connections that support academic success and long
+              term learning efficiency.
             </p>
 
             <h3 className="sub-title">
@@ -287,24 +312,34 @@ const HandwritingOverview = () => {
             </h3>
             <ul className="key-skills-list">
               <li>
-                <span>Focus & Discipline:</span> The practice of neat writing instills patience and attention to detail.
+                <span>Fine Motor Development:</span>
+                Writing exercises build finger strength and coordination.
                 <br />
-                <span>Result:</span> Reduced careless errors in schoolwork.
+                <span>Result:</span> Improved control for writing, drawing, and classroom tasks.
               </li>
               <li>
-                <span>Memory Retention:</span> Studies show that writing notes by hand improves learning and recall.
+                <span>Visual-Spatial Awareness:</span>
+                Children learn spacing, alignment, and proportion.
                 <br />
-                <span>Result:</span> Better exam preparation and grades.
+                <span>Result:</span> Cleaner notebooks and better academic presentation.
               </li>
               <li>
-                <span>Creativity & Expression:</span> A fluid writing style encourages free flow of thoughts.
+                <span>Muscle Memory:</span>
+                Repeated practice makes writing automatic.
                 <br />
-                <span>Result:</span> Improved essay and creative writing skills.
+                <span>Result:</span> Faster and more comfortable writing.
               </li>
               <li>
-                <span>Confidence:</span> Neat work receives praise and positive reinforcement.
+                <span>Grip & Control:</span>
+                Correct pencil positioning improves control and reduces strain.
                 <br />
-                <span>Result:</span> Higher self-esteem in academic settings.
+                <span>Result:</span> Better handwriting and reduced fatigue.
+              </li>
+              <li>
+                <span>Concentration & Patience:</span>
+                Focused writing tasks increase attention span.
+                <br />
+                <span>Result:</span> Students become more disciplined and detail-oriented.
               </li>
             </ul>
           </div>
@@ -313,52 +348,52 @@ const HandwritingOverview = () => {
         {activeTab === "opportunities" && (
           <div className="opportunities-content">
             <h2 className="main-title">Opportunities</h2>
-            <h4 className="dropdown-subtitle">1. Academic Success </h4>
+            <h4 className="dropdown-subtitle">1. Academic Excellence </h4>
             <ul className="dropdown-course-info">
               <li>
-                Higher marks for presentation and legibility
+                Neat writing boosts scores in written exams
               </li>
               <li>
-                Ability to complete exams on time
+                Improved speed helps complete papers on time
               </li>
               <li>
-                Better teacher appreciation
+                Better notebook presentation earns appreciation from teachers
               </li>
             </ul>
-            <h4 className="dropdown-subtitle">2. Personal Development </h4>
+            <h4 className="dropdown-subtitle">2. Confidence Building </h4>
             <ul className="dropdown-course-info">
               <li>
-                Improved patience and focus
+                Children gain pride in their handwriting
               </li>
               <li>
-                Sense of pride in one’s work
+                Clear writing boosts overall communication skills
               </li>
               <li>
-                Development of a unique personal signature style
+                Reduces frustration during classwork and homework
               </li>
             </ul>
-            <h4 className="dropdown-subtitle">3. Professional Advantages </h4>
+            <h4 className="dropdown-subtitle">3. Lifelong Skills </h4>
             <ul className="dropdown-course-info">
               <li>
-                Clear communication in written forms
+                Fine motor skills support drawing, craft, and daily tasks
               </li>
               <li>
-                First impression impact in applications/forms
+                Writing confidence extends to essay writing and creative work
               </li>
               <li>
-                Enhanced note-taking in meetings
+                Helps in competitive exams requiring long written answers
               </li>
             </ul>
-            <h4 className="dropdown-subtitle">4. Creative Expression </h4>
+            <h4 className="dropdown-subtitle">4. Foundation for Future Learning </h4>
             <ul className="dropdown-course-info">
               <li>
-                Calligraphy and artistic lettering
+                Handwriting discipline strengthens foundational academic habits
               </li>
               <li>
-                Journaling and personalized stationery
+                Builds structure, organization, and clarity in thinking
               </li>
               <li>
-                Handwritten letters and cards
+                Prepares children for higher grades where writing demands increase
               </li>
             </ul>
           </div>

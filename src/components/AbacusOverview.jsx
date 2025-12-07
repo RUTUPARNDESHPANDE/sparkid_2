@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import point from "../Assets/courses-img/checkpoint.png";
+import point from "../Assets/courses-img/checkpoint.webp";
 import "../styles/AbacusOverview.css";
 
 const Overview = () => {

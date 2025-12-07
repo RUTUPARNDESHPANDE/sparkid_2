@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/CareerHero.css"; 
-import heroImage from "../Assets/career-img/careerhero.png";
-import heroImage1 from "../Assets/career-img/careerhero1.png";
-import heroImage2 from "../Assets/career-img/careerhero2.png";
-import heroImage3 from "../Assets/career-img/careerhero3.png";
-import heroImage4 from "../Assets/career-img/careerhero4.png";
+import heroImage from "../Assets/career-img/careerhero.webp";
+import heroImage1 from "../Assets/career-img/careerhero1.webp";
+import heroImage2 from "../Assets/career-img/careerhero2.webp";
+import heroImage3 from "../Assets/career-img/careerhero3.webp";
+import heroImage4 from "../Assets/career-img/careerhero4.webp";
 
 const CareerHero = () => {
   return (

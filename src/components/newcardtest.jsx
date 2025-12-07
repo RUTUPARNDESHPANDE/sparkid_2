@@ -3,15 +3,16 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "../styles/newcardtest.css";
 import { Link } from "react-router-dom";
-import courseAge from "../Assets/home-img/course-age.png";
-import courseLevel from "../Assets/home-img/course-level.png";
-import courseTime from "../Assets/home-img/course-time.png";
-import courseLearnMore from "../Assets/home-img/course-learnmore.png";
-import vedicMathsImage from "../Assets/home-img/courseimg2.png";
-import abacusImage from "../Assets/home-img/courseimg1.png";
-import rubiksCubeImage from "../Assets/home-img/courseimg3.png";
-import handwritingImage from "../Assets/home-img/courseimg4.png";
-import readingImage from "../Assets/home-img/courseimg5.png";
+import courseAge from "../Assets/home-img/course-age.webp";
+import courseLevel from "../Assets/home-img/course-level.webp";
+import courseTime from "../Assets/home-img/course-time.webp";
+import courseLearnMore from "../Assets/home-img/course-learnmore.webp";
+import vedicMathsImage from "../Assets/home-img/courseimg2.webp";
+import abacusImage from "../Assets/home-img/courseimg1.webp";
+import rubiksCubeImage from "../Assets/home-img/courseimg3.webp";
+import handwritingImage from "../Assets/home-img/courseimg4.webp";
+import readingImage from "../Assets/home-img/courseimg5.webp";
+import spellingBeeImage from "../Assets/home-img/courseimg6.webp";
 
 const BoxLayoutCard = ({ image, title, rating, description, age, levels, time,courseId }) => (
   <div className="product-box">

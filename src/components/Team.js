@@ -1,13 +1,13 @@
 import React from "react";
 import "../styles/team.css";
-import team1 from "../Assets/about-img/team1.png";
-import team2 from "../Assets/about-img/team2.png";
-import team3 from "../Assets/about-img/team3.png";
-import team4 from "../Assets/about-img/team4.png";
-import facebook from "../Assets/about-img/facebook.png";
-import twitter from "../Assets/about-img/twitter.png";
-import instagram from "../Assets/about-img/instagram.png";
-import linkedin from "../Assets/about-img/linkedIN.png";
+import team1 from "../Assets/about-img/team1.webp";
+import team2 from "../Assets/about-img/team2.webp";
+import team3 from "../Assets/about-img/team3.webp";
+import team4 from "../Assets/about-img/team4.webp";
+import facebook from "../Assets/about-img/facebook.webp";
+import twitter from "../Assets/about-img/twitter.webp";
+import instagram from "../Assets/about-img/instagram.webp";
+import linkedin from "../Assets/about-img/linkedIN.webp";
 
 const teamMembers = [
   {

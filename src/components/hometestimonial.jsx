@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/hometestimonials.css";
-import testimonial1 from "../Assets/home-img/testimonial1.png";
-import testimonialcomma from "../Assets/home-img/testimonialcomma.png";
+import testimonial1 from "../Assets/home-img/testimonial1.webp";
+import testimonialcomma from "../Assets/home-img/testimonialcomma.webp";
 const cardsData = [
   {
     id: 1,

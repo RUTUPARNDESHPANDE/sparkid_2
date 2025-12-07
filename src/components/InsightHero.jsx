@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/InsightHero.css";
-import image from "../Assets/insight-img/insighthero.png";
+import image from "../Assets/insight-img/insighthero.webp";
 
 const insighthero = () => {
   return (

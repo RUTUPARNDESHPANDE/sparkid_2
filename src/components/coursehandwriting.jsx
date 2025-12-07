@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/coursehandwriting.css";
-import point from "../Assets/courses-img/checkpoint.png";
-import handwritingImage from "../Assets/courses-img/coursehandwriting.png";
+import point from "../Assets/courses-img/checkpoint.webp";
+import handwritingImage from "../Assets/courses-img/coursehandwriting.webp";
 
 const AbacusCourse = () => {
   return (

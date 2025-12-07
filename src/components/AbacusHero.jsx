@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/commoncourse.css";
-import courseabacus from "../Assets/courses-img/abacuscourse.png";
-import courseage from "../Assets/home-img/course-age.png";
-import coursetime from "../Assets/home-img/course-time.png";
-import courselevel from "../Assets/home-img/course-level.png";
+import courseabacus from "../Assets/courses-img/abacuscourse.webp";
+import courseage from "../Assets/home-img/course-age.webp";
+import coursetime from "../Assets/home-img/course-time.webp";
+import courselevel from "../Assets/home-img/course-level.webp";
 
 const AbacusHero = () => {
   return (

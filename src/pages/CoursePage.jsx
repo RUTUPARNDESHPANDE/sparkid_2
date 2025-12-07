@@ -3,6 +3,7 @@ import React from 'react';
 import Courseabacus from '../components/abacuscourse';
 import RubikCourse from '../components/rubikcourse';
 import ReadingCourse from '../components/readingcourse';
+import SpellingBeeCourse from '../components/spellingbeecourse';
 import QuestionSection from '../components/Question';
 //import Footer from '../components/Footer';
 import Coursehandwriting from '../components/coursehandwriting';
@@ -19,6 +20,7 @@ const CoursePage = () => {
       <RubikCourse />
       <Coursehandwriting />
       <ReadingCourse />
+      <SpellingBeeCourse />
       <QuestionSection />
     </div>
   );

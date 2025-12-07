@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/franchiseHero.css";
-import image from "../Assets/franchise-img/franchisehero.png";
+import image from "../Assets/franchise-img/franchisehero.webp";
 
 const franchisehero = () => {
   return (

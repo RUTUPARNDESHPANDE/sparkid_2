@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import point from "../Assets/courses-img/checkpoint.png";
+import point from "../Assets/courses-img/checkpoint.webp";
 import "../styles/AbacusOverview.css";
 
 const VedicOverview = () => {
@@ -46,14 +46,14 @@ const VedicOverview = () => {
               experience.
             </p>
             <h3 className="sub-title">
-              Unlock Your Child’s Hidden Mathematical Genius
+              Unlock Your Child's Hidden Mathematical Genius
             </h3>
             <p className="overview-description">
-              Unlock your child’s confidence in a subject most children fear — math.
+              Unlock your child's confidence in a subject most children fear — math.
               Many parents worry when their child struggles with numbers, loses confidence, or starts
-              believing “math is not for me.” Our Vedic Math program gently removes that fear by showing
-              children how powerful and capable they truly are. With every new technique, they experience
-              small victories that rebuild confidence from the inside out. This is more than a math class — it’s
+              believing "math is not for me."Our Vedic Math program gently removes that fear by showing
+              children how powerful and capable they truly are.With every new technique, they experience
+              small victories that rebuild confidence from the inside out.This is more than a math class — it's
               a transformation that helps them think faster, trust themselves, and perform better in every
               subject.
             </p>
@@ -131,19 +131,19 @@ const VedicOverview = () => {
                   </ul>
                   <h4 className="dropdown-subtitle">Learning Methodology</h4>
                   <p className="dropdown-course-info">
-                    <span>Hands-on practice:</span> through real-life examples
+                    <span>Hands-on practice:</span> Using simple examples to introduce core Vedic techniques.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Story-based explanation:</span> of Sutras
+                    <span>Story-based explanation:</span> Helping children understand Sutras through relatable scenarios.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Worksheets:</span> for daily reinforcement
+                    <span>Concept worksheets:</span> Daily exercises to build comfort with mental calculations.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Live demonstrations:</span> and guided practice
+                    <span>Live demonstrations:</span> Step-by-step solving of basic arithmetic using Vedic methods.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Parent updates:</span> for home practice support
+                    <span>Parent updates:</span> Regular progress notes with easy home-practice guidance.
                   </p>
                 </div>
               )}
@@ -195,19 +195,19 @@ const VedicOverview = () => {
                   </ul>
                   <h4 className="dropdown-subtitle">Learning Methodology</h4>
                   <p className="dropdown-course-info">
-                    <span>Step-by-step application:</span> of advanced Sutras
+                    <span>Hands-on practice:</span> Applying Vedic methods to multi-digit calculations.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Interactive classroom practice:</span>
+                    <span>Technique breakdown:</span> Clear explanation of each Sutra for deeper understanding.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Mental visualization exercises:</span>
+                    <span>Skill worksheets:</span> Targeted practice to improve speed and accuracy.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Speed-based challenges:</span> for confidence
+                    <span>Guided demonstrations:</span> Real-time walkthroughs for squares, cubes, and roots.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Workbook-based structured learning:</span>
+                    <span>Parent updates:</span> Progress tracking and home-support tips.
                   </p>
                 </div>
               )}
@@ -259,19 +259,19 @@ const VedicOverview = () => {
                   </ul>
                   <h4 className="dropdown-subtitle">Learning Methodology</h4>
                   <p className="dropdown-course-info">
-                    <span>Practice:</span> with competitive exam-style questions
+                    <span>Hands-on practice:</span> Solving advanced arithmetic and algebra using Vedic rules.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Time-bound:</span> problem-solving sessions
+                    <span>Concept reinforcement:</span> Structured review to strengthen higher-level Sutra usage.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Advanced visual logic exercises:</span>
+                    <span>Application worksheets:</span> Problem sets focused on exam-style questions.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Mentorship:</span> for accuracy & speed development
+                    <span>Guided demonstrations:</span> Simplifying complex problems using Vedic shortcuts.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Regular assessment:</span> with feedback
+                    <span>Parent updates:</span> Insights on exam-readiness and practice strategies.
                   </p>
                 </div>
               )}
@@ -302,22 +302,26 @@ const VedicOverview = () => {
             </h3>
             <ul className="key-skills-list">
               <li>
-                <span>Speed & Accuracy:</span> Children learn the fastest ways to perform operations, reducing dependency on calculators.
+                <span>Speed & Accuracy:</span>
+                Children learn the fastest ways to perform operations, reducing dependency on calculators.
                 <br />
                 <span>Result:</span> Improved exam performance and confidence.
               </li>
               <li>
-                <span>Logical Reasoning:</span> Sutras teach pattern-based thinking instead of memorization.
+                <span>Logical Reasoning:</span>
+                Sutras teach pattern-based thinking instead of memorization.
                 <br />
                 <span>Result:</span> Better problem-solving in mathematics and science.
               </li>
               <li>
-                <span>Memory Power:</span> Consistent practice strengthens retention of concepts and methods.
+                <span>Memory Power:</span>
+                Consistent practice strengthens retention of concepts and methods.
                 <br />
                 <span>Result:</span> Enhanced academic performance across subjects.
               </li>
               <li>
-                <span>Mental Agility:</span> Students learn to think flexibly and respond faster during timed tests.
+                <span>Mental Agility:</span>
+                Students learn to think flexibly and respond faster during timed tests.
                 <br />
                 <span>Result:</span> Better performance in competitive exams.
               </li>

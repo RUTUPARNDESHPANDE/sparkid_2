@@ -11,6 +11,11 @@ Use these code blocks directly in your Google Apps Script editor. Make sure to:
 ## 1. Contact Form Script
 
 ```javascript
+function doGet(e) {
+  return ContentService.createTextOutput('Contact Form Web App is running. Use POST to submit data.')
+    .setMimeType(ContentService.MimeType.TEXT);
+}
+
 function doPost(e) {
   try {
     const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
@@ -28,12 +33,10 @@ function doPost(e) {
     sheet.appendRow(row);
     
     return ContentService.createTextOutput(JSON.stringify({success: true}))
-      .setMimeType(ContentService.MimeType.JSON)
-      .setHeaders({'Access-Control-Allow-Origin': '*'});
+      .setMimeType(ContentService.MimeType.JSON);
   } catch (error) {
     return ContentService.createTextOutput(JSON.stringify({success: false, error: error.toString()}))
-      .setMimeType(ContentService.MimeType.JSON)
-      .setHeaders({'Access-Control-Allow-Origin': '*'});
+      .setMimeType(ContentService.MimeType.JSON);
   }
 }
 ```
@@ -43,6 +46,11 @@ function doPost(e) {
 ## 2. Question Form Script
 
 ```javascript
+function doGet(e) {
+  return ContentService.createTextOutput('Question Form Web App is running. Use POST to submit data.')
+    .setMimeType(ContentService.MimeType.TEXT);
+}
+
 function doPost(e) {
   try {
     const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
@@ -56,12 +64,10 @@ function doPost(e) {
     sheet.appendRow(row);
     
     return ContentService.createTextOutput(JSON.stringify({success: true}))
-      .setMimeType(ContentService.MimeType.JSON)
-      .setHeaders({'Access-Control-Allow-Origin': '*'});
+      .setMimeType(ContentService.MimeType.JSON);
   } catch (error) {
     return ContentService.createTextOutput(JSON.stringify({success: false, error: error.toString()}))
-      .setMimeType(ContentService.MimeType.JSON)
-      .setHeaders({'Access-Control-Allow-Origin': '*'});
+      .setMimeType(ContentService.MimeType.JSON);
   }
 }
 ```
@@ -71,6 +77,11 @@ function doPost(e) {
 ## 3. Job Application Script (with File Upload)
 
 ```javascript
+function doGet(e) {
+  return ContentService.createTextOutput('Job Application Web App is running. Use POST to submit data.')
+    .setMimeType(ContentService.MimeType.TEXT);
+}
+
 function doPost(e) {
   try {
     const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
@@ -121,12 +132,10 @@ function doPost(e) {
     sheet.appendRow(row);
     
     return ContentService.createTextOutput(JSON.stringify({success: true}))
-      .setMimeType(ContentService.MimeType.JSON)
-      .setHeaders({'Access-Control-Allow-Origin': '*'});
+      .setMimeType(ContentService.MimeType.JSON);
   } catch (error) {
     return ContentService.createTextOutput(JSON.stringify({success: false, error: error.toString()}))
-      .setMimeType(ContentService.MimeType.JSON)
-      .setHeaders({'Access-Control-Allow-Origin': '*'});
+      .setMimeType(ContentService.MimeType.JSON);
   }
 }
 ```

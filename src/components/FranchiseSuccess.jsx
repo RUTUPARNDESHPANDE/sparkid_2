@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/franchisesuccess.css";
-import franchisesuccess1 from "../Assets/franchise-img/franchisesuccess1.png";
+import franchisesuccess1 from "../Assets/franchise-img/franchisesuccess1.webp";
 import Slider from "react-slick";
 
 const FranchiseSlider = () => {

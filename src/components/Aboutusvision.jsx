@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/aboutusvision.css"; 
-import visionbg from "../Assets/about-img/visionbg.png";
-import vision1 from "../Assets/about-img/vision1.png";
-import vision2 from "../Assets/about-img/vision2.png";
-import vision3 from "../Assets/about-img/vision3.png";
+import visionbg from "../Assets/about-img/visionbg.webp";
+import vision1 from "../Assets/about-img/vision1.webp";
+import vision2 from "../Assets/about-img/vision2.webp";
+import vision3 from "../Assets/about-img/vision3.webp";
 const MissionVision = () => {
   return (
     <div className="f-our-vision-container">

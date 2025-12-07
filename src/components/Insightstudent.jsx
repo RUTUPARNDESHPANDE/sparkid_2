@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Insightstudent.css"; 
-import studentImage from "../Assets/courses-img/rubikcourse.png"; 
+import studentImage from "../Assets/courses-img/rubikcourse.webp"; 
 
 const StudentsAchievements = () => {
   const students = [

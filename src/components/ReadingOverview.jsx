@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/AbacusOverview.css"; // Using the same CSS file
-import point from "../Assets/courses-img/checkpoint.png"; // Importing the image
+import point from "../Assets/courses-img/checkpoint.webp"; // Importing the image
 
 const ReadingOverview = () => {
   const [activeTab, setActiveTab] = useState("overview");
@@ -34,48 +34,55 @@ const ReadingOverview = () => {
       <div className="content-card">
         {activeTab === "overview" && (
           <div className="overview-content">
-            <h2 className="main-title">What is the Reading Program?</h2>
+            <h2 className="main-title">Why Reading Is Essential</h2>
             <p className="overview-description">
-              Reading is the foundation of all learning. Our Reading Program is designed to help children move
-              beyond simple decoding to deep comprehension and fluency. We use a structured phonics-based
-              approach combined with interactive storytelling to make reading enjoyable. Whether your child is a
-              beginner or looking to improve vocabulary and speed, this program builds the skills needed for
-              academic success and a lifelong love for books.
+              Reading is the cornerstone of all learning, impacting academic success in every subject.
+              Our program strengthens phonics, comprehension, fluency, and expression through structured
+              and interactive reading methods.
+              Children learn to absorb information faster, visualize stories better, and understand text at
+              deeper levels.
+              Regular guided reading builds confidence in both independent learning and classroom
+              participation.
+              This program creates a lifelong love for reading, curiosity, and knowledge.
             </p>
             <h3 className="sub-title">
-              Unlock the World of Knowledge for Your Child
+              Unlock Your Child's Fluency, Comprehension & Learning Ability
             </h3>
             <p className="overview-description">
-              A child who reads well learns well.
-              Reading is not just about saying words aloud; it’s about understanding ideas, expanding imagination,
-              and building a rich vocabulary.
-              Our program helps children overcome reading struggles, hesitation, and lack of interest.
-              Through engaging stories and structured practice, we turn reluctant readers into confident book
-              lovers.
-              Strong reading skills open doors to better grades, clearer communication, and endless creativity.
+              Unlock your child's reading confidence through a structured approach that builds phonics,
+              fluency, and understanding.
+              With guided practice, children learn to read smoothly, interpret text accurately, and express
+              ideas clearly.
+              These skills significantly improve performance in all academic subjects that rely on reading
+              comprehension.
+              Regular reading sessions enhance focus, memory, and independent learning habits.
+              This foundation nurtures a lifelong interest in reading, knowledge, and curiosity.
             </p>
-            <h3 className="sub-title">Skills Enhanced Through Our Program</h3>
+            <h3 className="sub-title">Skills Enhanced Through Reading</h3>
             <ul className="benefits-list">
               <li>
-                <img src={point} alt="Checkpoint" /> Fluent and expressive reading
+                <img src={point} alt="Checkpoint" /> Reading fluency & speed
               </li>
               <li>
-                <img src={point} alt="Checkpoint" /> Strong vocabulary and grammar usage
+                <img src={point} alt="Checkpoint" /> Strong vocabulary and language understanding
               </li>
               <li>
-                <img src={point} alt="Checkpoint" /> Improved reading comprehension
+                <img src={point} alt="Checkpoint" /> Improved comprehension & interpretation
               </li>
               <li>
-                <img src={point} alt="Checkpoint" /> Correct pronunciation and diction
+                <img src={point} alt="Checkpoint" /> Better memory retention
               </li>
               <li>
-                <img src={point} alt="Checkpoint" /> Enhanced focus and imagination
+                <img src={point} alt="Checkpoint" /> Greater focus & attention span
               </li>
               <li>
-                <img src={point} alt="Checkpoint" /> Confidence in public speaking/reading
+                <img src={point} alt="Checkpoint" /> Confidence in academic reading
               </li>
               <li>
-                <img src={point} alt="Checkpoint" /> Better academic performance in all subjects
+                <img src={point} alt="Checkpoint" /> Improved imagination & creativity
+              </li>
+              <li>
+                <img src={point} alt="Checkpoint" /> Enhanced communication skills
               </li>
             </ul>
           </div>
@@ -92,51 +99,54 @@ const ReadingOverview = () => {
                   fontWeight: "bold",
                 }}
               >
-                <h3>1. Phonics & Fluency (Foundation Level)</h3>
+                <h3>1. Akshara Arambha — Beginner Reading</h3>
                 <span>{expandedSection === "level1" ? "-" : "+"}</span>
               </div>
               {expandedSection === "level1" && (
                 <div className="dropdown-content">
                   <p className="dropdown-course-info">
-                    <span>Eligibility:</span> 4 to 6 Years
+                    <span>Eligibility:</span> Ages 4–6
                   </p>
                   <p className="dropdown-course-info">
                     <span>Duration:</span> 3 Months
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Focus:</span> Sounds, Blending & Simple Words
+                    <span>Focus:</span> Phonics, Basic Reading & Letter Sounds
                   </p>
                   <p className="dropdown-description">
-                    This level introduces children to letter sounds (phonics) rather than just letter names. They learn
-                    to blend sounds to form words and read simple sentences with confidence.
+                    Young learners begin their reading journey through phonics, sound blending, and recognition of
+                    sight words. They gradually move from letters to words and early sentences.
                   </p>
                   <h4 className="dropdown-subtitle">Key Skills Developed</h4>
                   <ul className="benefits-list">
                     <li>
-                      <img src={point} alt="Checkpoint" /> Letter-sound recognition
+                      <img src={point} alt="Checkpoint" /> Understanding letter sounds & phonics
                     </li>
                     <li>
-                      <img src={point} alt="Checkpoint" /> Blending sounds to read words (CVC words)
+                      <img src={point} alt="Checkpoint" /> Blending sounds to form words
                     </li>
                     <li>
-                      <img src={point} alt="Checkpoint" /> Sight word recognition
+                      <img src={point} alt="Checkpoint" /> Reading simple sentences
                     </li>
                     <li>
-                      <img src={point} alt="Checkpoint" /> Basic sentence reading
+                      <img src={point} alt="Checkpoint" /> Recognizing sight words
                     </li>
                   </ul>
                   <h4 className="dropdown-subtitle">Learning Methodology</h4>
                   <p className="dropdown-course-info">
-                    <span>Phonics games & songs:</span>
+                    <span>Phonics instruction:</span> Strengthening foundational reading sounds.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Flashcards:</span> for sight words
+                    <span>Sight-word practice:</span> Building instant recognition of common words.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Storytelling sessions:</span>
+                    <span>Guided reading:</span> Slow-paced reading sessions to build fluency.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Reading aloud practice:</span>
+                    <span>Story comprehension:</span> Using short stories to improve understanding.
+                  </p>
+                  <p className="dropdown-course-info">
+                    <span>Parent updates:</span> Home-reading suggestions for practice.
                   </p>
                 </div>
               )}
@@ -152,51 +162,57 @@ const ReadingOverview = () => {
                   fontWeight: "bold",
                 }}
               >
-                <h3>2. Comprehension & Vocabulary (Intermediate Level)</h3>
+                <h3>2. Patha Vegam — Fluency Level</h3>
                 <span>{expandedSection === "level2" ? "-" : "+"}</span>
               </div>
               {expandedSection === "level2" && (
                 <div className="dropdown-content">
                   <p className="dropdown-course-info">
-                    <span>Eligibility:</span> 7 to 9 Years
+                    <span>Eligibility:</span> Age 6+
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Duration:</span> 3 Months
+                    <span>Duration:</span> 4 Months
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Focus:</span> Understanding & Expression
+                    <span>Focus:</span> Speed, Expression, Vocabulary & Comprehension
                   </p>
                   <p className="dropdown-description">
-                    Students move from learning to read to reading to learn. They focus on understanding the
-                    meaning of texts, answering questions, and expanding their vocabulary.
+                    Once children understand basic reading patterns, they move into fluency training—reading with
+                    speed, clarity, and expression while also learning vocabulary and comprehension.
                   </p>
                   <h4 className="dropdown-subtitle">Key Skills Developed</h4>
                   <ul className="benefits-list">
                     <li>
-                      <img src={point} alt="Checkpoint" /> Understanding story context and details
+                      <img src={point} alt="Checkpoint" /> Improved reading speed & smoothness
                     </li>
                     <li>
-                      <img src={point} alt="Checkpoint" /> Learning new vocabulary and usage
+                      <img src={point} alt="Checkpoint" /> Better expression & tone
                     </li>
                     <li>
-                      <img src={point} alt="Checkpoint" /> Answering comprehension questions
+                      <img src={point} alt="Checkpoint" /> Vocabulary enrichment
                     </li>
                     <li>
-                      <img src={point} alt="Checkpoint" /> Expressive reading with intonation
+                      <img src={point} alt="Checkpoint" /> Strong comprehension (main idea, theme, context)
+                    </li>
+                    <li>
+                      <img src={point} alt="Checkpoint" /> Reading for exams and understanding questions
                     </li>
                   </ul>
                   <h4 className="dropdown-subtitle">Learning Methodology</h4>
                   <p className="dropdown-course-info">
-                    <span>Interactive story discussions:</span>
+                    <span>Fluency drills:</span> Exercises to improve reading speed and expression.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Vocabulary building exercises:</span>
+                    <span>Comprehension practice:</span> Activities to develop deeper understanding.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Role-playing characters:</span>
+                    <span>Vocabulary building:</span> Introducing new words through stories.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Worksheets:</span> on comprehension
+                    <span>Group reading:</span> Sessions that build confidence and clarity.
+                  </p>
+                  <p className="dropdown-course-info">
+                    <span>Parent updates:</span> Reading routines recommended for home.
                   </p>
                 </div>
               )}
@@ -212,51 +228,57 @@ const ReadingOverview = () => {
                   fontWeight: "bold",
                 }}
               >
-                <h3>3. Advanced Reading & Analysis (Advanced Level)</h3>
+                <h3>3. Patha Vegam — Fluency Level</h3>
                 <span>{expandedSection === "level3" ? "-" : "+"}</span>
               </div>
               {expandedSection === "level3" && (
                 <div className="dropdown-content">
                   <p className="dropdown-course-info">
-                    <span>Eligibility:</span> 10 Years & Above
+                    <span>Eligibility:</span> Age 6+
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Duration:</span> 3 Months
+                    <span>Duration:</span> 4 Months
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Focus:</span> Critical Thinking & Speed Reading
+                    <span>Focus:</span> Speed, Expression, Vocabulary & Comprehension
                   </p>
                   <p className="dropdown-description">
-                    At this level, students engage with complex texts, articles, and novels. They learn to analyze
-                    content, summarize ideas, and read at a faster pace without losing understanding.
+                    Once children understand basic reading patterns, they move into fluency training—reading with
+                    speed, clarity, and expression while also learning vocabulary and comprehension.
                   </p>
                   <h4 className="dropdown-subtitle">Key Skills Developed</h4>
                   <ul className="benefits-list">
                     <li>
-                      <img src={point} alt="Checkpoint" /> Critical analysis of text
+                      <img src={point} alt="Checkpoint" /> Improved reading speed & smoothness
                     </li>
                     <li>
-                      <img src={point} alt="Checkpoint" /> Summarizing and paraphrasing skills
+                      <img src={point} alt="Checkpoint" /> Better expression & tone
                     </li>
                     <li>
-                      <img src={point} alt="Checkpoint" /> Speed reading techniques
+                      <img src={point} alt="Checkpoint" /> Vocabulary enrichment
                     </li>
                     <li>
-                      <img src={point} alt="Checkpoint" /> Advanced vocabulary and grammar
+                      <img src={point} alt="Checkpoint" /> Strong comprehension (main idea, theme, context)
+                    </li>
+                    <li>
+                      <img src={point} alt="Checkpoint" /> Reading for exams and understanding questions
                     </li>
                   </ul>
                   <h4 className="dropdown-subtitle">Learning Methodology</h4>
                   <p className="dropdown-course-info">
-                    <span>Book reviews and discussions:</span>
+                    <span>Fluency drills:</span> Exercises to improve reading speed and expression.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Debates based on reading material:</span>
+                    <span>Comprehension practice:</span> Activities to develop deeper understanding.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Speed reading drills:</span>
+                    <span>Vocabulary building:</span> Introducing new words through stories.
                   </p>
                   <p className="dropdown-course-info">
-                    <span>Creative writing:</span> linked to reading
+                    <span>Group reading:</span> Sessions that build confidence and clarity.
+                  </p>
+                  <p className="dropdown-course-info">
+                    <span>Parent updates:</span> Reading routines recommended for home.
                   </p>
                 </div>
               )}
@@ -268,47 +290,63 @@ const ReadingOverview = () => {
           <div className="details-content">
             <h2 className="main-title">The Science Behind Reading Training</h2>
             <p className="overview-description">
-              Reading is a whole-brain activity:
+              Reading activates multiple areas of the brain:
             </p>
             <ul className="dropdown-course-info">
               <li>
-                <span>Visual Cortex:</span> Recognizes letters and words.
+                <span>Visual Processing:</span> Recognizing letters and words
               </li>
               <li>
-                <span>Broca’s Area:</span> Processes speech sounds and articulation.
+                <span>Phonological Awareness:</span> Connecting sounds to letters
               </li>
               <li>
-                <span>Wernicke’s Area:</span> Decodes meaning and comprehension.
+                <span>Language Processing:</span> Understanding meaning
+              </li>
+              <li>
+                <span>Memory & Retrieval:</span> Remembering words and concepts
+              </li>
+              <li>
+                <span>Cognitive Skills:</span> Analyzing and interpreting text
               </li>
             </ul>
             <p className="overview-description">
-              Regular reading strengthens the connections between these areas, improving overall brain function
-              and intelligence.
+              Strong reading skills improve academic success across subjects like science, math word
+              problems, social studies, and languages.
             </p>
 
             <h3 className="sub-title">
-              Key Skills Enhanced Through Reading Training
+              Key Skills Enhanced Through Reading
             </h3>
             <ul className="key-skills-list">
               <li>
-                <span>Cognitive Development:</span> Reading stimulates mental growth and new neural connections.
+                <span>Reading Fluency:</span>
+                Reading smoothly and quickly improves comprehension.
                 <br />
-                <span>Result:</span> Smarter thinking and better problem-solving.
+                <span>Result:</span> Better focus, faster learning, and improved academic performance.
               </li>
               <li>
-                <span>Focus & Concentration:</span> Getting lost in a story trains the brain to focus for long periods.
+                <span>Vocabulary Development:</span>
+                Children learn new words naturally through reading.
                 <br />
-                <span>Result:</span> Improved attention span in class.
+                <span>Result:</span> Stronger communication and writing skills.
               </li>
               <li>
-                <span>Empathy & Emotional Intelligence:</span> Reading stories helps children understand different perspectives.
+                <span>Comprehension Skills:</span>
+                Students learn to understand meaning, themes, and ideas.
                 <br />
-                <span>Result:</span> Better social skills and emotional maturity.
+                <span>Result:</span> Better marks in language and comprehension-based exams.
               </li>
               <li>
-                <span>Language Mastery:</span> Constant exposure to good language improves speaking and writing.
+                <span>Memory & Retention:</span>
+                Story-based learning boosts long-term recall.
                 <br />
-                <span>Result:</span> Excellent communication skills.
+                <span>Result:</span> Stronger performance in all academic areas.
+              </li>
+              <li>
+                <span>Confidence in Reading Aloud:</span>
+                Regular guided reading builds confidence.
+                <br />
+                <span>Result:</span> Better participation in class and improved speaking skills.
               </li>
             </ul>
           </div>
@@ -320,49 +358,45 @@ const ReadingOverview = () => {
             <h4 className="dropdown-subtitle">1. Academic Excellence </h4>
             <ul className="dropdown-course-info">
               <li>
-                Better understanding of all subjects (History, Science, etc.)
+                Improves performance in all subjects
               </li>
               <li>
-                Higher scores in language and literature exams
+                Strengthens comprehension for exam passages
               </li>
               <li>
-                Stronger essay writing skills
-              </li>
-            </ul>
-            <h4 className="dropdown-subtitle">2. Cognitive Growth </h4>
-            <ul className="dropdown-course-info">
-              <li>
-                Enhanced memory and retention
-              </li>
-              <li>
-                Improved critical thinking
-              </li>
-              <li>
-                Faster information processing
+                Enhances writing, grammar, and vocabulary
               </li>
             </ul>
-            <h4 className="dropdown-subtitle">3. Communication Skills </h4>
+            <h4 className="dropdown-subtitle">2. Competitive Edge </h4>
+            <p className="dropdown-course-info">Students gain confidence for:</p>
+            <ul className="dropdown-course-info">
+              <li>Storytelling competitions</li>
+              <li>Reading challenges</li>
+              <li>Language Olympiads</li>
+            </ul>
+            <h4 className="dropdown-subtitle">3. Lifelong Skills </h4>
             <ul className="dropdown-course-info">
               <li>
-                Articulate speaking abilities
+                Clear communication
               </li>
               <li>
-                Rich vocabulary for expression
+                Strong imagination & creativity
               </li>
               <li>
-                Confidence in social interactions
+                Better focus and attention span
+              </li>
+              <li>
+                Independent learning skills
               </li>
             </ul>
-            <h4 className="dropdown-subtitle">4. Lifelong Learning </h4>
+            <h4 className="dropdown-subtitle">4. Future Readiness </h4>
             <ul className="dropdown-course-info">
               <li>
-                A habit of self-education
+                Strong reading foundation supports careers in writing, communication, science, law, and
+                technology
               </li>
               <li>
-                Access to global knowledge and ideas
-              </li>
-              <li>
-                Stress relief and relaxation through books
+                Enhances the ability to understand complex texts and concepts
               </li>
             </ul>
           </div>
@@ -373,3 +407,4 @@ const ReadingOverview = () => {
 };
 
 export default ReadingOverview;
+

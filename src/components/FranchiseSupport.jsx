@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/franchisesupport.css"; 
-import girlImage from "../Assets/franchise-img/franchisesupport.png";
-import point from "../Assets/courses-img/checkpoint.png";
+import girlImage from "../Assets/franchise-img/franchisesupport.webp";
+import point from "../Assets/courses-img/checkpoint.webp";
 const FranchiseSupport = () => {
   return (
     <section className="support">

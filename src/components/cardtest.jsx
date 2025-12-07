@@ -1,12 +1,12 @@
 import React from "react";
 import Slider from "react-slick";
-import courseimg1 from "../Assets/home-img/courseimg1.png";
-import courseage from "../Assets/home-img/course-age.png";
-import coursetime from "../Assets/home-img/course-time.png";
-import courselevel from "../Assets/home-img/course-level.png";
-import courserate from "../Assets/home-img/course-rate.png";
-import courseLearnMore from "../Assets/home-img/course-learnmore.png";
-import learnmorebulb from "../Assets/home-img/learnmorebulb.png";
+import courseimg1 from "../Assets/home-img/courseimg1.webp";
+import courseage from "../Assets/home-img/course-age.webp";
+import coursetime from "../Assets/home-img/course-time.webp";
+import courselevel from "../Assets/home-img/course-level.webp";
+import courserate from "../Assets/home-img/course-rate.webp";
+import courseLearnMore from "../Assets/home-img/course-learnmore.webp";
+import learnmorebulb from "../Assets/home-img/learnmorebulb.webp";
 import CourseCard from "./CourseCard"; // Your CourseCard component
 
 const CourseList = () => {

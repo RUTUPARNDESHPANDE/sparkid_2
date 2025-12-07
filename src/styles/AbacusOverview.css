@@ -4,7 +4,7 @@
 }
 
 .tab-header {
-  gap: 40px;
+  gap: 60px;
   background: none;
   border-bottom: 2px solid rgba(238, 238, 238, 0.3);
   margin-left: -15rem;
@@ -301,6 +301,224 @@
   }
 
   .dropdown-header h3 {
+    font-size: 18px;
+  }
+}
+
+/* Specific fix for 1024px */
+@media (max-width: 1024px) {
+  .page-container {
+    margin: 2rem 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .tab-header {
+    padding: 15px 20px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    gap: 25px;
+  }
+
+  .tab-button {
+    font-size: 18px;
+    padding: 0.6rem 0.8rem;
+    white-space: nowrap;
+  }
+
+  .content-card {
+    width: 100%;
+    max-width: calc(100% - 3rem);
+    padding: 2.5rem 2rem;
+    margin-left: 0;
+    box-sizing: border-box;
+  }
+
+  .main-title,
+  .sub-title {
+    font-size: 26px;
+  }
+
+  .overview-description {
+    font-size: 18px;
+    width: 100%;
+    line-height: 1.6;
+  }
+
+  .benefits-list {
+    margin: 2rem 0;
+  }
+
+  .benefits-list li {
+    font-size: 18px;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+
+  .benefits-list img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  .dropdown-header {
+    padding: 15px;
+  }
+
+  .dropdown-header h3 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .dropdown-content {
+    padding: 1rem;
+    font-size: 18px;
+  }
+
+  .dropdown-subtitle {
+    font-size: 20px;
+    margin-bottom: 0.8rem;
+  }
+
+  .dropdown-course-info {
+    font-size: 18px;
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .key-skills-list,
+  .brain-activation-list {
+    font-size: 18px;
+  }
+
+  .key-skills-list li,
+  .brain-activation-list li {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+/* Specific fix for 768px */
+@media (max-width: 768px) {
+  .page-container {
+    margin: 1.5rem 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .tab-header {
+    padding: 12px 10px;
+    margin-left: 0;
+    margin-bottom: 15px;
+    gap: 15px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tab-header::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .tab-header::-webkit-scrollbar-thumb {
+    background: var(--primary-orange);
+    border-radius: 2px;
+  }
+
+  .tab-button {
+    font-size: 14px;
+    padding: 0.5rem 0.6rem;
+    white-space: nowrap;
+    min-width: fit-content;
+  }
+
+  .content-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 1.5rem;
+    margin-left: 0;
+    box-sizing: border-box;
+  }
+
+  .main-title,
+  .sub-title {
+    font-size: 22px;
+    margin-bottom: 0.8rem;
+  }
+
+  .overview-description {
+    font-size: 16px;
+    width: 100%;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+  }
+
+  .benefits-list {
+    margin: 1.5rem 0;
+    line-height: 32px;
+  }
+
+  .benefits-list li {
+    font-size: 16px;
+    gap: 8px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+  }
+
+  .benefits-list img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  .dropdown-header {
+    padding: 12px;
+  }
+
+  .dropdown-header h3 {
+    font-size: 16px;
+    line-height: 1.4;
+    word-wrap: break-word;
+  }
+
+  .dropdown-header span {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+
+  .dropdown-content {
+    padding: 0.8rem;
+    font-size: 16px;
+  }
+
+  .dropdown-subtitle {
+    font-size: 18px;
+    margin-bottom: 0.6rem;
+  }
+
+  .dropdown-course-info {
+    font-size: 16px;
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+  }
+
+  .key-skills-list,
+  .brain-activation-list {
+    font-size: 16px;
+    margin: 0.8rem 0;
+  }
+
+  .key-skills-list li,
+  .brain-activation-list li {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+  }
+
+  .opportunity-list {
+    font-size: 16px;
+  }
+
+  .level-detail span {
     font-size: 18px;
   }
 }

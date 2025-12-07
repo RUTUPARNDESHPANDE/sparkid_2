@@ -1,12 +1,12 @@
 import React from "react";
 import "../styles/home-abt.css";
 import { Link } from "react-router-dom";
-import Image from "../Assets/home-img/img.png";
-import dots from "../Assets/home-img/dots.png";
-import card1 from "../Assets/home-img/card1.png";
-import card2 from "../Assets/home-img/card2.png";
-import card3 from "../Assets/home-img/card3.png";
-import bgofimage from "../Assets/home-img/bgofimage.png";
+import Image from "../Assets/home-img/img.webp";
+import dots from "../Assets/home-img/dots.webp";
+import card1 from "../Assets/home-img/card1.webp";
+import card2 from "../Assets/home-img/card2.webp";
+import card3 from "../Assets/home-img/card3.webp";
+import bgofimage from "../Assets/home-img/bgofimage.webp";
 
 
 const AboutUs = () => {

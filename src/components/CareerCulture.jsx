@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/CareerCulture.css";
-import checkIcon from "../Assets/courses-img/checkpoint.png";
+import checkIcon from "../Assets/courses-img/checkpoint.webp";
 
 const CareerCulture = () => {
   return (

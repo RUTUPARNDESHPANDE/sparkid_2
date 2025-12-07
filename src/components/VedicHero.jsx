@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styles/commoncourse.css"; 
-import coursevedic from "../Assets/courses-img/coursevedic.png";
-import courseage from "../Assets/home-img/course-age.png";
-import coursetime from "../Assets/home-img/course-time.png";
-import courselevel from "../Assets/home-img/course-level.png";
+import coursevedic from "../Assets/courses-img/coursevedic.webp";
+import courseage from "../Assets/home-img/course-age.webp";
+import coursetime from "../Assets/home-img/course-time.webp";
+import courselevel from "../Assets/home-img/course-level.webp";
 
 const VedicHero = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -33,10 +33,12 @@ const VedicHero = () => {
   }, []);
 
   const getImageStyles = () => {
-    if (screenWidth >= 768) {
+    if (screenWidth >= 1025) {
       return { width: "419px", height: "542px" };
-    } else if (screenWidth >= 426 && screenWidth < 768) {
-      return { width: "313px", height: "387px" };
+    } else if (screenWidth >= 769 && screenWidth <= 1024) {
+      return { width: "380px", height: "auto" };
+    } else if (screenWidth >= 426 && screenWidth <= 768) {
+      return { width: "320px", height: "auto" };
     } else if (screenWidth >= 375 && screenWidth <= 425) {
       return { width: "303px", height: "355px" };
     } else if (screenWidth >= 321 && screenWidth <= 375) {

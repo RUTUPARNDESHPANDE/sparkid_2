@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/aboutusculture.css"; 
-import culture from "../Assets/about-img/aboutusculture.png";
-import point from "../Assets/courses-img/checkpoint.png";
+import culture from "../Assets/about-img/aboutusculture.webp";
+import point from "../Assets/courses-img/checkpoint.webp";
 const Culture = () => {
   return (
     <div className="our-culture">

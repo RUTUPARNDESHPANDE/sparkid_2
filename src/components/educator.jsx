@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import '../styles/educator.css';
-import Educators from '../Assets/home-img/educators.png';
-import Shape from '../Assets/home-img/edushape.png';
+import Educators from '../Assets/home-img/educators.webp';
+import Shape from '../Assets/home-img/edushape.webp';
 
 const Educator = () => {
   return (
@@ -28,9 +28,9 @@ const Educator = () => {
           <h1 className="educator-heading">
             Sparking Aspiring <br/><span className="highlight-text">Womens to Empower</span>
           </h1>
-          <p className="educator-description">
+          <div className="educator-description">
             <h3>Education to transform lives <br/>and create a brighter future.</h3>
-          </p>
+          </div>
           <Link to='/careers' className="educator-button">Know more</Link>
         </div>
         </div>

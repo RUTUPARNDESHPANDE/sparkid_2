@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import '../styles/InsightGallery.css';
 
 // Importing images
-import sight1 from '../Assets/home-img/image1.png';
-import sight2 from '../Assets/home-img/image2.png';
-import sight3 from '../Assets/home-img/image3.png';
-import sight4 from '../Assets/home-img/image4.png';
-import sight5 from '../Assets/home-img/image5.png';
-import sight6 from '../Assets/home-img/image6.png';
-import sight7 from '../Assets/home-img/image7.png';
-import sight9 from '../Assets/home-img/image9.png';
+import sight1 from '../Assets/home-img/image1.webp';
+import sight2 from '../Assets/home-img/image2.webp';
+import sight3 from '../Assets/home-img/image3.webp';
+import sight4 from '../Assets/home-img/image4.webp';
+import sight5 from '../Assets/home-img/image5.webp';
+import sight6 from '../Assets/home-img/image6.webp';
+import sight7 from '../Assets/home-img/image7.webp';
+import sight9 from '../Assets/home-img/image9.webp';
 
 const Gallery = () => {
   // Upper and Lower Images

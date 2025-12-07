@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/franchiseourstory.css";
-import story1 from "../Assets/franchise-img/franchisestory1.png"; // Add your icon paths
-import story2 from "../Assets/franchise-img/franchisestory2.png";
-import story3 from "../Assets/franchise-img/franchisestory3.png";
-import story4 from "../Assets/franchise-img/franchisestory4.png";
+import story1 from "../Assets/franchise-img/franchisestory1.webp"; // Add your icon paths
+import story2 from "../Assets/franchise-img/franchisestory2.webp";
+import story3 from "../Assets/franchise-img/franchisestory3.webp";
+import story4 from "../Assets/franchise-img/franchisestory4.webp";
 
 const timelineData = [
   {

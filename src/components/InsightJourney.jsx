@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/InsightJourney.css";
-import testimonialImage from "../Assets/insight-img/insightjourney.png";
+import testimonialImage from "../Assets/insight-img/insightjourney.webp";
 
 const cardsData = [
   { id: 1, title: "Ananya", subtitle: "Abacus", description: "Meet Ananya: From Struggling With Numbers to Winning Abacus Competitions." },

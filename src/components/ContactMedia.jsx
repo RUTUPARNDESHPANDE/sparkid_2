@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/ourstory.css";
-import yearIcon1 from "../Assets/about-img/ourstory1.png"; // Add your icon paths
-import yearIcon2 from "../Assets/about-img/ourstory2.png";
-import yearIcon3 from "../Assets/about-img/ourstory3.png";
-import yearIcon4 from "../Assets/about-img/ourstory4.png";
+import yearIcon1 from "../Assets/about-img/ourstory1.webp"; // Add your icon paths
+import yearIcon2 from "../Assets/about-img/ourstory2.webp";
+import yearIcon3 from "../Assets/about-img/ourstory3.webp";
+import yearIcon4 from "../Assets/about-img/ourstory4.webp";
 
 const timelineData = [
   {

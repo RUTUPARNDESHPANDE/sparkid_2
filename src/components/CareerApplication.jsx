@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/CareerApplication.css"; 
-import arrowImage from "../Assets/franchise-img/franchisearrow.png";
+import arrowImage from "../Assets/franchise-img/franchisearrow.webp";
 
 const steps = [
   {

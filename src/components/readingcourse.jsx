@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/readingcourse.css";
-import pointIcon from "../Assets/courses-img/checkpoint.png";
-import readingImage from "../Assets/courses-img/readingcourse.png";
+import pointIcon from "../Assets/courses-img/checkpoint.webp";
+import readingImage from "../Assets/courses-img/readingcourse.webp";
 
 const ReadingCourse = () => {
   return (

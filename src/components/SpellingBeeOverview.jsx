@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/AbacusOverview.css"; // Using the same CSS file
-import point from "../Assets/courses-img/checkpoint.png"; // Importing the image
+import point from "../Assets/courses-img/checkpoint.webp"; // Importing the image
 
 const SpellingBeeOverview = () => {
     const [activeTab, setActiveTab] = useState("overview");
@@ -34,49 +34,57 @@ const SpellingBeeOverview = () => {
             <div className="content-card">
                 {activeTab === "overview" && (
                     <div className="overview-content">
-                        <h2 className="main-title">What is the Spelling Bee Program?</h2>
+                        <h2 className="main-title">What is Spelling Bee Training?</h2>
                         <p className="overview-description">
-                            The Spelling Bee is not just a competition; it is a celebration of language. Our program is designed
-                            to help students master spelling, vocabulary, and pronunciation. We move beyond rote
-                            memorization to teach the rules of etymology (word origins), phonetics, and usage. Whether for
-                            school exams or international competitions, our training equips students with the linguistic tools to
-                            excel.
+                            Spelling Bee training builds strong linguistic foundations by integrating phonics, memory
+                            techniques, and vocabulary mastery.
+                            Children learn not only how to spell words, but also how they are formed, pronounced, and
+                            used in real language.
+                            The program enhances concentration, retention, listening skills, and stage confidence.
+                            Through engaging challenges and spelling strategies, students develop superior communication
+                            abilities.
+                            This training equips children for competitions while building valuable academic and lifelong
+                            language skills.
                         </p>
                         <h3 className="sub-title">
-                            Master the Art of Language
+                            Unlock Your Child's Vocabulary, Memory & Communication Skills
                         </h3>
                         <p className="overview-description">
-                            Words are power.
-                            A strong command of spelling and vocabulary allows children to express themselves clearly and
-                            confidently.
-                            Our Spelling Bee program transforms students into "word detectives" who understand how words are
-                            built.
-                            We focus on root words, prefixes, suffixes, and language patterns.
-                            This deep understanding helps them tackle even the most difficult words with ease, boosting their
-                            confidence in writing and public speaking.
+                            This program unlocks your child's ability to understand words deeply through phonics, patterns, and
+                            structured practice.
+                            Students build strong vocabulary, better pronunciation, and accurate spelling skills.
+                            The training improves memory retention, listening ability, and stage confidence through regular
+                            challenges.
+                            Children become more articulate and comfortable expressing themselves in academic and
+                            public settings.
+                            These skills strengthen language proficiency and prepare them for competitions and future
+                            communication demands.
                         </p>
-                        <h3 className="sub-title">Skills Enhanced Through Our Program</h3>
+                        <h3 className="sub-title">Skills Enhanced Through Spelling Bee</h3>
                         <ul className="benefits-list">
                             <li>
-                                <img src={point} alt="Checkpoint" /> Accurate spelling of complex words
+                                <img src={point} alt="Checkpoint" /> Strong vocabulary & word knowledge
                             </li>
                             <li>
-                                <img src={point} alt="Checkpoint" /> Extensive vocabulary growth
+                                <img src={point} alt="Checkpoint" /> Correct pronunciation and phonetic understanding
                             </li>
                             <li>
-                                <img src={point} alt="Checkpoint" /> Understanding of word origins (Etymology)
+                                <img src={point} alt="Checkpoint" /> Improved memory retention & recall
                             </li>
                             <li>
-                                <img src={point} alt="Checkpoint" /> Correct pronunciation and phonetics
+                                <img src={point} alt="Checkpoint" /> Confident public speaking and articulation
                             </li>
                             <li>
-                                <img src={point} alt="Checkpoint" /> Improved memory and recall
+                                <img src={point} alt="Checkpoint" /> Better listening skills
                             </li>
                             <li>
-                                <img src={point} alt="Checkpoint" /> Confidence under pressure
+                                <img src={point} alt="Checkpoint" /> Stronger reading & writing abilities
                             </li>
                             <li>
-                                <img src={point} alt="Checkpoint" /> Public speaking skills
+                                <img src={point} alt="Checkpoint" /> Enhanced focus and concentration
+                            </li>
+                            <li>
+                                <img src={point} alt="Checkpoint" /> Competitive spirit & stage presence
                             </li>
                         </ul>
                     </div>
@@ -93,51 +101,55 @@ const SpellingBeeOverview = () => {
                                     fontWeight: "bold",
                                 }}
                             >
-                                <h3>1. Word Wizard (Foundation Level)</h3>
+                                <h3>1. The Word Map — Foundation Level</h3>
                                 <span>{expandedSection === "level1" ? "-" : "+"}</span>
                             </div>
                             {expandedSection === "level1" && (
                                 <div className="dropdown-content">
                                     <p className="dropdown-course-info">
-                                        <span>Eligibility:</span> 5 to 7 Years
+                                        <span>Eligibility:</span> Ages 6–8
                                     </p>
                                     <p className="dropdown-course-info">
                                         <span>Duration:</span> 3 Months
                                     </p>
                                     <p className="dropdown-course-info">
-                                        <span>Focus:</span> Phonics & Common Words
+                                        <span>Focus:</span> Phonics, Basic Vocabulary & Spelling Patterns
                                     </p>
                                     <p className="dropdown-description">
-                                        This level builds a strong foundation by teaching phonics rules, sight words, and common spelling
-                                        patterns. It is designed to make spelling fun and less intimidating for young learners.
+                                        This level introduces young learners to the world of words through engaging activities, phonics, and
+                                        simple spelling rules. Children begin building their foundation for decoding and spelling
+                                        words confidently.
                                     </p>
                                     <h4 className="dropdown-subtitle">Key Skills Developed</h4>
                                     <ul className="benefits-list">
                                         <li>
-                                            <img src={point} alt="Checkpoint" /> Understanding vowel and consonant sounds
+                                            <img src={point} alt="Checkpoint" /> Understanding basic phonics and sound patterns
                                         </li>
                                         <li>
-                                            <img src={point} alt="Checkpoint" /> Spelling high-frequency words
+                                            <img src={point} alt="Checkpoint" /> Recognizing simple word families
                                         </li>
                                         <li>
-                                            <img src={point} alt="Checkpoint" /> Basic pluralization rules
+                                            <img src={point} alt="Checkpoint" /> Building beginner vocabulary
                                         </li>
                                         <li>
-                                            <img src={point} alt="Checkpoint" /> Syllable breakdown
+                                            <img src={point} alt="Checkpoint" /> Improving memory through fun spelling games
                                         </li>
                                     </ul>
                                     <h4 className="dropdown-subtitle">Learning Methodology</h4>
                                     <p className="dropdown-course-info">
-                                        <span>Spelling games and puzzles:</span>
+                                        <span>Sound-based learning:</span> Phonics-driven teaching of basic spelling patterns.
                                     </p>
                                     <p className="dropdown-course-info">
-                                        <span>Picture-word association:</span>
+                                        <span>Interactive games:</span> Activities to build interest and retention.
                                     </p>
                                     <p className="dropdown-course-info">
-                                        <span>Rhyming word exercises:</span>
+                                        <span>Practice lists:</span> Simple word lists for consistent improvement.
                                     </p>
                                     <p className="dropdown-course-info">
-                                        <span>Weekly mini-quizzes:</span>
+                                        <span>Oral drills:</span> Strengthening listening and response skills.
+                                    </p>
+                                    <p className="dropdown-course-info">
+                                        <span>Parent updates:</span> Support sheets for home practice.
                                     </p>
                                 </div>
                             )}
@@ -153,51 +165,55 @@ const SpellingBeeOverview = () => {
                                     fontWeight: "bold",
                                 }}
                             >
-                                <h3>2. Language Leader (Intermediate Level)</h3>
+                                <h3>2. Word Build — Intermediate Level</h3>
                                 <span>{expandedSection === "level2" ? "-" : "+"}</span>
                             </div>
                             {expandedSection === "level2" && (
                                 <div className="dropdown-content">
                                     <p className="dropdown-course-info">
-                                        <span>Eligibility:</span> 8 to 10 Years
+                                        <span>Eligibility:</span> Ages 8–10
                                     </p>
                                     <p className="dropdown-course-info">
-                                        <span>Duration:</span> 3 Months
+                                        <span>Duration:</span> 4 Months
                                     </p>
                                     <p className="dropdown-course-info">
-                                        <span>Focus:</span> Rules & Exceptions
+                                        <span>Focus:</span> Vocabulary Expansion & Word Usage
                                     </p>
                                     <p className="dropdown-description">
-                                        Students dive deeper into the complexities of the English language. They learn about silent letters,
-                                        homophones, and more advanced spelling rules.
+                                        The intermediate level deepens the child's vocabulary knowledge. Students learn advanced
+                                        spelling lists, root words, synonyms, antonyms, and usage rules. Oral spelling activities help
+                                        sharpen listening and pronunciation skills.
                                     </p>
                                     <h4 className="dropdown-subtitle">Key Skills Developed</h4>
                                     <ul className="benefits-list">
                                         <li>
-                                            <img src={point} alt="Checkpoint" /> Mastering silent letters and double consonants
+                                            <img src={point} alt="Checkpoint" /> Understanding advanced word lists
                                         </li>
                                         <li>
-                                            <img src={point} alt="Checkpoint" /> Differentiating homophones (e.g., their/there)
+                                            <img src={point} alt="Checkpoint" /> Enhanced vocabulary and word usage
                                         </li>
                                         <li>
-                                            <img src={point} alt="Checkpoint" /> Prefixes and suffixes usage
+                                            <img src={point} alt="Checkpoint" /> Oral spelling confidence
                                         </li>
                                         <li>
-                                            <img src={point} alt="Checkpoint" /> Compound words
+                                            <img src={point} alt="Checkpoint" /> Better listening and concentration
                                         </li>
                                     </ul>
                                     <h4 className="dropdown-subtitle">Learning Methodology</h4>
                                     <p className="dropdown-course-info">
-                                        <span>Word sorting activities:</span>
+                                        <span>Pattern recognition:</span> Teaching word families and advanced patterns.
                                     </p>
                                     <p className="dropdown-course-info">
-                                        <span>Dictation practice:</span>
+                                        <span>Vocabulary expansion:</span> Building word usage and meaning.
                                     </p>
                                     <p className="dropdown-course-info">
-                                        <span>Crosswords and anagrams:</span>
+                                        <span>Mock tests:</span> Practice rounds to strengthen confidence.
                                     </p>
                                     <p className="dropdown-course-info">
-                                        <span>Interactive spelling bees in class:</span>
+                                        <span>Pronunciation drills:</span> Improving clarity and correctness.
+                                    </p>
+                                    <p className="dropdown-course-info">
+                                        <span>Parent updates:</span> Weekly revision guidance.
                                     </p>
                                 </div>
                             )}
@@ -213,51 +229,54 @@ const SpellingBeeOverview = () => {
                                     fontWeight: "bold",
                                 }}
                             >
-                                <h3>3. Spelling Champion (Advanced Level)</h3>
+                                <h3>3. Word Prep — Advanced Level</h3>
                                 <span>{expandedSection === "level3" ? "-" : "+"}</span>
                             </div>
                             {expandedSection === "level3" && (
                                 <div className="dropdown-content">
                                     <p className="dropdown-course-info">
-                                        <span>Eligibility:</span> 11 Years & Above
+                                        <span>Eligibility:</span> Age 10+
                                     </p>
                                     <p className="dropdown-course-info">
-                                        <span>Duration:</span> 3 Months
+                                        <span>Duration:</span> 6 Months
                                     </p>
                                     <p className="dropdown-course-info">
-                                        <span>Focus:</span> Etymology & Competition Prep
+                                        <span>Focus:</span> Competition Preparation & Mastery
                                     </p>
                                     <p className="dropdown-description">
-                                        This level is for students aiming for excellence. We explore word origins (Latin, Greek, French),
-                                        complex vocabulary, and strategies for competitive spelling bees.
+                                        This level prepares students for school, national, and international Spelling Bee contests.
+                                        Children master complex words, apply memory strategies, and practice stage confidence.
                                     </p>
                                     <h4 className="dropdown-subtitle">Key Skills Developed</h4>
                                     <ul className="benefits-list">
                                         <li>
-                                            <img src={point} alt="Checkpoint" /> Etymology (roots and origins)
+                                            <img src={point} alt="Checkpoint" /> Mastery of complex spelling lists
                                         </li>
                                         <li>
-                                            <img src={point} alt="Checkpoint" /> Spelling obscure and difficult words
+                                            <img src={point} alt="Checkpoint" /> Strong memory and recall abilities
                                         </li>
                                         <li>
-                                            <img src={point} alt="Checkpoint" /> Pronunciation keys and diacritical marks
+                                            <img src={point} alt="Checkpoint" /> Confident stage presence
                                         </li>
                                         <li>
-                                            <img src={point} alt="Checkpoint" /> Competition strategies and poise
+                                            <img src={point} alt="Checkpoint" /> Ability to decode unfamiliar words
                                         </li>
                                     </ul>
                                     <h4 className="dropdown-subtitle">Learning Methodology</h4>
                                     <p className="dropdown-course-info">
-                                        <span>Mock spelling bee competitions:</span>
+                                        <span>Competition training:</span> Preparing students for stage-level spelling rounds.
                                     </p>
                                     <p className="dropdown-course-info">
-                                        <span>Root word analysis:</span>
+                                        <span>Memory techniques:</span> Strategies for long-term retention of difficult words.
                                     </p>
                                     <p className="dropdown-course-info">
-                                        <span>Advanced vocabulary flashcards:</span>
+                                        <span>Word mastery exercises:</span> Advanced lists and usage activities.
                                     </p>
                                     <p className="dropdown-course-info">
-                                        <span>Public speaking drills:</span>
+                                        <span>Stage-practice drills:</span> Building speaking confidence and timing.
+                                    </p>
+                                    <p className="dropdown-course-info">
+                                        <span>Parent updates:</span> Insights for competition readiness.
                                     </p>
                                 </div>
                             )}
@@ -269,47 +288,62 @@ const SpellingBeeOverview = () => {
                     <div className="details-content">
                         <h2 className="main-title">The Science Behind Spelling Bee Training</h2>
                         <p className="overview-description">
-                            Spelling is a cognitive workout that involves multiple brain areas:
+                            Spelling Bee training strengthens the brain's language-processing abilities. Children learn:
                         </p>
                         <ul className="dropdown-course-info">
                             <li>
-                                <span>Visual Memory:</span> Recalling the "shape" of words.
+                                <span>Phonemic Awareness:</span> Identifying sounds within words
                             </li>
                             <li>
-                                <span>Auditory Processing:</span> Breaking down sounds (phonemes).
+                                <span>Morphological Understanding:</span> Learning roots, prefixes, and suffixes
                             </li>
                             <li>
-                                <span>Semantic Processing:</span> Understanding meaning and context.
+                                <span>Etymology:</span> Understanding word origins
+                            </li>
+                            <li>
+                                <span>Semantic Awareness:</span> Learning meanings and usage
+                            </li>
+                            <li>
+                                <span>Auditory Processing:</span> Listening accurately and responding quickly
                             </li>
                         </ul>
                         <p className="overview-description">
-                            Our training integrates these processes, leading to sharper memory and faster cognitive
-                            processing speeds.
+                            These components significantly improve communication skills and academic performance.
                         </p>
 
                         <h3 className="sub-title">
-                            Key Skills Enhanced Through Spelling Bee Training
+                            Key Skills Enhanced Through Spelling Bee
                         </h3>
                         <ul className="key-skills-list">
                             <li>
-                                <span>Memory Power:</span> Memorizing thousands of words expands brain capacity.
+                                <span>Vocabulary Mastery:</span>
+                                Children learn hundreds of words, their meanings, and pronunciation.
                                 <br />
-                                <span>Result:</span> Better retention in all academic subjects.
+                                <span>Result:</span> Stronger reading, writing, and communication skills.
                             </li>
                             <li>
-                                <span>Focus & Composure:</span> Competitions teach students to stay calm under pressure.
+                                <span>Memory & Recall:</span>
+                                Techniques such as chunking, visualization, and repetition build memory power.
                                 <br />
-                                <span>Result:</span> Improved performance in exams and interviews.
+                                <span>Result:</span> Improved academic recall in all subjects.
                             </li>
                             <li>
-                                <span>Linguistic Logic:</span> Understanding rules helps in learning new languages.
+                                <span>Listening Skills:</span>
+                                Students listen to pronunciations and spellings with precision.
                                 <br />
-                                <span>Result:</span> Ease in learning foreign languages.
+                                <span>Result:</span> Better classroom focus and comprehension.
                             </li>
                             <li>
-                                <span>Research Skills:</span> Learning to use dictionaries and study guides effectively.
+                                <span>Pronunciation & Speech:</span>
+                                Correct phonetics improve clarity of speaking.
                                 <br />
-                                <span>Result:</span> Independent learning habits.
+                                <span>Result:</span> More confident public communication.
+                            </li>
+                            <li>
+                                <span>Confidence & Stage Presence:</span>
+                                Mock contests and oral drills build performance skills.
+                                <br />
+                                <span>Result:</span> Students communicate confidently in competitions and presentations.
                             </li>
                         </ul>
                     </div>
@@ -318,52 +352,49 @@ const SpellingBeeOverview = () => {
                 {activeTab === "opportunities" && (
                     <div className="opportunities-content">
                         <h2 className="main-title">Opportunities</h2>
-                        <h4 className="dropdown-subtitle">1. Academic Brilliance </h4>
+                        <h4 className="dropdown-subtitle">1. Academic Excellence </h4>
                         <ul className="dropdown-course-info">
                             <li>
-                                Superior writing skills (essays, reports)
+                                Strong vocabulary boosts reading and writing performance
                             </li>
                             <li>
-                                High scores in standardized tests (SAT, GRE, etc.)
+                                Better spelling improves exam answers
                             </li>
                             <li>
-                                Impressive vocabulary for debates and speeches
+                                Enhanced listening and memory improve performance in all subjects
                             </li>
                         </ul>
-                        <h4 className="dropdown-subtitle">2. Competitive Success </h4>
+                        <h4 className="dropdown-subtitle">2. Competitive Edge </h4>
+                        <p className="dropdown-course-info">Students gain preparation for:</p>
+                        <ul className="dropdown-course-info">
+                            <li>School Spelling Bee competitions</li>
+                            <li>National & International Spelling Bee contests</li>
+                            <li>English Olympiads</li>
+                        </ul>
+                        <p className="dropdown-course-info">Participation in competitions boosts resilience, focus, and confidence.</p>
+                        <h4 className="dropdown-subtitle">3. Lifelong Skills </h4>
                         <ul className="dropdown-course-info">
                             <li>
-                                Participation in Regional, National, and International Spelling Bees
+                                Effective communication
                             </li>
                             <li>
-                                Winning scholarships and awards
+                                Improved language foundation
                             </li>
                             <li>
-                                Recognition in school and community
+                                Public speaking confidence
+                            </li>
+                            <li>
+                                Strong memory retention
                             </li>
                         </ul>
-                        <h4 className="dropdown-subtitle">3. Communication Mastery </h4>
+                        <h4 className="dropdown-subtitle">4. Future Readiness </h4>
                         <ul className="dropdown-course-info">
                             <li>
-                                Precise and effective communication
+                                Strong verbal skills support careers in law, media, business, academia, and public
+                                speaking
                             </li>
                             <li>
-                                Ability to articulate complex ideas
-                            </li>
-                            <li>
-                                Professional advantage in future careers
-                            </li>
-                        </ul>
-                        <h4 className="dropdown-subtitle">4. Confidence & Poise </h4>
-                        <ul className="dropdown-course-info">
-                            <li>
-                                Overcoming stage fright
-                            </li>
-                            <li>
-                                Handling success and failure with grace
-                            </li>
-                            <li>
-                                Building a strong self-image
+                                Helps students excel in debates, presentations, and interviews
                             </li>
                         </ul>
                     </div>

@@ -1,15 +1,15 @@
 import React from 'react';
 import '../styles/mission.css'; // Updated CSS path
-import centralImage from '../Assets/about-img/missionbg.png'; // Main background image
-import smallImage from '../Assets/about-img/mission.png'; // Smaller overlapping image
-import missionicon from '../Assets/about-img/missionicon.png';
-import missionicon2 from '../Assets/about-img/missionicon2.png';
-import mission1 from '../Assets/about-img/mission1.png';
-import mission2 from '../Assets/about-img/mission2.png';
-import mission3 from '../Assets/about-img/mission3.png';
-import mission4 from '../Assets/about-img/mission4.png';
-import mission5 from '../Assets/about-img/mission5.png';
-import mission6 from '../Assets/about-img/mission6.png';
+import centralImage from '../Assets/about-img/missionbg.webp'; // Main background image
+import smallImage from '../Assets/about-img/mission.webp'; // Smaller overlapping image
+import missionicon from '../Assets/about-img/missionicon.webp';
+import missionicon2 from '../Assets/about-img/missionicon2.webp';
+import mission1 from '../Assets/about-img/mission1.webp';
+import mission2 from '../Assets/about-img/mission2.webp';
+import mission3 from '../Assets/about-img/mission3.webp';
+import mission4 from '../Assets/about-img/mission4.webp';
+import mission5 from '../Assets/about-img/mission5.webp';
+import mission6 from '../Assets/about-img/mission6.webp';
 
 function Mission() {
   return (
