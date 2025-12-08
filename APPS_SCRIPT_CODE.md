@@ -12,7 +12,6 @@ Use these code blocks directly in your Google Apps Script editor. Make sure to:
 
 ```javascript
 function doGet(e) {
-  // CORS is handled automatically by Google for simple requests
   return ContentService.createTextOutput('Contact Form Web App is running. Use POST to submit data.')
     .setMimeType(ContentService.MimeType.TEXT);
 }
