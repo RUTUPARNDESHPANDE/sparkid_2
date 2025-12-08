@@ -158,29 +158,31 @@
   }
 
   .contactus-content {
-    padding: 10rem 6rem 6rem;
+    padding: 10rem 6rem 4rem;
     max-width: 100%;
+    min-height: auto;
+    /* Remove forced height to collapse gap */
   }
 
   .contactus-text-overlay {
     left: 6rem;
-    max-width: 75%;
-    padding: 5rem;
+    max-width: 55%;
+    padding: 8rem 5rem;
   }
 
   .contactus-heading {
-    font-size: 6.5rem;
-    margin-bottom: 3rem;
+    font-size: 7rem;
+    margin-bottom: 3.5rem;
   }
 
   .contactus-subheading {
-    font-size: 3rem;
-    margin-bottom: 1.75rem;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
   }
 
   .contactus-description {
-    font-size: 2.25rem;
-    line-height: 1.5;
+    font-size: 2.5rem;
+    line-height: 1.6;
   }
 
   .contactus-image {
@@ -197,13 +199,18 @@
     left: 3rem;
   }
 
+  .contactus {
+    min-height: auto;
+  }
+
   .contactus-pagename {
     font-size: clamp(14px, 1.25rem, 20px);
     padding: 0;
   }
 
   .contactus-content {
-    padding: 7rem 3rem 3rem;
+    padding: 7rem 3rem 1.5rem;
+    min-height: auto;
   }
 
   .contactus-text-overlay {
@@ -239,6 +246,10 @@
     left: 2rem;
   }
 
+  .contactus {
+    min-height: auto;
+  }
+
   .contactus-pagename {
     font-size: clamp(14px, 1rem, 18px);
     padding: 0;
@@ -254,13 +265,14 @@
   }
 
   .contactus-text-overlay {
-    left: 1rem;
-    right: 1rem;
-    max-width: calc(100% - 2rem);
-    padding: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    max-width: 85%;
+    width: 85%;
+    padding: 3.5rem 2rem;
     top: auto;
     bottom: 2rem;
-    transform: none;
     max-height: none;
   }
 
@@ -277,12 +289,12 @@
   }
 
   .contactus-heading {
-    font-size: clamp(32px, 3.5rem, 50px);
-    margin-bottom: 1.25rem;
+    font-size: clamp(36px, 4rem, 55px);
+    margin-bottom: 1.5rem;
   }
 
   .contactus-subheading {
-    font-size: clamp(20px, 1.5rem, 28px);
+    font-size: clamp(22px, 1.75rem, 30px);
     margin-bottom: 1rem;
   }
 

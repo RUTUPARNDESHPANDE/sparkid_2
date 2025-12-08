@@ -21,8 +21,8 @@ const Hero = () => {
         </h1>
         <p className="hero-subtitle">With Brave Sparkids Academy</p>
         <p className="hero-description">
-          Unlock your child's potential with programs designed <br /> to
-          sharpen skills, foster creativity, and <br /> nurture lifelong success.
+          Unlock your child's potential with programs designed to
+          sharpen skills, foster creativity, and nurture lifelong success.
         </p>
 
         <div className="hero-buttons">
@@ -41,9 +41,9 @@ const Hero = () => {
         </div>
 
         {/* Image Section moved here */}
-        <div className="image-partner">
+        {/* <div className="image-partner">
           <img src={partners} alt="Partners" className="partner-image" />
-        </div>
+        </div> */}
 
       </div>
       <div className="hero-image">

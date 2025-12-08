@@ -10,7 +10,7 @@ const BranchCarousel = () => {
 
   const branches = [
     {
-      title: "Sparkids Abacus Learning Point, Vijayapur",
+      title: "Sparkids Abacus Learning Point,  Vijayapur",
       mapSrc: "https://www.google.com/maps?q=16.839444,75.711194&output=embed",
       description: "Description",
     },
@@ -20,7 +20,7 @@ const BranchCarousel = () => {
       description: "Description",
     },
     {
-      title: "Samruddhi Sparkids Abacus Learning Point Vijayapur",
+      title: "Samruddhi Sparkids Abacus Learning Point, Vijayapur",
       mapSrc: "https://www.google.com/maps?q=16.817917,75.740889&output=embed",
       description: "Description",
     },
@@ -30,7 +30,7 @@ const BranchCarousel = () => {
       description: "Description",
     },
     {
-      title: "Haripriya Sparkids Abacus Learning Point Vijayapur",
+      title: "Haripriya Sparkids Abacus Learning Point, Vijayapur",
       mapSrc: "https://www.google.com/maps?q=16.826583,75.728722&output=embed",
       description: "Description",
     },
@@ -73,7 +73,15 @@ const BranchCarousel = () => {
             .slice(currentIndex, currentIndex + slidesToShow)
             .map((branch, index) => (
               <div key={currentIndex + index} className="branch-card">
-                <h3>{branch.title}</h3>
+                <h3>
+                  {branch.title.split(",").map((part, i) => (
+                    <React.Fragment key={i}>
+                      {i > 0 && ", "}
+                      {i > 0 && <br />}
+                      {part}
+                    </React.Fragment>
+                  ))}
+                </h3>
                 <iframe
                   src={branch.mapSrc}
                   width="100%"
@@ -165,11 +173,11 @@ const BranchCarousel = () => {
           <a href="#instagram">redirect Instagram &gt;</a>
         </p>
         <div className="media-gallery">
-        <img src={media1} alt="post1" />
-        <img src={media2} alt="post2" />
-        <img src={media3} alt="post3" />
-        <img src={media2} alt="post4" />
-                 </div>
+          <img src={media1} alt="post1" />
+          <img src={media2} alt="post2" />
+          <img src={media3} alt="post3" />
+          <img src={media2} alt="post4" />
+        </div>
         <p className="contact-footer-text">
           Every great mind was once a curious child. Let’s spark that curiosity together!
         </p>
