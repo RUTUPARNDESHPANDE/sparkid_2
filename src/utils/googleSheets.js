@@ -40,30 +40,36 @@ const submitToGoogleSheetsInternal = async (webAppUrl, payload, errorVarName, su
   }
 
   try {
-    // Use no-cors mode to avoid CORS preflight issues with Google Apps Script
-    // This prevents the browser from sending an OPTIONS preflight request
-    await fetch(webAppUrl, {
+    // We use "text/plain" to avoid CORS preflight (OPTIONS) requests which Google Apps Script doesn't handle.
+    // By using standard mode (not no-cors), we can read the response.
+    const response = await fetch(webAppUrl, {
       method: "POST",
-      mode: "no-cors", // Prevents CORS preflight, data still reaches Apps Script
+      // mode: "cors", // Default is cors, so we don't need to specify it (or we can to be explicit)
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "text/plain;charset=utf-8", // Avoids OPTIONS request
       },
       body: JSON.stringify(payload),
     });
 
-    // With no-cors mode, we can't read the response, but the data is still sent
-    // Google Apps Script will process it and save to Sheets
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const result = await response.json();
+
+    if (result.success === false) {
+      throw new Error(result.error || "Form submission failed on server.");
+    }
+
     return {
       success: true,
       message: successMessage,
     };
   } catch (error) {
     console.error("Error submitting to Google Sheets:", error);
-    // Even with errors, the request might have succeeded (network issues, etc.)
-    // Return success to avoid confusing users - check Sheets to verify
     return {
-      success: true,
-      message: successMessage,
+      success: false,
+      message: error.message || "Something went wrong. Please try again.",
     };
   }
 };
@@ -92,7 +98,7 @@ export const submitToGoogleSheets = async (webAppUrl, data) => {
  */
 export const submitJobApplication = async (webAppUrl, formData, file) => {
   let fileData = null;
-  
+
   // Convert file to base64 if provided
   if (file) {
     fileData = {
