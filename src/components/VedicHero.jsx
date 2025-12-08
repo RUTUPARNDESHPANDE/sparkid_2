@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styles/commoncourse.css";
-import coursevedic from "../Assets/courses-img/coursevedic.webp";
+import coursevedic from "../Assets/courses-img/coursevedic.png";
 import courseage from "../Assets/home-img/course-age.webp";
 import coursetime from "../Assets/home-img/course-time.webp";
 import courselevel from "../Assets/home-img/course-level.webp";

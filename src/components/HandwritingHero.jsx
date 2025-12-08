@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/commoncourse.css";
 import { Link } from "react-router-dom";
-import coursehandwriting from "../Assets/courses-img/coursehandwriting.webp";
+import coursehandwriting from "../Assets/courses-img/coursehandwriting.png";
 import courseage from "../Assets/home-img/course-age.webp";
 import coursetime from "../Assets/home-img/course-time.webp";
 import courselevel from "../Assets/home-img/course-level.webp";

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/commoncourse.css";
-import coursespelling from "../Assets/courses-img/readingcourse.webp"; // Using reading image as placeholder
+import coursespelling from "../Assets/courses-img/readingcourse.png"; // Using reading image as placeholder
 import courseage from "../Assets/home-img/course-age.webp";
 import coursetime from "../Assets/home-img/course-time.webp";
 import courselevel from "../Assets/home-img/course-level.webp";
