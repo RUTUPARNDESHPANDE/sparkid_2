@@ -14,23 +14,29 @@ const Culture = () => {
             experienced educators, passionate trainers,  and dedicated support staff.
           </p>
           <div className="culture-sub-div">
-            <div className="culture-subdiv-image" >
-              <img src={point} alt="culture" />
+            <div className="culture-subdiv-row">
+              <div className="culture-subdiv-image" >
+                <img src={point} alt="culture" />
+              </div>
+              <div className="culture-subdiv-point">
+                <p> Commitment to Quality</p>
+              </div>
             </div>
-            <div className="culture-subdiv-point">
-              <p> Commitment to Quality</p>
+            <div className="culture-subdiv-row">
+              <div className="culture-subdiv-image" >
+                <img src={point} alt="culture" />
+              </div>
+              <div className="culture-subdiv-point">
+                <p> Interactive, child-centered teaching methods.</p>
+              </div>
             </div>
-            <div className="culture-subdiv-image" >
-              <img src={point} alt="culture" />
-            </div>
-            <div className="culture-subdiv-point">
-              <p> Interactive, child-centered teaching methods.</p>
-            </div>
-            <div className="culture-subdiv-image" >
-              <img src={point} alt="culture" />
-            </div>
-            <div className="culture-subdiv-point">
-              <p> Building trust with our student, families, and partners.</p>
+            <div className="culture-subdiv-row">
+              <div className="culture-subdiv-image" >
+                <img src={point} alt="culture" />
+              </div>
+              <div className="culture-subdiv-point">
+                <p> Building trust with our student, families, and partners.</p>
+              </div>
             </div>
           </div>
 
