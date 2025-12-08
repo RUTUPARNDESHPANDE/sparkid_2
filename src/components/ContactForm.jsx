@@ -85,61 +85,63 @@ const ContactForm = () => {
       <div className="contact-row">
         {/* Left side - Form */}
         <div className="contact-form-section">
-          <h2 className="contact-heading">Drop us a message</h2>
-          <form onSubmit={handleSubmit}>
-            <input
-              type="text"
-              name="fullName"
-              placeholder="Full name"
-              value={formData.fullName}
-              onChange={handleInputChange}
-              required
-            />
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone number"
-              value={formData.phone}
-              onChange={handleInputChange}
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email I’d"
-              value={formData.email}
-              onChange={handleInputChange}
-              required
-            />
-            <div className="dropdown-container">
-              <select
-                className="styled-dropdown"
-                name="reason"
-                value={formData.reason}
+          <div className="contact-form-box">
+            <h2 className="contact-heading">Drop us a message</h2>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                name="fullName"
+                placeholder="Full name"
+                value={formData.fullName}
                 onChange={handleInputChange}
                 required
-              >
-                <option value="" disabled>
-                  I’m Reaching out about
-                </option>
-                <option value="enroll">Enrolling my child</option>
-                <option value="franchise">Franchise opportunities</option>
-                <option value="course">Course details</option>
-                <option value="general">General Inquiry</option>
-              </select>
-            </div>
-            <textarea
-              name="message"
-              placeholder="Your message. . ."
-              value={formData.message}
-              onChange={handleInputChange}
-              required
-            />
-            <button type="submit" className="submit-button">
-              Submit your response
-            </button>
-          </form>
-          {responseMessage && <p className="response-message">{responseMessage}</p>}
+              />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone number"
+                value={formData.phone}
+                onChange={handleInputChange}
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email I’d"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+              />
+              <div className="dropdown-container">
+                <select
+                  className="styled-dropdown"
+                  name="reason"
+                  value={formData.reason}
+                  onChange={handleInputChange}
+                  required
+                >
+                  <option value="" disabled>
+                    I’m Reaching out about
+                  </option>
+                  <option value="enroll">Enrolling my child</option>
+                  <option value="franchise">Franchise opportunities</option>
+                  <option value="course">Course details</option>
+                  <option value="general">General Inquiry</option>
+                </select>
+              </div>
+              <textarea
+                name="message"
+                placeholder="Your message. . ."
+                value={formData.message}
+                onChange={handleInputChange}
+                required
+              />
+              <button type="submit" className="submit-button">
+                Submit your response
+              </button>
+            </form>
+            {responseMessage && <p className="response-message">{responseMessage}</p>}
+          </div>
         </div>
 
         {/* Right side - Contact Info */}

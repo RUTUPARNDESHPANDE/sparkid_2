@@ -113,12 +113,12 @@
 
 .info-cards {
   position: absolute;
-  bottom: -181px;
+  bottom: -150px;
   left: 195px;
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
-  z-index: 2;
+  z-index: 4;
 }
 
 .info-card {
