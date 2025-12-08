@@ -10,7 +10,7 @@ import puzzle2 from '../Assets/home-img/brain-img/puzzle2.webp';
 import symbol from '../Assets/home-img/brain-img/symbol.webp';
 import gear from '../Assets/home-img/brain-img/gear.webp';
 import '../styles/hero.css';
-import watermark from '../Assets/home-img/watermark.webp';
+import partners from '../Assets/home-img/partners.png';
 
 const Hero = () => {
   return (
@@ -40,6 +40,11 @@ const Hero = () => {
           </h1>
         </div>
 
+        {/* Image Section moved here */}
+        <div className="image-partner">
+          <img src={partners} alt="Partners" className="partner-image" />
+        </div>
+
       </div>
       <div className="hero-image">
         {/* Brain Image and Icons */}
@@ -53,10 +58,6 @@ const Hero = () => {
           <img src={pencil} alt="Pencil Icon 2" className="brain-icon pencil" />
           <img src={brainleft} alt="Left Brain" className="brain-left" />
           <img src={brainright} alt="Right Brain" className="brain-right" />
-        </div>
-        {/* Image Section */}
-        <div className="image-partner">
-          <img src={watermark} alt="Partner" className="partner-image" />
         </div>
       </div>
 

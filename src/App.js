@@ -6,6 +6,12 @@ import Scrolltotop from './components/Scrolltotop';
 import CustomCursor from "./components/CustomCursor";
 import Splash from './components/SplashCursor';
 
+console.log('Header:', Header);
+console.log('Footer:', Footer);
+console.log('Scrolltotop:', Scrolltotop);
+console.log('CustomCursor:', CustomCursor);
+console.log('Splash:', Splash);
+
 // Lazy load all page components
 const HomePage = React.lazy(() => import("./pages/HomePage"));
 const AboutPage = React.lazy(() => import("./pages/AboutPage"));
@@ -46,13 +52,13 @@ const isVideoEntryDisabled = () => {
 // Component to handle first visit logic
 const FirstVisitHandler = () => {
   const videoDisabled = isVideoEntryDisabled();
-  
+
   // If video is disabled (after cutoff time), go to home
   // Otherwise, show video entry page on every refresh until cutoff time
   if (videoDisabled) {
     return <HomePage />;
   }
-  
+
   // Show video entry page on every refresh until 4 PM on Dec 7, 2025
   return <Navigate to="/entry-video" replace />;
 };

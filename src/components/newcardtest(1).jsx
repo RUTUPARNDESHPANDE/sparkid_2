@@ -82,103 +82,21 @@ const BoxLayoutCard1 = () => {
   const scroll = (direction) => {
     const container = cardContainerRef.current;
     if (!container) return;
-    
+
     const cardWidth = container.firstElementChild.offsetWidth + 55;
     const scrollAmount = direction === "left" ? -cardWidth : cardWidth;
     const newScrollLeft = container.scrollLeft + scrollAmount;
-    
+
     // Calculate new index based on scroll position
     const newIndex = Math.round(newScrollLeft / cardWidth);
     setCurrentIndex(Math.max(0, Math.min(newIndex, cards.length - 1)));
-    
+
     container.scrollBy({ left: scrollAmount, behavior: "smooth" });
   };
-
-  // Handle wheel events (desktop) and touch events (mobile) to allow page scrolling
   useEffect(() => {
     const container = cardContainerRef.current;
     if (!container) return;
 
-    // Desktop: Handle wheel events
-    const handleWheel = (e) => {
-      // If scrolling vertically (deltaY is much larger than deltaX), scroll the page instead
-      const isVerticalScroll = Math.abs(e.deltaY) > Math.abs(e.deltaX);
-      
-      if (isVerticalScroll) {
-        // Scroll the page vertically instead of the container
-        window.scrollBy({
-          top: e.deltaY,
-          behavior: 'auto'
-        });
-        e.preventDefault();
-        e.stopPropagation();
-      }
-      // If horizontal scroll, let the container handle it naturally
-    };
-
-    // Mobile: Handle touch events to prevent container from capturing vertical scrolls
-    let touchStartX = 0;
-    let touchStartY = 0;
-    let touchStartScrollLeft = 0;
-    let touchStartScrollTop = 0;
-    let isVerticalGesture = false;
-    let gestureDecided = false;
-    let lastTouchY = 0;
-
-    const handleTouchStart = (e) => {
-      touchStartX = e.touches[0].clientX;
-      touchStartY = e.touches[0].clientY;
-      lastTouchY = touchStartY;
-      touchStartScrollLeft = container.scrollLeft;
-      touchStartScrollTop = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
-      isVerticalGesture = false;
-      gestureDecided = false;
-    };
-
-    const handleTouchMove = (e) => {
-      if (!touchStartX || !touchStartY) return;
-
-      const touchCurrentX = e.touches[0].clientX;
-      const touchCurrentY = e.touches[0].clientY;
-      
-      const deltaX = touchCurrentX - touchStartX;
-      const deltaY = touchCurrentY - touchStartY;
-      const absDeltaX = Math.abs(deltaX);
-      const absDeltaY = Math.abs(deltaY);
-      
-      // Determine scroll direction after a very small movement threshold for faster detection
-      if (!gestureDecided && (absDeltaX > 3 || absDeltaY > 3)) {
-        isVerticalGesture = absDeltaY > absDeltaX; // If vertical movement is greater, it's vertical
-        gestureDecided = true;
-      }
-      
-      if (gestureDecided) {
-        if (isVerticalGesture) {
-          // This is a vertical scroll - prevent container from interfering
-          // Lock the container's horizontal scroll position immediately
-          container.scrollLeft = touchStartScrollLeft;
-          
-          // Don't manually scroll - let the browser handle it naturally
-          // Just prevent the container from interfering
-          e.preventDefault();
-        }
-        // If horizontal gesture, don't prevent default - let container scroll naturally
-      } else {
-        // Gesture not yet decided - don't prevent default yet
-        // Lock horizontal scroll to prevent accidental horizontal movement during vertical scroll
-        container.scrollLeft = touchStartScrollLeft;
-      }
-    };
-
-    const handleTouchEnd = () => {
-      touchStartX = 0;
-      touchStartY = 0;
-      lastTouchY = 0;
-      isVerticalGesture = false;
-      gestureDecided = false;
-    };
-
-    // Update current index on scroll
     const handleScroll = () => {
       if (!container) return;
       const cardWidth = container.firstElementChild?.offsetWidth + 55;
@@ -188,18 +106,9 @@ const BoxLayoutCard1 = () => {
       }
     };
 
-    // Add event listeners - touchmove needs to be non-passive to prevent default
-    container.addEventListener('wheel', handleWheel, { passive: false });
-    container.addEventListener('touchstart', handleTouchStart, { passive: true });
-    container.addEventListener('touchmove', handleTouchMove, { passive: false });
-    container.addEventListener('touchend', handleTouchEnd, { passive: true });
     container.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
-      container.removeEventListener('wheel', handleWheel);
-      container.removeEventListener('touchstart', handleTouchStart);
-      container.removeEventListener('touchmove', handleTouchMove);
-      container.removeEventListener('touchend', handleTouchEnd);
       container.removeEventListener('scroll', handleScroll);
     };
   }, [cards.length]);
@@ -218,8 +127,8 @@ const BoxLayoutCard1 = () => {
       <div className="Card cube-container" ref={cardContainerRef}>
         {cards.map((card, index) => {
           return (
-            <div 
-              className="product-box1 cube-card" 
+            <div
+              className="product-box1 cube-card"
               key={index}
             >
               <img src={card.image} alt={card.title} className="product-image" />
@@ -259,7 +168,7 @@ const BoxLayoutCard1 = () => {
           &#8250;
         </button>
       </div>
-    </div>
+    </div >
   );
 };
 

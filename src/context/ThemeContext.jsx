@@ -18,8 +18,8 @@ const ThemeProvider = ({ children }) => {
     if (savedTheme) {
       return savedTheme === "dark";
     }
-    // If no saved theme, use system preference
-    return getSystemTheme() === "dark";
+    // If no saved theme, default to dark mode
+    return true;
   });
 
   useEffect(() => {
@@ -31,7 +31,7 @@ const ThemeProvider = ({ children }) => {
   // Listen to system theme changes
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    
+
     const handleSystemThemeChange = (e) => {
       // Only update if user hasn't manually set a preference
       const savedTheme = localStorage.getItem("theme");

@@ -9,8 +9,6 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
-  /* Prevent scroll chaining - allows page to scroll normally */
-  overscroll-behavior: contain;
 }
 
 .about-us-info-text {
@@ -642,7 +640,8 @@
   .info-content h2 {
     font-size: 25px;
   }
-  .about-us-info{
+
+  .about-us-info {
     margin-bottom: 0px;
   }
 

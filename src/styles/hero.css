@@ -412,7 +412,7 @@
 
 /* Image Section Styles */
 .image-partner {
-  margin-top: 40px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -422,10 +422,10 @@
 
 .partner-image {
   width: 100%;
-  max-width: 704px;
+  max-width: 250px;
   height: auto;
-  margin-left: 0;
-  margin-top: 0;
+  margin: 0 auto;
+  margin-top: 10px;
   object-fit: contain;
 }
 
@@ -445,6 +445,32 @@
     flex-direction: column;
     align-items: center;
     height: auto;
+  }
+
+  .hero-content,
+  .hero-heading,
+  .hero-subtitle,
+  .hero-description,
+  .stats-text,
+  .opportunity-note,
+  .stats-text h1,
+  .opportunity-note h1 {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .hero-buttons {
+    justify-content: flex-start;
+  }
+
+  .image-partner {
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+
+  .partner-image {
+    margin: 0;
+    margin-top: 15px;
   }
 }
 
@@ -540,15 +566,15 @@
 
   .partner-image {
     width: 100%;
-    max-width: 500px;
+    max-width: 200px;
     height: auto;
-    margin-left: 0;
-    margin-top: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
   }
 
   .image-partner {
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 10px;
     order: 2;
   }
 
@@ -648,10 +674,10 @@
 
   .hero-content {
     order: 2;
-    text-align: center;
+    text-align: left;
     width: 100%;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 20px;
     margin-top: 20px;
     max-width: 100%;
@@ -670,6 +696,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
   }
 
   .hero-heading {
@@ -695,7 +722,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -713,8 +740,8 @@
   .hero-stats {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     margin-top: 30px;
     margin-bottom: 20px;
     width: 100%;
@@ -729,7 +756,7 @@
   .hero-stats .stats-text h1 {
     margin: 0;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     line-height: 1.3;
   }
 
@@ -741,7 +768,7 @@
 
   .opportunity-note {
     font-size: 16px;
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -814,7 +841,7 @@
     height: auto;
     top: 35%;
     right: 8%;
-    animation: slideInRightMobile 1s ease forwards;
+    animation: slideInRightMobile 1.s ease forwards;
   }
 
   .puzzle2 {
@@ -849,7 +876,7 @@
   }
 
   .image-partner {
-    margin-top: 30px;
+    margin-top: 10px;
     justify-content: center;
     width: 100%;
     padding: 0 20px;
@@ -862,6 +889,7 @@
     height: auto;
     margin: 0 auto;
     display: block;
+    margin-top: 10px;
   }
 
   /* Touch-friendly interactions for mobile */
@@ -1064,16 +1092,16 @@
 
     .partner-image {
       width: 100%;
-      max-width: 400px;
+      max-width: 150px;
       height: auto;
-      margin-left: 0;
-      margin-top: 30px;
+      margin: 0 auto;
+      margin-top: 10px;
       margin-bottom: 20px;
     }
 
     .image-partner {
       justify-content: center;
-      margin-top: 40px;
+      margin-top: 20px;
       order: 2;
       width: 100%;
       display: flex;
@@ -1197,7 +1225,7 @@
     .opportunity-btn {
       padding: 10px 15px;
       font-size: 13px;
-      max-width: 250px;
+      max-width: 150px;
     }
 
     .hero-stats .stats-text h1 {
@@ -1217,8 +1245,9 @@
     }
 
     .partner-image {
-      max-width: 250px;
-      margin-left: 45px;
+      max-width: 150px;
+      margin-left: 0;
+      margin-top: 20px;
     }
 
     /* Brain section - scaled from 768px layout (375px scale: 0.488) */
@@ -1520,6 +1549,33 @@
     max-width: 624px;
     z-index: 0;
   }
+
+  /* Force Left Align for Large Screens */
+  .hero-content,
+  .hero-heading,
+  .hero-subtitle,
+  .hero-description,
+  .stats-text,
+  .opportunity-note,
+  .stats-text h1,
+  .opportunity-note h1 {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .hero-buttons {
+    justify-content: flex-start;
+  }
+
+  .image-partner {
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+
+  .partner-image {
+    margin: 0;
+    margin-top: 20px;
+  }
 }
 
 /* 2K: 2560px */
@@ -1609,6 +1665,32 @@
     max-width: 780px;
     z-index: 0;
   }
+
+  .hero-content,
+  .hero-heading,
+  .hero-subtitle,
+  .hero-description,
+  .stats-text,
+  .opportunity-note,
+  .stats-text h1,
+  .opportunity-note h1 {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .hero-buttons {
+    justify-content: flex-start;
+  }
+
+  .image-partner {
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+
+  .partner-image {
+    margin: 0;
+    margin-top: 25px;
+  }
 }
 
 /* 4K: 3840px */
@@ -1690,12 +1772,61 @@
   }
 
   .partner-image {
-    max-width: 1408px;
+    max-width: 280px;
   }
 
   .brain-icon.gear,
   .gear {
     max-width: 1040px;
     z-index: 0;
+  }
+
+  .hero-content,
+  .hero-heading,
+  .hero-subtitle,
+  .hero-description,
+  .stats-text,
+  .opportunity-note,
+  .stats-text h1,
+  .opportunity-note h1 {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .hero-buttons {
+    justify-content: flex-start;
+  }
+
+  .image-partner {
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+
+  .partner-image {
+    margin: 0;
+    margin-top: 30px;
+  }
+}
+
+/* Partner Text Styles */
+.partner-text {
+  color: #d1d1d1;
+  /* Lighter grey for watermark effect */
+  font-family: 'Geologica', sans-serif;
+  /* Cleaner geometric font */
+  font-weight: 800;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+@media (max-width: 600px) {
+  .partner-text {
+    font-size: 24px;
+    margin-top: 10px;
   }
 }
