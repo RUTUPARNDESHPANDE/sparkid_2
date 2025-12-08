@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+[data-theme="dark"] .investment-requirements {
+  color: var(--item-text);
+}
+
 .investment-heading {
   color: var(--primary-orange);
   font-size: 24px;

@@ -32,7 +32,7 @@ const FranchisePage = () => {
       <div id="faq">
         <FAQ />
       </div>
-      <FranchiseSuccess />
+      {/* <FranchiseSuccess /> */}
       <QuestionSection />
     </div>
   );

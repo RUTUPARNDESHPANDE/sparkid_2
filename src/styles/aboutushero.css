@@ -38,9 +38,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
-  gap: 40px;
+  gap: 80px;
 }
 
 .about-us-content {
@@ -48,8 +48,9 @@
   max-width: 50%;
 }
 
+
 .headline {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 400;
   color: var(--primary-grey);
   font-family: 'Lilita One';
@@ -59,11 +60,11 @@
 
 .headline span {
   color: var(--primary-orange);
-  font-size: 64px;
+  font-size: 76px;
 }
 
 .subheadline {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 400;
   font-family: geologica;
   color: var(--highlight-color);
@@ -72,7 +73,7 @@
 }
 
 .description {
-  font-size: 20px;
+  font-size: 22px;
   color: var(--primary-grey);
   font-family: geologica;
   font-weight: 300;
@@ -91,7 +92,7 @@
   border-radius: 40px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 450px;
+  max-width: 600px;
   height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -196,31 +197,31 @@
   }
 
   .about-us-container>div:first-child {
-    max-width: 1600px;
+    max-width: 1400px;
   }
 
   .headline {
-    font-size: 60px;
+    font-size: 72px;
   }
 
   .headline span {
-    font-size: 80px;
+    font-size: 90px;
   }
 
   .subheadline {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .description {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .about-us-image img {
-    max-width: 600px;
+    max-width: 750px;
   }
 
   .about-us-pagename {
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 
@@ -235,27 +236,27 @@
   }
 
   .headline {
-    font-size: 80px;
+    font-size: 90px;
   }
 
   .headline span {
-    font-size: 100px;
+    font-size: 110px;
   }
 
   .subheadline {
-    font-size: 36px;
+    font-size: 40px;
   }
 
   .description {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .about-us-image img {
-    max-width: 800px;
+    max-width: 900px;
   }
 
   .about-us-pagename {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
@@ -270,26 +271,26 @@
   }
 
   .headline {
-    font-size: 110px;
+    font-size: 120px;
   }
 
   .headline span {
-    font-size: 140px;
+    font-size: 160px;
   }
 
   .subheadline {
-    font-size: 48px;
+    font-size: 56px;
   }
 
   .description {
-    font-size: 42px;
+    font-size: 48px;
   }
 
   .about-us-image img {
-    max-width: 1100px;
+    max-width: 1300px;
   }
 
   .about-us-pagename {
-    font-size: 42px;
+    font-size: 48px;
   }
 }

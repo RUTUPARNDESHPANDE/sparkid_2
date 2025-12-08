@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/CareerHero.css"; 
+import "../styles/CareerHero.css";
 import heroImage from "../Assets/career-img/careerhero.webp";
 import heroImage1 from "../Assets/career-img/careerhero1.webp";
 import heroImage2 from "../Assets/career-img/careerhero2.webp";
@@ -10,9 +10,7 @@ import heroImage4 from "../Assets/career-img/careerhero4.webp";
 const CareerHero = () => {
   return (
     <div className="careerhero-container">
-      <div>
-      <p className="careerhero-pagename"><a href="/">Home</a> | <span> <Link to="/careers">Careers</Link></span> </p> 
-      </div>
+      <p className="careerhero-pagename"><a href="/">Home</a> | <span> <Link to="/careers">Careers</Link></span> </p>
       <div className="careerhero-sub-container">
         <div className="careerhero-content">
           <p className="careerhero-subheadline">Nurturing environment</p>
@@ -32,22 +30,22 @@ const CareerHero = () => {
 
         {/* Image */}
         <div className="careerhero-image">
-  <div className="careerhero-central-image">
-    <img src={heroImage} alt="Central Hero" />
-  </div>
-  <div className="careerhero-circle careerhero-circle-1">
-    <img src={heroImage1} alt="Circle Hero 1" />
-  </div>
-  <div className="careerhero-circle careerhero-circle-2">
-    <img src={heroImage2} alt="Circle Hero 2" />
-  </div>
-  <div className="careerhero-circle careerhero-circle-3">
-    <img src={heroImage3} alt="Circle Hero 3" />
-  </div>
-  <div className="careerhero-circle careerhero-circle-4">
-    <img src={heroImage4} alt="Circle Hero 4" />
-  </div>
-</div>
+          <div className="careerhero-central-image">
+            <img src={heroImage} alt="Central Hero" />
+          </div>
+          <div className="careerhero-circle careerhero-circle-1">
+            <img src={heroImage1} alt="Circle Hero 1" />
+          </div>
+          <div className="careerhero-circle careerhero-circle-2">
+            <img src={heroImage2} alt="Circle Hero 2" />
+          </div>
+          <div className="careerhero-circle careerhero-circle-3">
+            <img src={heroImage3} alt="Circle Hero 3" />
+          </div>
+          <div className="careerhero-circle careerhero-circle-4">
+            <img src={heroImage4} alt="Circle Hero 4" />
+          </div>
+        </div>
 
 
       </div>
@@ -55,4 +53,4 @@ const CareerHero = () => {
   );
 };
 
-export default CareerHero;
+export default CareerHero;

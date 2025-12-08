@@ -1,11 +1,14 @@
 .career-culture {
-    padding: 3rem 2rem; /* Add more padding to the container */
+    padding: 3rem 2rem;
+    /* Add more padding to the container */
     font-family: Geologica;
     color: #333;
     text-align: center;
     display: grid;
-    grid-template-rows: auto auto; /* Two rows for heading + content */
-    grid-template-columns: 1fr; /* Single column by default */
+    grid-template-rows: auto auto;
+    /* Two rows for heading + content */
+    grid-template-columns: 1fr;
+    /* Single column by default */
     justify-items: center;
     align-items: center;
     min-height: 100vh;
@@ -15,22 +18,23 @@
 .career-culture-heading {
     color: var(--primary-orange);
     font-size: 24px;
-    margin-bottom: 1rem; /* Adjust spacing */
+    margin-bottom: 1rem;
+    /* Adjust spacing */
     font-family: Geologica;
 }
 
 .career-culture-subheading {
     font-size: 50px;
-    margin-bottom: 1rem; 
-    margin-top: 0; 
+    margin-bottom: 1rem;
+    margin-top: 0;
     font-family: Lilita One;
     color: var(--primary-grey);
 }
 
 .career-culture-description {
     font-size: 24px;
-    margin-bottom: 2rem; 
-    margin-top: 0rem; 
+    margin-bottom: 2rem;
+    margin-top: 0rem;
     color: var(--text-color);
     line-height: 1.5;
     font-family: Geologica;
@@ -38,7 +42,8 @@
 
 .career-culture-content {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-columns: 1fr 1fr;
+    /* Two columns */
     gap: 10rem;
     width: 1000px;
     margin-top: 2rem;
@@ -56,6 +61,12 @@
     font-weight: bold;
     color: #333;
     font-family: Geologica;
+}
+
+[data-theme="dark"] .career-culture,
+[data-theme="dark"] .career-culture-column h4,
+[data-theme="dark"] .career-culture-column li span {
+    color: var(--item-text);
 }
 
 .career-culture-column ul {
@@ -135,7 +146,8 @@
 @media (max-width: 426px) {
     .career-culture {
         padding: 2rem;
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr;
+        /* Single column layout */
     }
 
     .career-culture-heading {
@@ -162,7 +174,8 @@
     }
 
     .career-culture-content {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr;
+        /* Single column layout */
         gap: 1px;
         margin: 0;
     }
@@ -205,7 +218,8 @@
 @media (max-width: 321px) {
     .career-culture {
         padding: 1rem;
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr;
+        /* Single column layout */
     }
 
     .career-culture-heading {

@@ -74,6 +74,7 @@
 
 .franchise-timeline-card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 0 25px var(--primary-orange);
 }
 
 .franchise-timeline-icon {
@@ -99,6 +100,22 @@
   font-weight: 200;
   color: #777;
   margin-bottom: -10px;
+}
+
+[data-theme="dark"] .franchise-ourstory-text h3,
+[data-theme="dark"] .franchise-ourstory-text p,
+[data-theme="dark"] .franchise-timeline-card h3,
+[data-theme="dark"] .franchise-timeline-card p {
+  color: var(--item-text);
+}
+
+[data-theme="dark"] .franchise-timeline-card {
+  background-color: #2b2b2b;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .franchise-timeline-card:hover {
+  box-shadow: 0 0 25px var(--primary-orange);
 }
 
 @media (max-width: 1024px) {

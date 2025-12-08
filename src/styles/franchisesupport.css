@@ -141,6 +141,14 @@
   transition: transform 0.3s ease;
 }
 
+[data-theme="dark"] .support-text h3,
+[data-theme="dark"] .support-text p,
+[data-theme="dark"] .support-sub-heading,
+[data-theme="dark"] .support-sub-description,
+[data-theme="dark"] .support-sub-points li {
+  color: var(--item-text);
+}
+
 .support-sub-image img:hover {
   transform: translateY(-10px);
 }
