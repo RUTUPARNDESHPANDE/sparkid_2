@@ -667,7 +667,8 @@
   .maincourse-points-list span,
   .maincourse-subcontent li span {
     font-size: 14px;
-    width: 17%;
+    width: auto;
+    margin-right: 5px;
   }
 
   .maincourse-button {
