@@ -199,3 +199,35 @@
         height: auto;
     }
 }
+
+/* Specific fix for 584px - 426px range */
+@media (max-width: 584px) {
+    .handwriting-section {
+        padding: 2rem 1rem;
+        /* Reduce padding to gain space */
+    }
+
+    .handwriting-heading {
+        font-size: 28px;
+        /* Scale down heading */
+    }
+
+    .handwriting-description {
+        font-size: 16px;
+        /* Scale down description */
+    }
+
+    .handwriting-points li {
+        font-size: 16px;
+        /* Scale down list items */
+    }
+
+    .handwriting-points li span {
+        font-size: 16px;
+    }
+
+    .handwriting-points li img {
+        width: 18px;
+        height: 18px;
+    }
+}

@@ -478,6 +478,85 @@
     padding: 0;
     line-height: 1.4;
   }
+
+  .maincourse-points-wholelist {
+    padding: 0;
+    line-height: 1.4;
+  }
+}
+
+/* Fix for 584px breakpoint (e.g. large phones/phablets) */
+@media (max-width: 584px) {
+  .maincourse-container {
+    padding: 20px 5px;
+  }
+
+  .maincourse-section {
+    padding: 25px 15px;
+    gap: 15px;
+    flex-direction: column-reverse;
+    /* Force stack layout, image on top */
+  }
+
+  .maincourse-heading {
+    font-size: 28px;
+  }
+
+  .maincourse-content {
+    max-width: 100%;
+    /* Increase width to full */
+    flex: 0 1 100%;
+    padding-right: 0;
+    text-align: center;
+    /* Ensure text alignment is centered */
+  }
+
+  .maincourse-image {
+    max-width: 80%;
+    /* Adjust image width if needed */
+    flex: 0 1 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .maincourse-points-list {
+    justify-content: center;
+    /* Center align items */
+    font-size: 14px;
+    flex-wrap: wrap;
+    width: 100%;
+    /* Ensure full width */
+  }
+
+  .maincourse-points-list span {
+    font-size: 14px;
+    white-space: normal;
+    margin-right: 5px;
+    text-align: center;
+  }
+
+  .maincourse-subcontent li {
+    font-size: 14px;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center subcontent items */
+    align-items: center;
+    width: 100%;
+  }
+
+  .maincourse-subcontent span {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+
+  .maincourse-button {
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+    padding: 0;
+  }
 }
 
 @media (max-width: 425px) {
