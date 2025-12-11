@@ -15,7 +15,8 @@
 
 .address {
   display: grid;
-  width: 500px;
+  width: 100%;
+  /* Remove fixed 500px width */
   padding: 0.5rem 1.2rem;
   background: none;
   font-size: 1rem;
@@ -121,8 +122,22 @@
   height: 20px;
 }
 
-/* Responsive Footer for 768px Width */
-@media (min-width:768px) and (max-width: 1024px) {
+/* Responsive Footer for 451px - 1024px Width */
+@media (min-width:451px) and (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    /* Switch to 2 columns */
+    gap: 20px;
+    text-align: left;
+  }
+
+  .address {
+    grid-column: span 2;
+    /* Make address take full width */
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
 
   .footer-container {
     gap: 20px;

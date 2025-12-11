@@ -71,7 +71,7 @@
   color: var(--primary-grey);
   font-family: Lilita One;
   line-height: 1.2;
-  text-wrap: nowrap;
+  text-wrap: wrap;
 }
 
 .careerhero-headline span {
@@ -181,8 +181,8 @@
 
 /* Responsive Styles */
 
-/* For 1024px */
-@media (max-width: 1024px) {
+/* For 1280px (Tablet/Small Laptop) */
+@media (max-width: 1280px) {
   .careerhero-container {
     padding: 20px 40px;
     align-items: flex-start;
@@ -205,12 +205,20 @@
   }
 
   .careerhero-content {
-    text-align: left;
-    max-width: 50%;
+    text-align: center;
+    /* Center text */
+    max-width: 100%;
+    /* Use full width */
     margin-left: 0;
     margin-top: 0;
-    align-items: flex-start;
+    align-items: center;
+    /* Center items */
     /* Align internal content to start */
+  }
+
+  .careerhero-pagename {
+    text-align: center;
+    width: 100%;
   }
 
   .careerhero-headline {
@@ -389,6 +397,41 @@
   .careerhero-circle-4 {
     bottom: 75%;
     right: 0%;
+  }
+
+  /* Adjust circles roughly for mobile */
+  .careerhero-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* ... existing styles ... */
+}
+
+/* Specific fix for 481px - 600px range */
+@media (min-width: 481px) and (max-width: 600px) {
+  .careerhero-headline {
+    font-size: 32px;
+    /* Intermediate size */
+  }
+
+  .careerhero-image {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .careerhero-image img {
+    max-width: 80%;
+    /* Ensure image isn't too huge */
+    height: auto;
+  }
+
+  .careerhero-subheadline {
+    font-size: 20px;
+  }
+
+  .careerhero-description {
+    font-size: 16px;
   }
 }
 

@@ -126,6 +126,8 @@
   .our-culture-image {
     justify-content: center;
     width: 100%;
+    margin-top: 40px;
+    /* Add spacing between text and image */
   }
 
   .our-culture-image img {
