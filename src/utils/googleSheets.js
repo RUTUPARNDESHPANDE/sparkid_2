@@ -59,11 +59,9 @@ const submitToGoogleSheetsInternal = async (webAppUrl, payload, errorVarName, su
     };
   } catch (error) {
     console.error("Error submitting to Google Sheets:", error);
-    // Even with errors, the request might have succeeded (network issues, etc.), but usually catch is network fail.
-    // If it's a network error, we can return false.
     return {
-      success: true, // We return true to avoid blocking the user UI, as we can't distinguish logic error vs network sometimes.
-      message: successMessage,
+      success: false,
+      message: "Submission could not be sent. Please try again or contact the administrator.",
     };
   }
 };
@@ -125,4 +123,3 @@ export const submitJobApplication = async (webAppUrl, formData, file) => {
 export const submitPhoneNumber = async (webAppUrl, phoneNumber) => {
   return submitToGoogleSheets(webAppUrl, { phoneNumber });
 };
-

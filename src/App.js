@@ -28,6 +28,10 @@ const HandwritingPage = React.lazy(() => import("./pages/HandwritingPage"));
 const ReadingPage = React.lazy(() => import("./pages/ReadingPage"));
 const SpellingBeePage = React.lazy(() => import("./pages/SpellingBeePage"));
 const VideoEntryPage = React.lazy(() => import("./pages/VideoEntryPage"));
+// Registration, Hall Ticket & Admin pages
+const RegistrationPage = React.lazy(() => import("./pages/RegistrationPage"));
+const HallTicketPage = React.lazy(() => import("./pages/HallTicketPage"));
+const AdminPage = React.lazy(() => import("./pages/AdminPage"));
 
 // Loading fallback component
 const LoadingFallback = () => (
@@ -66,13 +70,16 @@ const FirstVisitHandler = () => {
 // Wrapper component to conditionally render Header/Footer
 const AppContent = () => {
   const location = useLocation();
+  // Hide Header/Footer on video entry page and admin page
   const isVideoEntryPage = location.pathname === '/entry-video';
+  const isAdminPage = location.pathname === '/admin';
+  const hideHeaderFooter = isVideoEntryPage || isAdminPage;
 
   return (
     <>
-      {!isVideoEntryPage && <Header />}
+      {!hideHeaderFooter && <Header />}
       <CustomCursor />
-      {!isVideoEntryPage && <Scrolltotop />}
+      {!hideHeaderFooter && <Scrolltotop />}
       <Splash />
       <Suspense fallback={<LoadingFallback />}>
         <Routes>
@@ -93,9 +100,14 @@ const AppContent = () => {
           <Route path="/insight" element={<Insight />} />
           */}
           <Route path="/contact" element={<Contact />} />
+          {/* Registration & Hall Ticket Feature */}
+          <Route path="/register" element={<RegistrationPage />} />
+          <Route path="/hall-ticket" element={<HallTicketPage />} />
+          {/* Admin Panel — password protected, no header/footer */}
+          <Route path="/admin" element={<AdminPage />} />
         </Routes>
       </Suspense>
-      {!isVideoEntryPage && <Footer />}
+      {!hideHeaderFooter && <Footer />}
     </>
   );
 };

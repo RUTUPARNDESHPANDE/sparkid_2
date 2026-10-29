@@ -1,0 +1,583 @@
+/* HallTicket.css - Brave SparKids Academy */
+
+/* ===== PAGE WRAPPER ===== */
+.hall-ticket-page {
+  background: var(--bg-gradient);
+  min-height: 100vh;
+}
+
+/* ===== HERO SECTION ===== */
+.hall-ticket-hero {
+  background: linear-gradient(135deg, var(--primary-orange), #e0761e);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hall-ticket-hero h1 {
+  font-family: 'Lilita One', cursive;
+  font-size: 3rem;
+  color: white;
+  margin: 0 0 12px;
+  letter-spacing: 0.5px;
+}
+
+.hall-ticket-hero p {
+  color: white;
+  font-family: 'Geologica', sans-serif;
+  font-size: 1.1rem;
+  opacity: 0.92;
+  margin: 0;
+}
+
+/* ===== LOOKUP CONTAINER ===== */
+.lookup-container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* ===== LOOKUP CARD ===== */
+.lookup-card {
+  background: var(--item-color);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.lookup-card h2 {
+  font-family: 'Lilita One', cursive;
+  color: var(--primary-grey);
+  font-size: 1.8rem;
+  margin: 0 0 8px;
+}
+
+.lookup-card p {
+  font-family: 'Geologica', sans-serif;
+  color: #888;
+  font-size: 14px;
+  margin: 0 0 24px;
+}
+
+.lookup-card .form-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Geologica', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.lookup-card .form-input:focus {
+  border-color: var(--primary-orange);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(245, 134, 52, 0.15);
+}
+
+.lookup-btn {
+  width: 100%;
+  padding: 13px 24px;
+  background: var(--primary-orange);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Lilita One', cursive;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s;
+  letter-spacing: 0.4px;
+}
+
+.lookup-btn:hover {
+  background: #e0761e;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(245, 134, 52, 0.4);
+}
+
+.lookup-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* ===== STATUS MESSAGES ===== */
+.status-message {
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 24px 0;
+  font-family: 'Geologica', sans-serif;
+  font-size: 14px;
+}
+
+.status-message.info,
+.status-message.pending {
+  background: #e3f2fd;
+  border-left: 4px solid #1976d2;
+  color: #0d47a1;
+}
+
+.status-message.approved,
+.status-message.success {
+  background: #e8f5e9;
+  border-left: 4px solid #388e3c;
+  color: #1b5e20;
+}
+
+.status-message.warning,
+.status-message.under-review {
+  background: #fff8e1;
+  border-left: 4px solid #f9a825;
+  color: #e65100;
+}
+
+.status-message.error,
+.status-message.rejected {
+  background: #ffebee;
+  border-left: 4px solid #e53935;
+  color: #b71c1c;
+}
+
+.status-message.warning,
+.status-message.additional-info {
+  background: #fff8e1;
+  border-left: 4px solid #f9a825;
+  color: #e65100;
+}
+
+/* ===== HALL TICKET CARD ===== */
+.hall-ticket-card {
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+/* ===== HALL TICKET HEADER ===== */
+.ht-header {
+  background: linear-gradient(135deg, var(--primary-orange), #e0761e);
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ht-header .ht-logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 28px;
+}
+
+.ht-header .ht-title-group {
+  flex: 1;
+}
+
+.ht-header .academy-name {
+  color: white;
+  font-family: 'Lilita One', cursive;
+  font-size: 1.6rem;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.ht-header .hall-ticket-title {
+  color: white;
+  font-size: 1rem;
+  opacity: 0.9;
+  margin: 2px 0 0;
+  font-family: 'Geologica', sans-serif;
+}
+
+/* ===== HALL TICKET BODY ===== */
+.ht-body {
+  padding: 32px;
+}
+
+/* ===== SECTION TITLE ===== */
+.ht-section-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--primary-orange);
+  margin-bottom: 12px;
+  margin-top: 0;
+  font-family: 'Geologica', sans-serif;
+}
+
+/* ===== INFO GRID ===== */
+.ht-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.ht-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ht-info-item .label {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 0.5px;
+  font-family: 'Geologica', sans-serif;
+}
+
+.ht-info-item .value {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--highlight-color);
+  font-family: 'Geologica', sans-serif;
+}
+
+/* ===== DIVIDER ===== */
+.ht-divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 20px 0;
+}
+
+.ht-ticket-number {
+  margin-top: 12px;
+  font-family: 'Geologica', sans-serif;
+  color: #444;
+}
+
+/* ===== STATUS BADGE ===== */
+.ht-status-badge {
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Geologica', sans-serif;
+}
+
+.ht-status-badge.submitted {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.ht-status-badge.approved {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.ht-status-badge.under-review {
+  background: #fff8e1;
+  color: #f57f17;
+}
+
+.ht-status-badge.rejected {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.ht-status-badge.additional-info {
+  background: #fff8e1;
+  color: #e65100;
+}
+
+.ht-status-badge.ticket-generated {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* ===== INSTRUCTIONS BOX ===== */
+.ht-instructions {
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 13px;
+  color: #555;
+  margin-top: 24px;
+  font-family: 'Geologica', sans-serif;
+  line-height: 1.6;
+}
+
+.ht-instructions ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+.ht-instructions li {
+  margin-bottom: 4px;
+}
+
+/* ===== FOOTER ACTIONS ===== */
+.ht-footer-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+  padding: 0 32px 32px;
+  flex-wrap: wrap;
+}
+
+/* ===== PRINT BUTTON ===== */
+.print-btn {
+  padding: 12px 32px;
+  background: var(--primary-orange);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Lilita One', cursive;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  letter-spacing: 0.4px;
+}
+
+.print-btn:hover {
+  background: #e0761e;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(245, 134, 52, 0.4);
+}
+
+.back-btn {
+  padding: 12px 28px;
+  background: transparent;
+  color: var(--primary-orange);
+  border: 2px solid var(--primary-orange);
+  border-radius: 8px;
+  font-family: 'Lilita One', cursive;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.back-btn:hover {
+  background: rgba(245, 134, 52, 0.08);
+}
+
+/* ===== LOADING SPINNER ===== */
+.ht-loading-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 0;
+}
+
+.ht-loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(245, 134, 52, 0.2);
+  border-top-color: var(--primary-orange);
+  border-radius: 50%;
+  animation: htSpin 0.8s linear infinite;
+}
+
+@keyframes htSpin {
+  to { transform: rotate(360deg); }
+}
+
+/* ===== DARK MODE ===== */
+[data-theme="dark"] .hall-ticket-page {
+  background: var(--bg-gradient);
+}
+
+[data-theme="dark"] .lookup-card {
+  background: var(--item-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .lookup-card h2 {
+  color: #b0bec5;
+}
+
+[data-theme="dark"] .lookup-card p {
+  color: #aaa;
+}
+
+[data-theme="dark"] .lookup-card .form-input {
+  background: #1e1e1e;
+  color: var(--item-text);
+  border-color: #444;
+}
+
+[data-theme="dark"] .lookup-card .form-input:focus {
+  border-color: var(--primary-orange);
+}
+
+[data-theme="dark"] .status-message.info,
+[data-theme="dark"] .status-message.pending {
+  background: #0d2137;
+  color: #90caf9;
+  border-left-color: #42a5f5;
+}
+
+[data-theme="dark"] .status-message.approved,
+[data-theme="dark"] .status-message.success {
+  background: #0d2b0d;
+  color: #a5d6a7;
+  border-left-color: #66bb6a;
+}
+
+[data-theme="dark"] .status-message.warning,
+[data-theme="dark"] .status-message.under-review {
+  background: #2b2000;
+  color: #ffcc80;
+  border-left-color: #ffa726;
+}
+
+[data-theme="dark"] .status-message.error,
+[data-theme="dark"] .status-message.rejected {
+  background: #2b0000;
+  color: #ef9a9a;
+  border-left-color: #ef5350;
+}
+
+[data-theme="dark"] .hall-ticket-card {
+  background: var(--item-color);
+}
+
+[data-theme="dark"] .ht-info-item .value {
+  color: var(--item-text);
+}
+
+[data-theme="dark"] .ht-divider {
+  border-top-color: #444;
+}
+
+[data-theme="dark"] .ht-instructions {
+  background: #2b2000;
+  border-color: #5d4b00;
+  color: #ccc;
+}
+
+/* ===== PRINT MEDIA QUERY ===== */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+  }
+
+  .hall-ticket-page {
+    background: white !important;
+    padding: 0 !important;
+  }
+
+  .hall-ticket-hero {
+    display: none;
+  }
+
+  .lookup-container {
+    display: none;
+  }
+
+  .hall-ticket-card {
+    box-shadow: none !important;
+    border: 2px solid #333;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .ht-header {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .ht-footer-actions {
+    display: none;
+  }
+
+  .admin-sidebar,
+  .admin-main,
+  .admin-modal-header {
+    display: none !important;
+  }
+
+  .admin-modal-overlay {
+    position: static;
+    display: block;
+    background: white;
+  }
+
+  .admin-modal {
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    overflow: visible;
+    box-shadow: none;
+  }
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hall-ticket-hero h1 {
+    font-size: 2rem;
+  }
+
+  .lookup-container {
+    margin: 32px auto;
+  }
+
+  .lookup-card {
+    padding: 28px 20px;
+  }
+
+  .hall-ticket-card {
+    margin: 24px auto;
+    border-radius: 12px;
+  }
+
+  .ht-header {
+    padding: 20px;
+    gap: 12px;
+  }
+
+  .ht-header .academy-name {
+    font-size: 1.3rem;
+  }
+
+  .ht-body {
+    padding: 20px;
+  }
+
+  .ht-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ht-footer-actions {
+    padding: 0 20px 24px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .print-btn,
+  .back-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hall-ticket-hero {
+    padding: 40px 16px;
+  }
+
+  .hall-ticket-hero h1 {
+    font-size: 1.7rem;
+  }
+}

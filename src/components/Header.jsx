@@ -186,6 +186,24 @@ function Header() {
           */}
           <li>
             <NavLink
+              to="/register"
+              onClick={handleNavItemClick}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Register
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/hall-ticket"
+              onClick={handleNavItemClick}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Hall Ticket
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/contact"
               onClick={handleNavItemClick}
               className={({ isActive }) => (isActive ? "active" : "")}

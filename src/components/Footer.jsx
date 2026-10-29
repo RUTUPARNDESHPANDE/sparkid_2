@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Contact Us Section */}
         <div className="footer-section address">
-          {/* <Link to ='/'><img src={logo} alt="Brave SparkKids Logo" className="footer-logo" /></Link> */}
+          {/* <Link to='/'><img src={logo} alt="Brave SparkKids Logo" className="footer-logo" /></Link> */}
           <NavLink to="/">
             <img
               src={logo}
@@ -63,7 +63,7 @@ const Footer = () => {
           <ul>
             <li><Link to="/abacus">Abacus</Link></li>
             <li><Link to="/vedic">Vedic Maths</Link></li>
-            <li><Link to="/rubic">Rubik’s Cube</Link></li>
+            <li><Link to="/rubic">Rubik's Cube</Link></li>
             <li><Link to="/writing">Writing</Link></li>
             <li><Link to="/reading">Reading</Link></li>
             <li><Link to="/spellingbee">Spelling Bee</Link></li>
@@ -79,7 +79,7 @@ const Footer = () => {
             {/* <li><Link to="/#testimonials">Testimonials</Link></li> */}
             <li><Link to="/blogs">Blogs</Link></li>
             <li><Link to="/policies">Policies</Link></li>
-            <li><Link to="/terms">Terms & Conditions</Link></li>
+            <li><Link to="/terms">Terms &amp; Conditions</Link></li>
           </ul>
         </div>
 
@@ -96,6 +96,10 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <p>© 2024 Brave SparkKids, Inc. All Rights Reserved</p>
+        {/* Admin link — small and unobtrusive, not shown in main navigation */}
+        <p style={{ marginTop: '6px', fontSize: '12px', opacity: 0.45 }}>
+          <Link to="/admin" style={{ color: 'inherit', textDecoration: 'none' }}>Admin</Link>
+        </p>
       </div>
     </footer>
   );

@@ -11,6 +11,12 @@ export const GOOGLE_SHEETS_CONFIG = {
   
   // Job application form web app URL (handles both form data and file uploads)
   jobApplication: process.env.REACT_APP_GOOGLE_SHEETS_JOB_APPLICATION || "",
+
+  // Candidate registration form web app URL
+  registrationForm: process.env.REACT_APP_GOOGLE_SHEETS_REGISTRATION_FORM || "",
+
+  // Hall ticket lookup web app URL
+  hallTicketLookup: process.env.REACT_APP_GOOGLE_SHEETS_HALL_TICKET_LOOKUP || "",
 };
 
 // Validate that all required environment variables are set
@@ -18,6 +24,8 @@ const missingVars = [];
 if (!GOOGLE_SHEETS_CONFIG.contactForm) missingVars.push('REACT_APP_GOOGLE_SHEETS_CONTACT_FORM');
 if (!GOOGLE_SHEETS_CONFIG.questionForm) missingVars.push('REACT_APP_GOOGLE_SHEETS_QUESTION_FORM');
 if (!GOOGLE_SHEETS_CONFIG.jobApplication) missingVars.push('REACT_APP_GOOGLE_SHEETS_JOB_APPLICATION');
+if (!GOOGLE_SHEETS_CONFIG.registrationForm) missingVars.push('REACT_APP_GOOGLE_SHEETS_REGISTRATION_FORM');
+if (!GOOGLE_SHEETS_CONFIG.hallTicketLookup) missingVars.push('REACT_APP_GOOGLE_SHEETS_HALL_TICKET_LOOKUP');
 
 if (missingVars.length > 0) {
   console.warn('⚠️ Missing Google Sheets environment variables:', missingVars.join(', '));
@@ -28,4 +36,3 @@ if (missingVars.length > 0) {
     console.error('❌ Production build requires all environment variables to be set!');
   }
 }
-
