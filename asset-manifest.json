@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sparkid_2/static/css/main.d7118964.css",
-    "main.js": "/sparkid_2/static/js/main.5d7482e2.js",
+    "main.js": "/sparkid_2/static/js/main.a9d0b836.js",
     "static/css/205.d9435f98.chunk.css": "/sparkid_2/static/css/205.d9435f98.chunk.css",
     "static/js/205.a99d85c9.chunk.js": "/sparkid_2/static/js/205.a99d85c9.chunk.js",
     "static/css/197.78a639bf.chunk.css": "/sparkid_2/static/css/197.78a639bf.chunk.css",
@@ -129,7 +129,7 @@
     "static/media/facebook.webp": "/sparkid_2/static/media/facebook.d9447539861e2024f8ac.webp",
     "static/media/franchisestory1.webp": "/sparkid_2/static/media/franchisestory1.53c2678a133bd7601d19.webp",
     "main.d7118964.css.map": "/sparkid_2/static/css/main.d7118964.css.map",
-    "main.5d7482e2.js.map": "/sparkid_2/static/js/main.5d7482e2.js.map",
+    "main.a9d0b836.js.map": "/sparkid_2/static/js/main.a9d0b836.js.map",
     "205.d9435f98.chunk.css.map": "/sparkid_2/static/css/205.d9435f98.chunk.css.map",
     "205.a99d85c9.chunk.js.map": "/sparkid_2/static/js/205.a99d85c9.chunk.js.map",
     "197.78a639bf.chunk.css.map": "/sparkid_2/static/css/197.78a639bf.chunk.css.map",
@@ -163,6 +163,6 @@
   },
   "entrypoints": [
     "static/css/main.d7118964.css",
-    "static/js/main.5d7482e2.js"
+    "static/js/main.a9d0b836.js"
   ]
 }
